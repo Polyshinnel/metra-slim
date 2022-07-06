@@ -1,0 +1,17 @@
+{
+    "name": "admin/metra-slim.web",
+    "description": "migrate metra to slim framework",
+    "license": "free",
+    "autoload": {
+        "psr-4": {
+            "Admin\\MetraSlimWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Polyshinnel",
+            "email": "polyshinnel@gmail.com"
+        }
+    ],
+    "require": {}
+}
