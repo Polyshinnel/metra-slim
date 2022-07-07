@@ -4,7 +4,7 @@
     "license": "free",
     "autoload": {
         "psr-4": {
-            "Admin\\MetraSlimWeb\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -13,5 +13,17 @@
             "email": "polyshinnel@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php" : "^7.2",
+        "slim/slim": "3.*",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "twig/twig": "^3.0",
+        "ext-simplexml": "*",
+        "ext-ftp": "*",
+        "symfony/console": "*",
+        "illuminate/database": "^7.30",
+        "illuminate/pagination": "^7.30"
+    }
 }
