@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/vendor/splide-carousel/css/splide-core.min.css">
-    <link rel="stylesheet" href="assets/vendor/airDatepicker/air-datepicker.css">
+    <link rel="stylesheet" href="assets/js/airDatepicker/air-datepicker.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <title>{$pageTitle}</title>
+    <title>{{ title }}</title>
 </head>
 <body>
 <main class="main">
@@ -36,7 +35,7 @@
     <div class="work-area">
         <div class="box-container">
             <header class="work-area__header">
-                <h1 class="page-title">{$pageName}</h1>
+                <h1 class="page-title">{{ pageTitle }}</h1>
                 <div class="other-header__block">
 
                     <div class="notification-header">
@@ -49,7 +48,7 @@
                     <div class="demiter-header"></div>
 
                     <div class="header-person">
-                        <h4 class="header-person__name">{$headerUserName}</h4>
+                        <h4 class="header-person__name">{{ headerUserName }}</h4>
                         <div class="header-person__round">
                             <div class="header-person__round-img">
                                 <img src="assets/img/user.png" alt="">

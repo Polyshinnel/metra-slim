@@ -30,25 +30,25 @@ $view = new Environment($loader);
 //$view->addExtension(new TwigExtension());
 
 $app->get('/',function (Request $request,Response $response, array $args) use ($view){
-//    $userAuth = UserController::checkUserAuth();
-//    if($userAuth)
-//    {
-//        $folder = 'admin';
-//        $body = $view->render("$folder/main.twig", [
-//            'title' => 'Выберете поставщика',
-//        ]);
-//        $response->getBody()->write($body);
-//    }
-//    else
-//    {
-//        return $response->withStatus(302)->withHeader('Location', '/auth');
-//    }
-    $folder = 'user';
-    $body = $view->render("$folder/main.twig", [
-        'title' => 'Выберете поставщика',
-    ]);
-    $response->getBody()->write($body);
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        $folder = $userAuth['folder'];
+        $headerName = $userAuth['name'];
+        $body = $view->render("$folder/main.twig", [
+            'title' => 'Выберете поставщика',
+            'headerName' => $headerName
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
 });
+
+
 
 $app->get('/auth',function (Request $request,Response $response, array $args) use ($view){
     $folder = 'common';
