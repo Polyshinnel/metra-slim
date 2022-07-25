@@ -3,6 +3,7 @@
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
+use App\Controllers\Tkp\GetTkpAuto;
 use App\Controllers\UserController;
 use App\Models\Database;
 use App\Utils\TwigExtension;
@@ -262,6 +263,30 @@ $app->post('/restorePass',function(Request $request,Response $response, array $a
     $params = $request->getParsedBody();
     $userResponse = UserController::restorePass($params);
     $response->getBody()->write($userResponse);
+    return $response;
+});
+
+
+
+$app->post('/listTkp/{id}',function(Request $request,Response $response, array $args){
+    $params = $request->getParsedBody();
+    $typeTkp = $args['id'];
+    if($typeTkp == 'auto')
+    {
+        $controllerResponse = GetTkpAuto::getTkpList($params);
+    }
+
+    if($typeTkp == 'vagon')
+    {
+        $controllerResponse = NULL;
+    }
+
+    if($typeTkp == 'platform')
+    {
+        $controllerResponse = NULL;
+    }
+
+    $response->getBody()->write($controllerResponse);
     return $response;
 });
 

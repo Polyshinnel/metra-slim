@@ -212,15 +212,63 @@ $('.tkp-tab-selector').click(function () {
             $(this).addClass('tkp-tab_active');
         }
    })
+
+    $('.get-tkp').attr('data-link',dataId)
 });
 
-$('.selector-block').click(function () {
-    $(this).find('.select-list').slideToggle();
+$('.selector-block input').click(function () {
+    console.log($(this).parent().find('.select-list'));
+    $(this).parent().find('.select-list').slideToggle();
 })
 
 $('.select-list li').click(function () {
     var data = $(this).html();
     $(this).parent().parent().find('input').val(data);
-    $(this).parent().find('.select-list').slideUp();
+    $(this).parent().slideUp();
 })
 
+$('.get-tkp').click(function () {
+    var link = $(this).attr('data-link');
+
+    var clientData = {
+        customerName : $('#customerName').val(),
+        instalationPlace: $('#instalationPlace').val(),
+        expiredData: $('#expiredData').val()
+    };
+
+    if(link == 'auto')
+    {
+        var typeSensor = $('#typeSensor').val();
+        var model = $('#model').val();
+        var typeInstalation = $('#typeInstalation').val();
+        var weight = $('#weight').val();
+        var length = $('#length').val();
+
+        $.ajax({
+            url: '/listTkp/'+link,
+            method: 'post',
+            dataType: 'json',
+            data: {
+                typeSensor: typeSensor,
+                typeInstalation: typeInstalation,
+                length: length,
+                model: model,
+                weight: weight,
+                customerName: clientData.customerName,
+                instalationPlace: clientData.instalationPlace,
+                expiredDate: clientData.expiredData
+            },
+            success: function(data){
+                if(data.message != 'tkp not empty')
+                {
+                    showFancyBox(data.message, 'error');
+                }
+                else
+                {
+
+                }
+            }
+        });
+    }
+
+})
