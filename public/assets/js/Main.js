@@ -194,4 +194,33 @@ $(document).ready(function () {
             $(this).addClass('sidebar__menu-item_active');
         }
     })
+});
+
+$('.tkp-tab-selector').click(function () {
+   var dataId = $(this).attr('data-tab');
+
+   $('.tkp-tab-selector').each(function () {
+        $(this).removeClass('tkp-tab-selector_active');
+   });
+   $(this).addClass('tkp-tab-selector_active');
+
+   $('.tkp-tab').each(function () {
+        $(this).removeClass('tkp-tab_active')
+       var dataTab = $(this).attr('data-tab');
+        if(dataTab == dataId)
+        {
+            $(this).addClass('tkp-tab_active');
+        }
+   })
+});
+
+$('.selector-block').click(function () {
+    $(this).find('.select-list').slideToggle();
 })
+
+$('.select-list li').click(function () {
+    var data = $(this).html();
+    $(this).parent().parent().find('input').val(data);
+    $(this).parent().find('.select-list').slideUp();
+})
+

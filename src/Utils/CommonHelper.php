@@ -41,4 +41,40 @@ class CommonHelper
         $phone = '+7'.$phone;
         return $phone;
     }
+
+    public static function normalizePrice($price)
+    {
+        if($price>=1000 && $price<1000000){
+            $hundreeds =  $price%1000;
+            $thousands = ($price - $hundreeds)/1000;
+            if($hundreeds < 100){
+                $hundreeds = '0'.$hundreeds;
+            }
+            if($hundreeds < 10){
+                $hundreeds = '00'.$hundreeds;
+            }
+            $price = $thousands.' '.$hundreeds;
+        }elseif($price>=1000000){
+            $millMod = $price%1000000;
+            $hundreeds =  $millMod%1000;
+            $thousands = ($millMod - $hundreeds)/1000;
+            $millions = ($price-$millMod)/1000000;
+            if($hundreeds < 100){
+                $hundreeds = '0'.$hundreeds;
+            }
+            if($hundreeds < 10){
+                $hundreeds = '00'.$hundreeds;
+            }
+            if($thousands < 100){
+                $thousands = '0'.$thousands;
+            }
+            if($thousands < 10){
+                $thousands = '00'.$thousands;
+            }
+            $price = $millions.' '.$thousands.' '.$hundreeds;
+        }else{
+            return $price;
+        }
+        return $price;
+    }
 }

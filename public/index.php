@@ -1,5 +1,7 @@
 <?php
 
+use App\Controllers\Pages\Catalog\CatalogController;
+use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
 use App\Controllers\UserController;
 use App\Models\Database;
@@ -85,6 +87,73 @@ $app->get('/tkpcostruct',function (Request $request,Response $response, array $a
 });
 
 
+$app->get('/catalog',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $getParams = $request->getQueryParams();
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $catalogData = CatalogController::getCategoriesAndProducts($getParams);
+
+            $body = $view->render("user/catalog.twig", [
+                'title' => 'Каталог',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar,
+                'categories' => $catalogData['categories'],
+                'products' => $catalogData['products'],
+                'breadcrumbs' => $catalogData['breadcrumbs'],
+                'last_crumb' => $catalogData['lastCrumb']
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/products/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $productId = $args['id'];
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+
+            $productData = ProductController::getProduct($productId);
+
+            $body = $view->render("user/product.twig", [
+                'title' => 'Каталог',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar,
+                'product' => $productData['product'],
+                'breadcrumbs' => $productData['breadcrumbs'],
+                'lust_crumb' => $productData['lust_crumb']
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
 
 
 

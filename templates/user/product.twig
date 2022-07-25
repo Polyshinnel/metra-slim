@@ -1,0 +1,63 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+    <div class="breadcrumbps">
+        <ul>
+            {% for breadcrumb in breadcrumbs %}
+            <li><a href="{{ breadcrumb.url }}">{{ breadcrumb.name }}</a>&nbsp;/&nbsp;</li>
+            {% endfor %}
+            <li>{{ lust_crumb }}</li>
+        </ul>
+    </div>
+
+    <div class="product-card-block">
+        <h1>{{ product.name }}</h1>
+        <div class="product-card-block__wrapper">
+            <div class="product-card-block__img">
+                <img src="{{ product.img }}" alt="">
+            </div>
+            <div class="product-card-block__params">
+                <div class="product-card-block__params-unit">
+                    <div class="product-card-block__params-unit-header">
+                        <p>Основные параметры:</p>
+                    </div>
+                    <div class="product-card-block__params-unit-body">
+                        <div class="product-card-block__params-unit-body-line">
+                            <p class="product-card-block__params-unit-body-line-title">Наименование:</p>
+                            <p class="product-card-block__params-unit-body-line-text">{{ product.name }}</p>
+                        </div>
+
+                        <div class="product-card-block__params-unit-body-line">
+                            <p class="product-card-block__params-unit-body-line-title">Артикул:</p>
+                            <p class="product-card-block__params-unit-body-line-text">{{ product.sku }}</p>
+                        </div>
+
+                        <div class="product-card-block__params-unit-body-line">
+                            <p class="product-card-block__params-unit-body-line-title">Цена:</p>
+                            <p class="product-card-block__params-unit-body-line-text">{{ product.price }}</p>
+                        </div>
+
+                        <div class="product-card-block__params-unit-body-line">
+                            <p class="product-card-block__params-unit-body-line-title">Наличие:</p>
+                            <p class="product-card-block__params-unit-body-line-text {{ product.statusClass }}">{{ product.status }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card-block__params-unit">
+                    <div class="product-card-block__params-unit-header">
+                        <p>Текстовое описание:</p>
+                    </div>
+                    <div class="product-card-block__params-unit-body">
+                        <h4>Описание:</h4>
+                        <p class="product-card-block__descr">{{ product.description }}</p>
+                    </div>
+                </div>
+
+                <button class="product-shop-btn blue-btn" data-id="{{ product.id }}">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
