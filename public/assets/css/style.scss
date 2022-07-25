@@ -131,6 +131,10 @@ body{
                 font-size: 14px;
                 color: #7e8192;
             }
+
+            img{
+                width: 24px;
+            }
         }
     }
 }
@@ -1151,5 +1155,29 @@ body{
 
     .product-card-block .product-card-block__params .product-card-block__params-unit .product-card-block__params-unit-body .product-card-block__params-unit-body-line .product-card-block__params-unit-body-line-text{
         max-width: 240px;
+    }
+}
+
+.slider-main{
+    .owl-dots{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        .owl-dot{
+            width: 12px;
+            height: 12px;
+            border: 1px solid #003D9A;
+        }
+
+        .owl-dot+.owl-dot{
+            margin-left: 12px;
+        }
+
+        .active{
+            background: #003D9A;
+        }
     }
 }

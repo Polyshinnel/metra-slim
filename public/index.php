@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\Pages\PageHelpers\SidebarController;
 use App\Controllers\UserController;
 use App\Models\Database;
 use App\Utils\TwigExtension;
@@ -33,14 +34,49 @@ $app->get('/',function (Request $request,Response $response, array $args) use ($
     $userAuth = UserController::checkUserAuth();
     if($userAuth)
     {
-        $folder = $userAuth['folder'];
-        $headerName = $userAuth['name'];
-        $body = $view->render("$folder/main.twig", [
-            'title' => 'Выберете поставщика',
-            'headerName' => $headerName
-        ]);
-        $response->getBody()->write($body);
-        return $response;
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/main.twig", [
+                'title' => 'Главная',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/tkpcostruct',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/tkpconstruct.twig", [
+                'title' => 'Конструктор ТКП',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
     }
     else
     {
@@ -50,6 +86,11 @@ $app->get('/',function (Request $request,Response $response, array $args) use ($
 
 
 
+
+
+
+
+//Общие страницы: Авторизация, регистрация, восстановление пароля и т.д
 $app->get('/auth',function (Request $request,Response $response, array $args) use ($view){
     $folder = 'common';
     $body = $view->render("$folder/AuthForm.twig", [
@@ -68,8 +109,11 @@ $app->get('/register',function (Request $request,Response $response, array $args
 
 $app->get('/confirm',function (Request $request,Response $response, array $args) use ($view){
     $folder = 'common';
+    $getParams = $request->getQueryParams();
+    $mail = $getParams['mail'];
     $body = $view->render("$folder/ConfirmMail.twig", [
         'title' => 'Подтверждение почты',
+        'mail' => $mail
     ]);
     $response->getBody()->write($body);
 });
@@ -85,46 +129,70 @@ $app->get('/restore',function (Request $request,Response $response, array $args)
 
 $app->get('/restorePass',function (Request $request,Response $response, array $args) use ($view){
     $folder = 'common';
-    $body = $view->render("$folder/RestorePass.twig", [
+    $getParams = $request->getQueryParams();
+
+    $userInfo = UserController::getDataFromToken($getParams);
+
+    if($userInfo)
+    {
+        $body = $view->render("$folder/RestorePass.twig", [
+            'title' => 'Восстановление пароля',
+            'text' => 'Введите новый пароль для логина: '.$userInfo['mail']
+        ]);
+
+        $response->getBody()->write($body);
+        return $response;
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/awaitPage',function (Request $request,Response $response, array $args) use ($view){
+    $folder = 'common';
+    $body = $view->render("$folder/AwaitPage.twig", [
         'title' => 'Восстановление пароля',
+        'pageText' => 'На вашу почту будет отправлена ссылка на сброс пароля'
     ]);
     $response->getBody()->write($body);
 });
 
 
 
-
-
-
-
-
-
-
+//Методы для служебных страниц
 $app->post('/authUser',function(Request $request,Response $response, array $args){
     $params = $request->getParsedBody();
-
-    $response->getBody()->write();
+    $controllerResponse = UserController::authUser($params);
+    $response->getBody()->write($controllerResponse);
     return $response;
 });
 
 $app->post('/registerUser',function(Request $request,Response $response, array $args){
     $params = $request->getParsedBody();
-
-    $response->getBody()->write();
+    $controllerResponse = UserController::registerUser($params);
+    $response->getBody()->write($controllerResponse);
     return $response;
 });
 
 $app->post('/confirmMail',function(Request $request,Response $response, array $args){
     $params = $request->getParsedBody();
+    $userResponse = UserController::checkConfirm($params['mail'],$params['code']);
+    $response->getBody()->write($userResponse);
+    return $response;
+});
 
-    $response->getBody()->write();
+$app->post('/restoreMail',function(Request $request,Response $response, array $args){
+    $params = $request->getParsedBody();
+    $userResponse = UserController::restoreMail($params);
+    $response->getBody()->write($userResponse);
     return $response;
 });
 
 $app->post('/restorePass',function(Request $request,Response $response, array $args){
     $params = $request->getParsedBody();
-
-    $response->getBody()->write();
+    $userResponse = UserController::restorePass($params);
+    $response->getBody()->write($userResponse);
     return $response;
 });
 

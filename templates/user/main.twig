@@ -1,45 +1,35 @@
 {% extends 'user/base.twig' %}
 
 {% block body %}
-<div class="main-slider splide">
-    <div class="splide__track">
-        <ul class="splide__list">
-            <li class="splide__slide">
-                <div class="slide__unit">
-                    <img src="assets/img/slider/slide1.png" alt="">
-                    <div class="slide__unit-mask">
-                        <h2>Обновление модельного ряда Весов Кочевник</h2>
-                        <a href="#"><button>Ознакомиться</button></a>
-                    </div>
-                </div>
-            </li>
+<div class="slider-main owl-carousel">
+    <div class="slide__unit">
+        <img src="assets/img/slider/slide1.png" alt="">
+        <div class="slide__unit-mask">
+            <h2>Обновление модельного ряда Весов Кочевник</h2>
+            <a href="#"><button>Ознакомиться</button></a>
+        </div>
+    </div>
 
-            <li class="splide__slide">
-                <div class="slide__unit">
-                    <img src="assets/img/slider/slide1.png" alt="">
-                    <div class="slide__unit-mask">
-                        <h2>Обновление модельного ряда Весов Кочевник</h2>
-                        <a href="#"><button>Ознакомиться</button></a>
-                    </div>
-                </div>
-            </li>
+    <div class="slide__unit">
+        <img src="assets/img/slider/slide1.png" alt="">
+        <div class="slide__unit-mask">
+            <h2>Обновление модельного ряда Весов Кочевник</h2>
+            <a href="#"><button>Ознакомиться</button></a>
+        </div>
+    </div>
 
-            <li class="splide__slide">
-                <div class="slide__unit">
-                    <img src="assets/img/slider/slide1.png" alt="">
-                    <div class="slide__unit-mask">
-                        <h2>Обновление модельного ряда Весов Кочевник</h2>
-                        <a href="#"><button>Ознакомиться</button></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
+    <div class="slide__unit">
+        <img src="assets/img/slider/slide1.png" alt="">
+        <div class="slide__unit-mask">
+            <h2>Обновление модельного ряда Весов Кочевник</h2>
+            <a href="#"><button>Ознакомиться</button></a>
+        </div>
     </div>
 </div>
 
 <div class="common-module">
     <h4 class="common-module__title">Последние новости:</h4>
-    <a href="/?controller=News" class="common-module__link">Смотреть все новости</a>
+    <a href="/news" class="common-module__link">Смотреть все новости</a>
 
     <div class="common-module__cards">
         <a href="#" class="common-module__card-link">
@@ -86,7 +76,7 @@
 
 <div class="common-module">
     <h4 class="common-module__title">Вебинары:</h4>
-    <a href="/?controller=Vebinars" class="common-module__link">Смотреть все вебинары</a>
+    <a href="/academy/vebinars" class="common-module__link">Смотреть все вебинары</a>
 
     <div class="common-module__cards">
         <a href="#" class="common-module__card-link">

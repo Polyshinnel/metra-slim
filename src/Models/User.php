@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
+    public $timestamps = false;
     protected $fillable = [
         'name',
         'mail',
@@ -16,6 +17,7 @@ class User extends Model
         'pass',
         'status',
         'confirm_code',
-        'status_mail'
+        'status_mail',
+        'admin_status'
     ];
 }

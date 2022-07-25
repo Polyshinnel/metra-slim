@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/js/owl-carusel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/js/owl-carusel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/js/airDatepicker/air-datepicker.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -19,36 +21,37 @@
 
         <nav class="sidebar__menu">
             <ul class="sidebar__menu-list">
-                {foreach $sidebarPages as $sidebarPage}
-                <li class="{$sidebarPage['class']}">
-                    <a href="{$sidebarPage['url']}" class="sidebar__menu-item-link">
+                {% for sidebarUnit in sidebar %}
+                <li class="sidebar__menu-item">
+                    <a href="{{ sidebarUnit.link }}" class="sidebar__menu-item-link">
                         <div class="sidebar__menu-item-link-icon">
-                            {$sidebarPage['img']}
+                            {{ sidebarUnit.svg | raw }}
                         </div>
-                        <p>{$sidebarPage['name']}</p>
+                        <p>{{ sidebarUnit.name }}</p>
                     </a>
                 </li>
-                {/foreach}
+                {% endfor %}
             </ul>
         </nav>
     </aside>
     <div class="work-area">
         <div class="box-container">
             <header class="work-area__header">
-                <h1 class="page-title">{{ pageTitle }}</h1>
+                <h1 class="page-title">{{ title }}</h1>
                 <div class="other-header__block">
 
                     <div class="notification-header">
                         <div class="notification-header__bell">
                             <img src="assets/img/bell.svg" alt="">
-                            <div class="notification-header__bell-round notification-header__bell-round_active"></div>
+{#                            <div class="notification-header__bell-round notification-header__bell-round_active"></div>#}
+                            <div class="notification-header__bell-round"></div>
                         </div>
                     </div>
 
                     <div class="demiter-header"></div>
 
                     <div class="header-person">
-                        <h4 class="header-person__name">{{ headerUserName }}</h4>
+                        <h4 class="header-person__name">{{ headerName }}</h4>
                         <div class="header-person__round">
                             <div class="header-person__round-img">
                                 <img src="assets/img/user.png" alt="">
