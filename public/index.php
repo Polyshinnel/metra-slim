@@ -3,6 +3,7 @@
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
+use App\Controllers\Tkp\CreateTkpAuto;
 use App\Controllers\Tkp\GetTkpAuto;
 use App\Controllers\UserController;
 use App\Models\Database;
@@ -288,6 +289,12 @@ $app->post('/listTkp/{id}',function(Request $request,Response $response, array $
 
     $response->getBody()->write($controllerResponse);
     return $response;
+});
+
+$app->get('/getTkp/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $getParams = $request->getQueryParams();
+    CreateTkpAuto::createTkp($getParams);
+    $response->getBody()->write('');
 });
 
 $app->run();
