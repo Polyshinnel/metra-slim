@@ -18,7 +18,7 @@ class CreateTkpAuto
 
         $tkpInfo = TkpAuto::where('id',$tkpId)->first()->toArray();
 
-        $template = __DIR__.'../../../public/assets/tkp'.$tkpInfo['path'];
+        $template = __DIR__.'../../../../public/assets/tkp'.$tkpInfo['path'];
         $templateProcessor = new TemplateProcessor($template);
 
         $templateProcessor->setValue('customerName', $customerName);
