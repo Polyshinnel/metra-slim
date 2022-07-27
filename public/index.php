@@ -157,6 +157,144 @@ $app->get('/products/{id}',function (Request $request,Response $response, array 
     }
 });
 
+$app->get('/orders',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/orders.twig", [
+                'title' => 'Мои заказы',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/news',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/news.twig", [
+                'title' => 'Новости',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/addmaterials',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/addmaterials.twig", [
+                'title' => 'Доп.материалы',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/academy',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/academy.twig", [
+                'title' => 'Академия метра',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+$app->get('/clients',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth)
+    {
+        if($userAuth['redirect'] == 'none')
+        {
+            $headerName = $userAuth['name'];
+            $sidebar = SidebarController::getSidebar();
+            $body = $view->render("user/clients.twig", [
+                'title' => 'Мои клиенты',
+                'headerName' => $headerName,
+                'sidebar' => $sidebar
+            ]);
+            $response->getBody()->write($body);
+            return $response;
+        }
+        else
+        {
+            return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
+        }
+    }
+    else
+    {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+});
+
+
+
+
 
 
 
