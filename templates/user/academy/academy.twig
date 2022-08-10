@@ -1,0 +1,32 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+<div class="breadcrumbps">
+    <ul>
+        <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+        <li>{{ title }}</li>
+    </ul>
+</div>
+
+<h1 class="other-page-title">{{ title }}</h1>
+
+<div class="other-page-wrapper">
+    <div class="page-category-wrapper">
+        <a href="/academy/presentations">
+            <div class="page-category__block">
+                <img src="/assets/img/other-pages/academy/1.svg" alt="">
+                <p>Презентации</p>
+            </div>
+        </a>
+
+        <a href="/academy/vebinars">
+            <div class="page-category__block">
+                <img src="/assets/img/other-pages/academy/2.svg" alt="">
+                <p>Вебинары</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
