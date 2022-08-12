@@ -14,47 +14,14 @@
 
 <div class="other-page-wrapper">
     <div class="page-category-wrapper">
-        <a href="/academy/presentations">
+        {% for vebinar in vebinars %}
+        <a href="/academy/vebinars/{{ vebinar.id }}">
             <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
+                <img src="{{ vebinar.img }}" alt="">
+                <p>{{ vebinar.title }}</p>
             </div>
         </a>
-
-        <a href="/academy/presentations">
-            <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
-            </div>
-        </a>
-
-        <a href="/academy/presentations">
-            <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
-            </div>
-        </a>
-
-        <a href="/academy/presentations">
-            <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
-            </div>
-        </a>
-
-        <a href="/academy/presentations">
-            <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
-            </div>
-        </a>
-
-        <a href="/academy/presentations">
-            <div class="page-category__block page-category__block_page-elem">
-                <img src="/assets/img/vebinars/1.png" alt="">
-                <p>Вебинар "Модернизация автомобильных весов"</p>
-            </div>
-        </a>
+        {% endfor %}
     </div>
 
     <div class="pagination-block">

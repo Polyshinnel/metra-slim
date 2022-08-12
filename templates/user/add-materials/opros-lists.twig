@@ -1,0 +1,54 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+<div class="breadcrumbps">
+    <ul>
+        <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+        <li><a href="/addmaterials">Доп.материалы</a>&nbsp;/&nbsp;</li>
+        <li>{{ title }}</li>
+    </ul>
+</div>
+
+<h1 class="other-page-title">{{ title }}</h1>
+
+<div class="other-page-wrapper">
+    <div class="other-page-wrapper_downloadable">
+        <a href="/assets/opros-lists/1.doc" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/word.svg" alt="">
+                <p>Конвеерный дозатор опросный лист</p>
+            </div>
+        </a>
+
+        <a href="/assets/opros-lists/2.doc" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/word.svg" alt="">
+                <p>Опросный лист на автомобильные весы 2020</p>
+            </div>
+        </a>
+
+        <a href="/assets/opros-lists/3.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Опросный лист (Типовые бункерные весы)</p>
+            </div>
+        </a>
+
+        <a href="/assets/opros-lists/4.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Опросный лист вагонные весы</p>
+            </div>
+        </a>
+
+        <a href="/assets/opros-lists/5.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Опросный лист конвейерные весы</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

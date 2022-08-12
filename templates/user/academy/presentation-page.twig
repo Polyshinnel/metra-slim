@@ -1,0 +1,22 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+<div class="breadcrumbps">
+    <ul>
+        <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+        <li><a href="/academy">Академия метра</a>&nbsp;/&nbsp;</li>
+        <li><a href="/academy/presentations">Презентации</a>&nbsp;/&nbsp;</li>
+        <li>{{ title }}</li>
+    </ul>
+</div>
+
+<h1 class="other-page-title">{{ title }}</h1>
+
+<div class="other-page-wrapper">
+    <div class="other-page-wrapper_single">
+        <iframe src="https://www.youtube.com/embed/YEQiA_-v_gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+{% endblock %}

@@ -79,53 +79,19 @@
     <a href="/academy/vebinars" class="common-module__link">Смотреть все вебинары</a>
 
     <div class="common-module__cards">
-        <a href="#" class="common-module__card-link">
+        {% for vebinar in vebinars %}
+        <a href="/academy/vebinars/{{ vebinar.id }}" class="common-module__card-link">
             <div class="common-module__card common-module__card-vebinar">
                 <div class="common-module__card-overlay">
                     <p class="common-module__card-overlay-author">Организатор: Е. Машкова</p>
                     <div class="common-module__card-overlay-meta">
-                        <div class="common-module__card-overlay-date"><p>05.05.2022</p></div>
-                        <p class="common-module__card-overlay-name">Новогоднее поздравление Никитиной Татаьяны, Генерального директора ...</p>
+                        <div class="common-module__card-overlay-date"><p>{{ vebinar.date_create }}</p></div>
+                        <p class="common-module__card-overlay-name">{{ vebinar.title }}</p>
                     </div>
                 </div>
             </div>
         </a>
-
-        <a href="#" class="common-module__card-link">
-            <div class="common-module__card common-module__card-vebinar">
-                <div class="common-module__card-overlay">
-                    <p class="common-module__card-overlay-author">Организатор: Е. Машкова</p>
-                    <div class="common-module__card-overlay-meta">
-                        <div class="common-module__card-overlay-date"><p>05.05.2022</p></div>
-                        <p class="common-module__card-overlay-name">Новогоднее поздравление Никитиной Татаьяны, Генерального директора ...</p>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="#" class="common-module__card-link">
-            <div class="common-module__card common-module__card-vebinar">
-                <div class="common-module__card-overlay">
-                    <p class="common-module__card-overlay-author">Организатор: Е. Машкова</p>
-                    <div class="common-module__card-overlay-meta">
-                        <div class="common-module__card-overlay-date"><p>05.05.2022</p></div>
-                        <p class="common-module__card-overlay-name">Новогоднее поздравление Никитиной Татаьяны, Генерального директора ...</p>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="#" class="common-module__card-link">
-            <div class="common-module__card common-module__card-vebinar">
-                <div class="common-module__card-overlay">
-                    <p class="common-module__card-overlay-author">Организатор: Е. Машкова</p>
-                    <div class="common-module__card-overlay-meta">
-                        <div class="common-module__card-overlay-date"><p>05.05.2022</p></div>
-                        <p class="common-module__card-overlay-name">Новогоднее поздравление Никитиной Татаьяны, Генерального директора ...</p>
-                    </div>
-                </div>
-            </div>
-        </a>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

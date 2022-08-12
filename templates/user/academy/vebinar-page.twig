@@ -1,0 +1,22 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+<div class="breadcrumbps">
+    <ul>
+        <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+        <li><a href="/academy">Академия метра</a>&nbsp;/&nbsp;</li>
+        <li><a href="/academy/vebinars">Вебинары</a>&nbsp;/&nbsp;</li>
+        <li>{{ title }}</li>
+    </ul>
+</div>
+
+<h1 class="other-page-title">{{ title }}</h1>
+
+<div class="other-page-wrapper">
+    <div class="other-page-wrapper_single">
+        {{ vebinar.html | raw }}
+    </div>
+</div>
+
+{% endblock %}

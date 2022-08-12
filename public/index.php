@@ -1,5 +1,7 @@
 <?php
 
+use App\Controllers\Pages\Academy\Vebinars;
+use App\Controllers\Pages\Academy\VebinarsPage;
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
@@ -57,10 +59,13 @@ $app->get('/',function (Request $request,Response $response, array $args) use ($
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
+
+    $vebinars = VebinarsPage::getVebinars('last');
     $body = $view->render("user/main.twig", [
         'title' => 'Главная',
         'headerName' => $headerName,
-        'sidebar' => $sidebar
+        'sidebar' => $sidebar,
+        'vebinars' => $vebinars
     ]);
     $response->getBody()->write($body);
     return $response;
@@ -146,18 +151,7 @@ $app->get('/news',function (Request $request,Response $response, array $args) us
     return $response;
 })->add($authMiddleware);
 
-$app->get('/addmaterials',function (Request $request,Response $response, array $args) use ($view){
-    $userAuth = UserController::checkUserAuth();
-    $headerName = $userAuth['name'];
-    $sidebar = SidebarController::getSidebar();
-    $body = $view->render("user/addmaterials.twig", [
-        'title' => 'Доп.материалы',
-        'headerName' => $headerName,
-        'sidebar' => $sidebar
-    ]);
-    $response->getBody()->write($body);
-    return $response;
-})->add($authMiddleware);
+
 
 $app->group('/academy',function () use ($app,$view){
     $app->get('',function (Request $request,Response $response, array $args) use ($view){
@@ -190,8 +184,81 @@ $app->group('/academy',function () use ($app,$view){
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
+
+        $vebinars = VebinarsPage::getVebinars('all');
         $body = $view->render("user/academy/vebinars.twig", [
             'title' => 'Вебинары',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'vebinars' => $vebinars
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/vebinars/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $vebinar = VebinarsPage::getVebinarById($args['id']);
+        $body = $view->render("user/academy/vebinar-page.twig", [
+            'title' => $vebinar['title'],
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'vebinar' => $vebinar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/presentations/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+
+        $body = $view->render("user/academy/presentation-page.twig", [
+            'title' => 'Видео с производства',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+})->add($authMiddleware);
+
+$app->group('/addmaterials',function () use ($app,$view){
+    $app->get('',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/addmaterials.twig", [
+            'title' => 'Доп.материалы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/sertificates',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/sertificates.twig", [
+            'title' => 'Сертификаты и описания типа',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/check-lists',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/opros-lists.twig", [
+            'title' => 'Опросные листы',
             'headerName' => $headerName,
             'sidebar' => $sidebar
         ]);
