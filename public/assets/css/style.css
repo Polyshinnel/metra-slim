@@ -1195,6 +1195,7 @@ body {
 .other-page-wrapper .page-category-wrapper {
   margin-top: -45px;
   margin-left: -45px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
