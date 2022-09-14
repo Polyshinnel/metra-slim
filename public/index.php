@@ -20,6 +20,9 @@ use Twig\Loader\FilesystemLoader;
 require __DIR__.'/../config/config.php';
 require __DIR__.'/../vendor/autoload.php';
 
+ini_set('display_errors', 'on'); // сообщения с ошибками будут показываться
+error_reporting(E_ALL); // E_ALL - отображаем ВСЕ ошибки
+
 $db = new Database();
 
 $config = [
@@ -259,6 +262,32 @@ $app->group('/addmaterials',function () use ($app,$view){
         $sidebar = SidebarController::getSidebar();
         $body = $view->render("user/add-materials/opros-lists.twig", [
             'title' => 'Опросные листы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/promo-materials',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/promo-materials.twig", [
+            'title' => 'Рекламные материалы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/promo-photos',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/foto-productions.twig", [
+            'title' => 'Фото продукции',
             'headerName' => $headerName,
             'sidebar' => $sidebar
         ]);

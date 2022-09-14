@@ -1,0 +1,82 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+<div class="breadcrumbps">
+    <ul>
+        <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+        <li><a href="/addmaterials">Доп.материалы</a>&nbsp;/&nbsp;</li>
+        <li>{{ title }}</li>
+    </ul>
+</div>
+
+<h1 class="other-page-title">{{ title }}</h1>
+
+<div class="other-page-wrapper">
+    <div class="other-page-wrapper_downloadable">
+        <a href="/assets/promo-materials/blocknotes-a5.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Блокнот А5</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/blocknotes-a6.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Блокнот А6</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/liflets.zip" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/zip.svg" alt="">
+                <p>Лифлеты</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/listovka-common.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Листовка общая</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/listovka-oskolves.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Листовка Осколвес</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/listovka-uraltochpribor.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Листовка Уралточприбор</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/listovka-vesgarant.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Листовка ВесГарант</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/lsitovka-vestech.pdf" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/pdf.svg" alt="">
+                <p>Листовка Вестех</p>
+            </div>
+        </a>
+
+        <a href="/assets/promo-materials/pen.zip" class="downloadable-unit-link">
+            <div class="downloadable-unit">
+                <img src="/assets/img/other-pages/add-materials/type-files/zip.svg" alt="">
+                <p>Макет ручки</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
