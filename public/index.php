@@ -294,6 +294,19 @@ $app->group('/addmaterials',function () use ($app,$view){
         $response->getBody()->write($body);
         return $response;
     });
+
+    $app->get('/faq',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+        $body = $view->render("user/add-materials/faq.twig", [
+            'title' => 'Часто задаваемые вопросы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
 })->add($authMiddleware);
 
 
