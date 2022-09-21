@@ -54,6 +54,7 @@ class ParserProcessing
 
 
         $filter = [
+            'name' => $name,
             'sku' => $sku,
             'category_id' => $category,
         ];
