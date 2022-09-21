@@ -27,7 +27,6 @@ class TelegramBot
 
         if(!empty($callbackResponse))
         {
-            $chatId = $callbackResponse['from']['id'];
             $dataBtn = $callbackResponse['data'];
 
             $dataArr = explode('=',$dataBtn);
@@ -49,7 +48,7 @@ class TelegramBot
                     'status' => 1
                 ];
 
-                User::where('id',$userId)->udpate($updateArr);
+                User::where('id',$userId)->update($updateArr);
 
                 foreach($adminArr as $adminUser){
                     $chatId = $adminUser['chat_id'];
