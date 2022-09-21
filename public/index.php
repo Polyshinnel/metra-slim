@@ -6,6 +6,7 @@ use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\Catalog\SearchController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
+use App\Controllers\telegram\TelegramBot;
 use App\Controllers\Tkp\CreateTkpAuto;
 use App\Controllers\Tkp\GetTkpAuto;
 use App\Controllers\UserController;
@@ -344,6 +345,13 @@ $app->get('/clients',function (Request $request,Response $response, array $args)
 
 
 
+//Страница для телеграм бота
+$app->post('/telegram-bot',function (Request $request,Response $response, array $args) use ($view){
+    $params = $request->getParsedBody();
+    $telegramBot = new TelegramBot();
+    $telegramBot->testBot($params);
+    $response->getBody()->write('');
+});
 
 
 
