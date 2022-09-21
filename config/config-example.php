@@ -38,3 +38,6 @@ define('signMail','');
 
 //Телефон общий
 define('commonPhone','');
+
+//Токен телеграм бота
+define('tokenTelegram','');

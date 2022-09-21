@@ -4,6 +4,8 @@
 namespace App\Controllers;
 
 
+use App\Controllers\telegram\TelegramService;
+use App\Models\AdminList;
 use App\Models\User;
 use App\Utils\CommonHelper;
 use App\Utils\MailSender;
@@ -212,6 +214,32 @@ class UserController
         if(!empty($userInfo))
         {
             User::where('mail',$mail)->update(['status_mail' => '1']);
+
+            $telegramService = new TelegramService(tokenTelegram);
+
+            $text = "Зарегистрирован новый пользователь\r\n"."<b>Имя пользователя: </b>".$userInfo[0]['name']."\r\n<b>Почта: </b>".$userInfo[0]['mail']."\r\n<b>Телефон: </b>".$userInfo[0]['phone']."\r\n<b>Организация: </b>".$userInfo[0]['org_name'];
+
+            $callbackData = 'authUser='.$userInfo[0]['id'];
+
+            $keyboard = [
+                'inline_keyboard' => [
+                    //Первый ряд кнопок
+                    [
+                        [
+                            'text' => 'Авторизовать ✅',
+                            'callback_data' => $callbackData
+                        ],
+                    ]
+
+                ]
+            ];
+
+
+            $adminArr = AdminList::all()->toArray();
+            foreach ($adminArr as $adminItem)
+            {
+                $telegramService->sendInteractionMessage($keyboard,$adminItem['chat_id'],$text);
+            }
             return 'Регистрация успешно завершена!';
         }
         else

@@ -4,6 +4,8 @@
 namespace App\Controllers\Parser;
 
 
+use App\Controllers\telegram\TelegramService;
+use App\Models\AdminList;
 use App\Models\Product;
 
 class ParserProcessing
@@ -39,7 +41,15 @@ class ParserProcessing
             }
         }
 
-        return 'Обработка выгрузки завершена. Обновлено: '.$updateCount.'. Создано: '.$createCount;
+        $text = 'Обработка выгрузки завершена. Обновлено: '.$updateCount.'. Создано: '.$createCount;
+        $telegramService = new TelegramService(tokenTelegram);
+        $adminArr = AdminList::all()->toArray();
+        foreach ($adminArr as $adminItem)
+        {
+            $telegramService->sendMessage($adminItem['chat_id'],$text);
+        }
+
+        return $text;
     }
 
     private function createOrUpdateProduct($product)
