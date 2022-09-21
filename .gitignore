@@ -2,5 +2,5 @@
 /.idea
 /config/config.php
 composer.lock
-/public/exchange
+/public/exchange/
 /public/assets/cabinet-materials
