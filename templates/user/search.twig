@@ -1,0 +1,72 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+    <div class="breadcrumbps">
+        <ul>
+            <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+            <li>Поиск</li>
+        </ul>
+    </div>
+
+    <div class="catalog-header">
+        <div class="search-category">
+            <input type="text" placeholder="Поиск по каталогу" value="{{ searchName }}">
+            <img src="assets/img/icons/search-catalog.svg" alt="">
+        </div>
+
+        <div class="favorite-cart__block">
+            <div class="favorite__block catalog-header__unit">
+                <p>Избранное</p>
+                <div class="count-unit favorite__block-count">
+                    <img src="assets/img/icons/favorite-header.svg" alt="">
+                    <div class="count-unit__round favorite__block-round">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__block catalog-header__unit">
+                <p>Корзина</p>
+                <div class="count-unit cart__block-count">
+                    <img src="assets/img/icons/cart-header.svg" alt="">
+                    <div class="count-unit__round cart__block-round">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="search-title">Результаты поиска по фразе: {{ searchName }}</h2>
+
+    {% if products %}
+        <div class="product-block">
+            <div class="product-block__wrapper">
+                {% for product in products %}
+                    <div class="product-unit">
+                        <div class="favorite-product">
+                            <img src="assets/img/icons/favorite-product.svg" alt="">
+                        </div>
+                        <div class="product-unit__img">
+                            <a href="/products/{{ product.id }}">
+                                <img src="{{ product.img }}" alt="">
+                            </a>
+                        </div>
+                        <div class="product-unit__status-price">
+                            <p class="product-unit__status {{ product.statusClass }}">{{ product.status }}</p>
+                            <p class="product-unit__price">{{ product.price }}</p>
+                        </div>
+                        <p class="prodict-unit__sku">{{ product.sku }}</p>
+                        <a href="/products/{{ product.id }}" class="product-unit__link">
+                            <p class="product-unit__name">{{ product.name }}</p>
+                        </a>
+                        <button class="blue-btn shop-btn" data-item="{{ product.id }}">В корзину</button>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <p class="err-search">К сожалению поиск не дал результатов, уточните поиск</p>
+    {% endif %}
+
+{% endblock %}

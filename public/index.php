@@ -4,6 +4,7 @@ use App\Controllers\Pages\Academy\Vebinars;
 use App\Controllers\Pages\Academy\VebinarsPage;
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
+use App\Controllers\Pages\Catalog\SearchController;
 use App\Controllers\Pages\PageHelpers\SidebarController;
 use App\Controllers\Tkp\CreateTkpAuto;
 use App\Controllers\Tkp\GetTkpAuto;
@@ -103,6 +104,24 @@ $app->get('/catalog',function (Request $request,Response $response, array $args)
         'products' => $catalogData['products'],
         'breadcrumbs' => $catalogData['breadcrumbs'],
         'last_crumb' => $catalogData['lastCrumb']
+    ]);
+    $response->getBody()->write($body);
+    return $response;
+})->add($authMiddleware);
+
+$app->get('/search',function (Request $request,Response $response, array $args) use ($view){
+    $userAuth = UserController::checkUserAuth();
+    $getParams = $request->getQueryParams();
+    $search = SearchController::getSearchResults($getParams);
+    $headerName = $userAuth['name'];
+    $sidebar = SidebarController::getSidebar();
+
+    $body = $view->render("user/search.twig", [
+        'title' => 'Поиск',
+        'headerName' => $headerName,
+        'sidebar' => $sidebar,
+        'searchName' => $search['search'],
+        'products' => $search['searchResult']
     ]);
     $response->getBody()->write($body);
     return $response;

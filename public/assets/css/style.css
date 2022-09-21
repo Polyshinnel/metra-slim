@@ -1368,4 +1368,15 @@ body {
   font-size: 14px;
   color: #333;
   text-align: center;
+}
+
+.search-title {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #333;
+}
+
+.err-search {
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */

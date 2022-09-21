@@ -75,7 +75,7 @@ class IntegrationParser
 
         }
 
-        print_r($productsArr);
+        return $productsArr;
 
     }
 }

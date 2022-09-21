@@ -298,3 +298,18 @@ $('.change-tkp').click(function(){
     $('.tkp-block-search').css('display','block');
     $('.tkp-results').css('display','none');
 });
+
+$('.search-category img').click(function () {
+    var searchQuery = $('.search-category input').val();
+    var url = '/search?search='+ encodeURIComponent(searchQuery);
+    getRedirect(url);
+})
+
+$('.search-category input').on('keypress',function (e) {
+    if(e.which == 13)
+    {
+        var searchQuery = $('.search-category input').val();
+        var url = '/search?search='+ encodeURIComponent(searchQuery);
+        getRedirect(url);
+    }
+})
