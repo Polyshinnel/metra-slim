@@ -291,6 +291,162 @@ $('.get-tkp').click(function () {
         });
     }
 
+    if(link == 'vagon')
+    {
+        var type_instalation = $('#typeInstalation-vagon').val();
+        var type_measure = $('#typeMeasure-vagon').val();
+        var weight = $('#weight-vagon').val();
+
+        $.ajax({
+            url: '/listTkp/'+link,
+            method: 'post',
+            dataType: 'json',
+            data: {
+                type_instalation: type_instalation,
+                type_measure: type_measure,
+                weight: weight,
+                customerName: clientData.customerName,
+                instalationPlace: clientData.instalationPlace,
+                expiredDate: clientData.expiredData
+            },
+            success: function(data){
+                if(data.message != 'tkp not empty')
+                {
+                    showFancyBox(data.message, 'error');
+                }
+                else
+                {
+                    $('.tkp-block-search').css('display','none');
+                    $('.tkp-results').css('display','block');
+
+                    var lengthArr = data.tkp.length;
+                    for(var i = 0; i < lengthArr; i++)
+                    {
+                        var tkpLine = '<div class="tkp-results__unit"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info"><h4>Название ТКП:</h4><p>'+data.tkp[i].name+'</p></div><div class="tkp-results__unit-info"><h4>Название организации:</h4><p>'+data.tkp[i].customer+'</p></div></div><a href="'+data.tkp[i].link+'" class="tkp-link"><button class="blue-btn">Скачать ТКП</button></a></div>';
+
+                        $('.tkp-results__wrapper').append(tkpLine);
+
+                        if((data.tkp[i].buildTasks != '') || (data.tkp[i].buildTasks != undefined)){
+                            var buildTasks = data.tkp[i].buildTasks;
+                            for(var k = 0; k < data.tkp[i].buildTasks.length;k++)
+                            {
+                                var tkpLineTask = '<div class="tkp-results__unit tkp-results__unit_task"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info tkp-results__unit-info_text"><h4>Название:</h4><p>'+data.tkp[i].buildTasks[k].name+'</p></div><div class="tkp-results__unit-info"><h4>Тип документа:</h4><p>'+'Строительное задание'+'</p></div></div><a href="'+data.tkp[i].buildTasks[k].link+'" class="tkp-link"><button class="blue-btn">Скачать</button></a></div>';
+                                $('.tkp-results__wrapper').append(tkpLineTask);
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        });
+    }
+
+    if(link == 'platform')
+    {
+        var model = $('#platform-model').val();
+        var quant_sensor = $('#sensors-platform').val();
+        var width = $('#width-platform').val();
+        var weight = $('#weight-platform').val();
+
+        $.ajax({
+            url: '/listTkp/'+link,
+            method: 'post',
+            dataType: 'json',
+            data: {
+                model: model,
+                quant_sensor: quant_sensor,
+                width: width,
+                weight: weight,
+                customerName: clientData.customerName,
+                instalationPlace: clientData.instalationPlace,
+                expiredDate: clientData.expiredData
+            },
+            success: function(data){
+                if(data.message != 'tkp not empty')
+                {
+                    showFancyBox(data.message, 'error');
+                }
+                else
+                {
+                    $('.tkp-block-search').css('display','none');
+                    $('.tkp-results').css('display','block');
+
+                    var lengthArr = data.tkp.length;
+                    for(var i = 0; i < lengthArr; i++)
+                    {
+                        var tkpLine = '<div class="tkp-results__unit"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info"><h4>Название ТКП:</h4><p>'+data.tkp[i].name+'</p></div><div class="tkp-results__unit-info"><h4>Название организации:</h4><p>'+data.tkp[i].customer+'</p></div></div><a href="'+data.tkp[i].link+'" class="tkp-link"><button class="blue-btn">Скачать ТКП</button></a></div>';
+
+                        $('.tkp-results__wrapper').append(tkpLine);
+
+                        if((data.tkp[i].buildTasks != '') || (data.tkp[i].buildTasks != undefined)){
+                            var buildTasks = data.tkp[i].buildTasks;
+                            for(var k = 0; k < data.tkp[i].buildTasks.length;k++)
+                            {
+                                var tkpLineTask = '<div class="tkp-results__unit tkp-results__unit_task"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info tkp-results__unit-info_text"><h4>Название:</h4><p>'+data.tkp[i].buildTasks[k].name+'</p></div><div class="tkp-results__unit-info"><h4>Тип документа:</h4><p>'+'Строительное задание'+'</p></div></div><a href="'+data.tkp[i].buildTasks[k].link+'" class="tkp-link"><button class="blue-btn">Скачать</button></a></div>';
+                                $('.tkp-results__wrapper').append(tkpLineTask);
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        });
+    }
+
+    if(link == 'upgrade-bundle')
+    {
+        var count_sensor = $('#bundle-sensors').val();
+        var model = $('#bundle-type').val();
+
+        $.ajax({
+            url: '/listTkp/'+link,
+            method: 'post',
+            dataType: 'json',
+            data: {
+                count_sensor: count_sensor,
+                model: model,
+                customerName: clientData.customerName,
+                instalationPlace: clientData.instalationPlace,
+                expiredDate: clientData.expiredData
+            },
+            success: function(data){
+                if(data.message != 'tkp not empty')
+                {
+                    showFancyBox(data.message, 'error');
+                }
+                else
+                {
+                    $('.tkp-block-search').css('display','none');
+                    $('.tkp-results').css('display','block');
+
+                    var lengthArr = data.tkp.length;
+                    for(var i = 0; i < lengthArr; i++)
+                    {
+                        var tkpLine = '<div class="tkp-results__unit"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info"><h4>Название ТКП:</h4><p>'+data.tkp[i].name+'</p></div><div class="tkp-results__unit-info"><h4>Название организации:</h4><p>'+data.tkp[i].customer+'</p></div></div><a href="'+data.tkp[i].link+'" class="tkp-link"><button class="blue-btn">Скачать ТКП</button></a></div>';
+
+                        $('.tkp-results__wrapper').append(tkpLine);
+
+                        if((data.tkp[i].buildTasks != '') || (data.tkp[i].buildTasks != undefined)){
+                            var buildTasks = data.tkp[i].buildTasks;
+                            for(var k = 0; k < data.tkp[i].buildTasks.length;k++)
+                            {
+                                var tkpLineTask = '<div class="tkp-results__unit tkp-results__unit_task"><div class="tkp-results__unit-info-block"><div class="tkp-results__unit-info tkp-results__unit-info_text"><h4>Название:</h4><p>'+data.tkp[i].buildTasks[k].name+'</p></div><div class="tkp-results__unit-info"><h4>Тип документа:</h4><p>'+'Строительное задание'+'</p></div></div><a href="'+data.tkp[i].buildTasks[k].link+'" class="tkp-link"><button class="blue-btn">Скачать</button></a></div>';
+                                $('.tkp-results__wrapper').append(tkpLineTask);
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        });
+    }
+
 });
 
 

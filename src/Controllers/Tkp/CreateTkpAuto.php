@@ -5,20 +5,42 @@ namespace App\Controllers\Tkp;
 
 
 use App\Models\TkpAuto;
+use App\Models\TkpBundle;
+use App\Models\TkpPlatform;
+use App\Models\TkpVagon;
 use PhpOffice\PhpWord\Exception\CopyFileException;
 use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;
 use PhpOffice\PhpWord\TemplateProcessor;
 
 class CreateTkpAuto
 {
-    public static function createTkp($data)
+    public static function createTkp($data,$typeTkp)
     {
         $tkpId = $data['id'];
         $customerName = $data['customerName'];
         $instalationPlace = $data['instalationPlace'];
         $expiredDate = $data['expiredDate'];
 
-        $tkpInfo = TkpAuto::where('id',$tkpId)->first()->toArray();
+        if($typeTkp == 'auto')
+        {
+            $tkpInfo = TkpAuto::where('id',$tkpId)->first()->toArray();
+        }
+
+        if($typeTkp == 'vagon')
+        {
+            $tkpInfo = TkpVagon::where('id',$tkpId)->first()->toArray();
+        }
+
+        if($typeTkp == 'platform')
+        {
+            $tkpInfo = TkpPlatform::where('id',$tkpId)->first()->toArray();
+        }
+
+        if($typeTkp == 'upgrade-bundle')
+        {
+            $tkpInfo = TkpBundle::where('id',$tkpId)->first()->toArray();
+        }
+
 
         $template = __DIR__.'../../../../public/assets/cabinet-materials/tkp'.$tkpInfo['path'];
         try {

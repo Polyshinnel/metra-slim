@@ -10,6 +10,9 @@ use App\Controllers\telegram\TelegramBot;
 use App\Controllers\telegram\TelegramService;
 use App\Controllers\Tkp\CreateTkpAuto;
 use App\Controllers\Tkp\GetTkpAuto;
+use App\Controllers\Tkp\GetTkpPlatform;
+use App\Controllers\Tkp\GetTkpUpgradeBundle;
+use App\Controllers\Tkp\GetTkpVagon;
 use App\Controllers\UserController;
 use App\Models\Database;
 use App\Utils\TwigExtension;
@@ -477,12 +480,17 @@ $app->post('/listTkp/{id}',function(Request $request,Response $response, array $
 
     if($typeTkp == 'vagon')
     {
-        $controllerResponse = NULL;
+        $controllerResponse = GetTkpVagon::getTkpList($params);
     }
 
     if($typeTkp == 'platform')
     {
-        $controllerResponse = NULL;
+        $controllerResponse = GetTkpPlatform::getTkpList($params);
+    }
+
+    if($typeTkp == 'upgrade-bundle')
+    {
+        $controllerResponse = GetTkpUpgradeBundle::getTkpList($params);
     }
 
     $response->getBody()->write($controllerResponse);
@@ -491,7 +499,8 @@ $app->post('/listTkp/{id}',function(Request $request,Response $response, array $
 
 $app->get('/getTkp/{id}',function (Request $request,Response $response, array $args) use ($view){
     $getParams = $request->getQueryParams();
-    CreateTkpAuto::createTkp($getParams);
+    $typeTkp = $args['id'];
+    CreateTkpAuto::createTkp($getParams,$typeTkp);
     $response->getBody()->write('');
 });
 
