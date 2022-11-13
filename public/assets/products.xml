@@ -1,0 +1,3447 @@
+﻿<products>
+	<product>
+		<name_product>Шкаф управления М6104</name_product>
+		<category>11</category>
+		<price>256453</price>
+		<quantity_product/>
+		<articul>р11725</articul>
+		<description>Конвейерный дозатор  на контроллере (проверить спецификацию)</description>
+		<img/>
+		<kz_price>254427</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6025</name_product>
+		<category>11</category>
+		<price>209420</price>
+		<quantity_product>1</quantity_product>
+		<articul>р07404</articul>
+		<description>Шкаф управления бункерных весов</description>
+		<img/>
+		<kz_price>207766</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0601-БМ-3</name_product>
+		<category>3</category>
+		<price>39662</price>
+		<quantity_product>3</quantity_product>
+		<articul>р11243</articul>
+		<description>шкафного исполнения. На задней панели прибора все соединения на клеммниках под отвёртку</description>
+		<img/>
+		<kz_price>39349</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-01-020</name_product>
+		<category>3</category>
+		<price>28679</price>
+		<quantity_product>11</quantity_product>
+		<articul>16373</articul>
+		<description>Прежнее название М0802. В корпусе G120. С грозозащитой на 4  датчика  (кабели  d=4…7,6 мм) , 2 выхода RS485 (кабель  d=4…7,6 мм).</description>
+		<img/>
+		<kz_price>28452</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=24 м) (Весы 2021) (НПКМ 448.241-05)</name_product>
+		<category>42</category>
+		<price>182667</price>
+		<quantity_product/>
+		<articul>36220</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 24 метров
+</description>
+		<img/>
+		<kz_price>181224</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=16 м) с монтажным креплением (Весы 2021) (НПКМ 448.260-02)</name_product>
+		<category>42</category>
+		<price>74637</price>
+		<quantity_product/>
+		<articul>36825</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>74047</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-16-М06-НМ9В-030 (НПКМ 482.401-05)</name_product>
+		<category>47</category>
+		<price>1820964.99</price>
+		<quantity_product/>
+		<articul>35116</articul>
+		<description>6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 16 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>1806579</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-20-ПК-НМ9В-027 (НПКМ 482.404-09)</name_product>
+		<category>48</category>
+		<price>1995998.67</price>
+		<quantity_product/>
+		<articul>35132</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 2 шт. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось Средняя секция 8м. Длина платформы 20м. Швеллер 27У. Ширина платформы весов 3м. Ширина колеи 1м. </description>
+		<img/>
+		<kz_price>1980230</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4808</name_product>
+		<category>14</category>
+		<price>1625</price>
+		<quantity_product/>
+		<articul>р08453</articul>
+		<description/>
+		<img/>
+		<kz_price>1612</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект оснований для установки на плиты - 6 датчиков по краям (НПКМ 982.021)</name_product>
+		<category>44</category>
+		<price>6403</price>
+		<quantity_product/>
+		<articul>38181</articul>
+		<description/>
+		<img/>
+		<kz_price>6352</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф пневмоавтоматики М7003</name_product>
+		<category>11</category>
+		<price>39134</price>
+		<quantity_product/>
+		<articul>р12696</articul>
+		<description/>
+		<img/>
+		<kz_price>38825</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6506</name_product>
+		<category>11</category>
+		<price>329839</price>
+		<quantity_product/>
+		<articul>р08350</articul>
+		<description>Шкаф управления для Дифлекс (Выкса-2)</description>
+		<img/>
+		<kz_price>327233</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик СБ LOC-500 ЛАС</name_product>
+		<category>35</category>
+		<price>27252</price>
+		<quantity_product/>
+		<articul>15578</articul>
+		<description>Тензодатчик LOC-500 скабелем 5м и вилкой DB-9M для прибора М0600-Б</description>
+		<img/>
+		<kz_price>27037</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6025-П</name_product>
+		<category>11</category>
+		<price>229753</price>
+		<quantity_product/>
+		<articul>р12599</articul>
+		<description/>
+		<img/>
+		<kz_price>227938</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6025-Э</name_product>
+		<category>11</category>
+		<price>247321</price>
+		<quantity_product/>
+		<articul>р12823</articul>
+		<description/>
+		<img/>
+		<kz_price>245367</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим-06А (М0600-С6-4)</name_product>
+		<category>3</category>
+		<price>58269</price>
+		<quantity_product/>
+		<articul>П6296</articul>
+		<description>Прошивка для поосного взвешивания вагонов и вагонеток в движении</description>
+		<img/>
+		<kz_price>57809</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=24 м) с монтажным креплением (Весы 2021) (НПКМ 448.260-05)</name_product>
+		<category>42</category>
+		<price>101851</price>
+		<quantity_product/>
+		<articul>36828</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>101046</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1500/3000 (1500х2000мм) М8100-1,5/3-АК4С-П</name_product>
+		<category>27</category>
+		<price>160695</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х2000х90 (4 датчика), двухдиапазонные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят пандусы  р9681, р9685, рама р9064.</description>
+		<img/>
+		<kz_price>159426</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 300/600 (1200х1200мм) М8100-0,3/0,6-АК2С-П</name_product>
+		<category>27</category>
+		<price>126745</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1200х1200х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят пандусы  р9675, р9679, рама р9061.</description>
+		<img/>
+		<kz_price>125744</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-18-М06-НМ9В-030 (НПКМ 482.401-08)</name_product>
+		<category>47</category>
+		<price>2060548.5</price>
+		<quantity_product/>
+		<articul>35117</articul>
+		<description>8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 18 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>2044270</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 24 м (НПКМ 448.243-03)</name_product>
+		<category>43</category>
+		<price>151575</price>
+		<quantity_product/>
+		<articul>34653</articul>
+		<description/>
+		<img/>
+		<kz_price>150378</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 16 м (НПКМ 448.243-05)</name_product>
+		<category>43</category>
+		<price>114767</price>
+		<quantity_product/>
+		<articul>35764</articul>
+		<description/>
+		<img/>
+		<kz_price>113860</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=12 м) (НПКМ 448.259-01)</name_product>
+		<category>42</category>
+		<price>41661</price>
+		<quantity_product/>
+		<articul>36222</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>41332</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-12-М06-НМ9В-027 (НПКМ 482.401-02)</name_product>
+		<category>47</category>
+		<price>1250466.06</price>
+		<quantity_product>1</quantity_product>
+		<articul>35113</articul>
+		<description>6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1240587</kz_price>
+	</product>
+	<product>
+		<name_product>Абсолют цифровые 60/100-24 (М8200А-60/100-0-1-24-010)</name_product>
+		<category>19</category>
+		<price>5095713</price>
+		<quantity_product/>
+		<articul>р10205</articul>
+		<description>Двухдиапазонные цифровые 60/100т. Длина 24 м. Установка с пандусом. 10 тензодатчиков С16-30т.Тензопреобразователи цифровые М0808-E-01 (4х и 6и-канальный). Компьютер. </description>
+		<img/>
+		<kz_price>5055457</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/40-12-ПК-НМ9В-024 (НПКМ 482.404-01)</name_product>
+		<category>48</category>
+		<price>1147873.2</price>
+		<quantity_product/>
+		<articul>35124</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-06 1 шт.6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12м. 24 швеллер.</description>
+		<img/>
+		<kz_price>1138805</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=8 м) с монтажным креплением (Весы 2021) (НПКМ 448.260)</name_product>
+		<category>42</category>
+		<price>37319</price>
+		<quantity_product/>
+		<articul>36824</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>37024</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=18 м) (НПКМ 448.259-03)</name_product>
+		<category>42</category>
+		<price>62414</price>
+		<quantity_product/>
+		<articul>36195</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 18 метров
+</description>
+		<img/>
+		<kz_price>61921</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6801</name_product>
+		<category>11</category>
+		<price>121782</price>
+		<quantity_product/>
+		<articul>р13232</articul>
+		<description/>
+		<img/>
+		<kz_price>120820</kz_price>
+	</product>
+	<product>
+		<name_product>Главный шкаф М6204 искрозащитный</name_product>
+		<category>11</category>
+		<price>148485</price>
+		<quantity_product/>
+		<articul>18410</articul>
+		<description>Шкаф искрозащитный М6204 в составе с барьерами искробезопасности (Z757 -1шт, Z765 – 2шт)</description>
+		<img/>
+		<kz_price>147312</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6037 (НПКМ 460.047)</name_product>
+		<category>11</category>
+		<price>319466</price>
+		<quantity_product/>
+		<articul>35018</articul>
+		<description/>
+		<img/>
+		<kz_price>316942</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-02.01</name_product>
+		<category>3</category>
+		<price>55525</price>
+		<quantity_product>1</quantity_product>
+		<articul>р14842</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия, блок сопряжения М2604, RS-485, MS-bus токовый выход 4-20 мА</description>
+		<img/>
+		<kz_price>55086</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-02.02</name_product>
+		<category>3</category>
+		<price>60155</price>
+		<quantity_product/>
+		<articul>р14844</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия, блок сопряжения М2604, RS-485, MS-bus токовый выход 0-20 мА</description>
+		<img/>
+		<kz_price>59680</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-15Н (1500мм)</name_product>
+		<category>28</category>
+		<price>81292</price>
+		<quantity_product/>
+		<articul>р09299</articul>
+		<description>Ширина пандуса 1500мм. Подходит для весов М8100-АН3Н, М8100-АН4Н, Пандус НЕ связан с весами.</description>
+		<img/>
+		<kz_price>80650</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект оснований для установки на плиты - 4 датчиков</name_product>
+		<category>44</category>
+		<price>31853</price>
+		<quantity_product/>
+		<articul>35691</articul>
+		<description/>
+		<img/>
+		<kz_price>31601</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-01-032</name_product>
+		<category>3</category>
+		<price>26302</price>
+		<quantity_product>3</quantity_product>
+		<articul>16144</articul>
+		<description>Прежнее название М0803-2. Цифровой тензопреобразователь в корпусе G120 2 ТД, RS485 без дискретных входов и выхода. 1 тензодатчик.</description>
+		<img/>
+		<kz_price>26094</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=16 м) (Весы 2021) (НПКМ 448.241-02)</name_product>
+		<category>42</category>
+		<price>128460</price>
+		<quantity_product/>
+		<articul>36218</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 16 метров
+</description>
+		<img/>
+		<kz_price>127445</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6035-Э (НПКМ 460.044)</name_product>
+		<category>11</category>
+		<price>310204</price>
+		<quantity_product/>
+		<articul>33794</articul>
+		<description/>
+		<img/>
+		<kz_price>307753</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6038 (НПКМ 460.048)</name_product>
+		<category>11</category>
+		<price>307251</price>
+		<quantity_product/>
+		<articul>35641</articul>
+		<description>Дозатор жидкости в КВАРТ</description>
+		<img/>
+		<kz_price>304824</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/40-12-М06-НМ9В-024 (НПКМ 482.401-01)</name_product>
+		<category>47</category>
+		<price>1142165.58</price>
+		<quantity_product/>
+		<articul>35112</articul>
+		<description>6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12м. 24 швеллер.</description>
+		<img/>
+		<kz_price>1133142</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 300/600 (1000х1500мм)  М8100-0,3/0,6-АК10С-П</name_product>
+		<category>27</category>
+		<price>124356</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1000х1500х90 (4 датчика), двухинтервальные 300/600 кг. К весам подходят пандусы  р9662, р9668, рама р9060.</description>
+		<img/>
+		<kz_price>123374</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект металлических пандусов 3 метра</name_product>
+		<category>44</category>
+		<price>323232</price>
+		<quantity_product>4</quantity_product>
+		<articul>32929</articul>
+		<description>Комплект состоит из 4х трёхметровых пандусов. В комплект поставки пандусов входят клиновые анкеры М16 для крепления к бетонной плите основания </description>
+		<img/>
+		<kz_price>320678</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1000 (1500х2000мм)  М8100-1-АК4С-П</name_product>
+		<category>27</category>
+		<price>138728</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х2000х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9681, р9685, рама р9064.</description>
+		<img/>
+		<kz_price>137632</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 300/600 (1000х1200мм) М8100-0,3/0,6-АК1С-П</name_product>
+		<category>27</category>
+		<price>122175</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1000х1200х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят пандусы  р9662, р9668, рама р9059.</description>
+		<img/>
+		<kz_price>121210</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-18-ПК-НМ9В-027 (НПКМ 482.404-07)</name_product>
+		<category>48</category>
+		<price>1832732.1</price>
+		<quantity_product>1</quantity_product>
+		<articul>35130</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 2 шт. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 18 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1818254</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=20 м) (Весы 2021) (НПКМ 448.241-04)</name_product>
+		<category>42</category>
+		<price>155564</price>
+		<quantity_product/>
+		<articul>36219</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 20 метров
+</description>
+		<img/>
+		<kz_price>154335</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=18 м) с монтажным креплением (Весы 2021) (НПКМ 448.260-03)</name_product>
+		<category>42</category>
+		<price>80478</price>
+		<quantity_product/>
+		<articul>36826</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>79842</kz_price>
+	</product>
+	<product>
+		<name_product>Главный шкаф М6507</name_product>
+		<category>11</category>
+		<price>653126</price>
+		<quantity_product/>
+		<articul>р10217</articul>
+		<description>линия рассева -Технокерамика</description>
+		<img/>
+		<kz_price>647966</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 12 м (НПКМ 448.243-01)</name_product>
+		<category>43</category>
+		<price>77760</price>
+		<quantity_product>1</quantity_product>
+		<articul>34651</articul>
+		<description/>
+		<img/>
+		<kz_price>77146</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 8 м (4 м х 2) (НПКМ 448.243)</name_product>
+		<category>43</category>
+		<price>65898</price>
+		<quantity_product/>
+		<articul>34650</articul>
+		<description/>
+		<img/>
+		<kz_price>65377</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 20 м (НПКМ 448.243-04)</name_product>
+		<category>43</category>
+		<price>133289</price>
+		<quantity_product/>
+		<articul>35763</articul>
+		<description/>
+		<img/>
+		<kz_price>132236</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 2000 (1500х1500мм) М8100-2-АК3С-П</name_product>
+		<category>27</category>
+		<price>150989</price>
+		<quantity_product/>
+		<articul>38069 </articul>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х1500х90 (4 датчика), однодиапазонные 2000 кг. Дискретность индикации 1 Кг. К весам подходят пандусы  р9681, р9685, рама р9063.</description>
+		<img/>
+		<kz_price>149796</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1500/3000 (1200х2700мм) М8100-1,5/3-АК9С-П</name_product>
+		<category>27</category>
+		<price>131000</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1200х2700х104 (4 датчика), двухинтервальные 1500/3000 кг. Дискретность индикации 0,5/1 Кг</description>
+		<img/>
+		<kz_price>129965</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-24-ПК-НМ9В-027</name_product>
+		<category>48</category>
+		<price>2374604.13</price>
+		<quantity_product/>
+		<articul>35135</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 1 шт Микросим М0808-06 1 шт. 10 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 24 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>2355845</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-20-М06-НМ9В-030 (НПКМ 482.401-10)</name_product>
+		<category>47</category>
+		<price>2258944.35</price>
+		<quantity_product/>
+		<articul>35119</articul>
+		<description>8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 20 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>2241099</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1000х1000мм) М8101-0,6/1,5-АН0Н</name_product>
+		<category>28</category>
+		<price>201381</price>
+		<quantity_product/>
+		<articul>р09002</articul>
+		<description>Весы платформенные из нержавеющей стали1000х1000х90 (4 датчика), двухдиапазонные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят Пандусы р9295, р9296, рама р9058</description>
+		<img>/exchange/images/00-00011087.jpg</img>
+		<kz_price>199790</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-04.00</name_product>
+		<category>3</category>
+		<price>57766</price>
+		<quantity_product/>
+		<articul>р14850</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия, блок сопряжения М2606, RS-485, MS-bus токовый выход 0-5 мА</description>
+		<img/>
+		<kz_price>57310</kz_price>
+	</product>
+	<product>
+		<name_product>Рамка для встраивания дублирующей платы индикации LAS</name_product>
+		<category>3</category>
+		<price>19105</price>
+		<quantity_product/>
+		<articul>р05924</articul>
+		<description/>
+		<img/>
+		<kz_price>18954</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный М0601-БМ-4-П-W (НПКМ 406.042-01)</name_product>
+		<category>3</category>
+		<price>41435</price>
+		<quantity_product/>
+		<articul>34429</articul>
+		<description/>
+		<img/>
+		<kz_price>41108</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный цифровой М1001-Е-1-К</name_product>
+		<category>3</category>
+		<price>155580</price>
+		<quantity_product/>
+		<articul>р12942</articul>
+		<description/>
+		<img/>
+		<kz_price>154351</kz_price>
+	</product>
+	<product>
+		<name_product>Кожух М0601-Б-3</name_product>
+		<category>3</category>
+		<price>4423</price>
+		<quantity_product/>
+		<articul>б10085</articul>
+		<description>НПКМ 406.034</description>
+		<img/>
+		<kz_price>4388</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-24-ПК-HM9B-001-К</name_product>
+		<category>17</category>
+		<price>2770132</price>
+		<quantity_product/>
+		<articul>р14502</articul>
+		<description/>
+		<img>/exchange/images/00-00010726.jpg</img>
+		<kz_price>2748248</kz_price>
+	</product>
+	<product>
+		<name_product>Рамка для прибора в шкаф (М0601ШУ )</name_product>
+		<category>3</category>
+		<price>4213</price>
+		<quantity_product>8</quantity_product>
+		<articul>9448</articul>
+		<description>Рамка лицевая для встройки в шкафы управления 0600К, Д, 0601Б</description>
+		<img/>
+		<kz_price>4180</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 1000 (1200х1200)</name_product>
+		<category>27</category>
+		<price>265104</price>
+		<quantity_product/>
+		<articul>17664</articul>
+		<description>Нержавеющие, типоразмера №2 (1200х1200),  на нержавеющих подвесках и тензодатчиках.М300-300кг.   М0601-БМ. НПВ=1 т. К весам Подходит пандус Пандус М4801-ВН2 Арт.17685</description>
+		<img/>
+		<kz_price>263010</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект металлических пандусов 4 метра</name_product>
+		<category>44</category>
+		<price>449960</price>
+		<quantity_product/>
+		<articul>36487</articul>
+		<description>Комплект состоит из 4-х четырехметровых пандусов. В комплект поставки пандусов входят клиновые анкеры М16 для крепления к бетонной плите основания </description>
+		<img/>
+		<kz_price>446405</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект оснований для установки на плиты - 8 датчиков</name_product>
+		<category>44</category>
+		<price>62069</price>
+		<quantity_product>10</quantity_product>
+		<articul>32928</articul>
+		<description/>
+		<img/>
+		<kz_price>61579</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-20-М06-НМ9В-027 (НПКМ 482.401-09)</name_product>
+		<category>47</category>
+		<price>1994197.14</price>
+		<quantity_product/>
+		<articul>35118</articul>
+		<description>8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось Средняя секция 8м. Длина платформы 20м. Швеллер 27У. Ширина платформы весов 3м. Ширина колеи 1м. </description>
+		<img/>
+		<kz_price>1978443</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-18-ПК-НМ9В-024 (НПКМ 482.404-06)</name_product>
+		<category>48</category>
+		<price>1672307.13</price>
+		<quantity_product/>
+		<articul>35129</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 2 шт. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 18м. 24 швеллер.</description>
+		<img/>
+		<kz_price>1659096</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф пневмоавтоматики М7004 (НПКМ 470.004)</name_product>
+		<category>11</category>
+		<price>22430</price>
+		<quantity_product/>
+		<articul>34075</articul>
+		<description/>
+		<img/>
+		<kz_price>22253</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6036 (НПКМ 460.046)</name_product>
+		<category>11</category>
+		<price>329324</price>
+		<quantity_product/>
+		<articul>34198</articul>
+		<description/>
+		<img/>
+		<kz_price>326722</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 600/1500 (1000х1500мм)  М8100-0,6/1,5-АК10С-П</name_product>
+		<category>27</category>
+		<price>128780</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1000х1500х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9060.</description>
+		<img/>
+		<kz_price>127763</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект оснований для установки на плиты - 10 датчиков</name_product>
+		<category>44</category>
+		<price>77471</price>
+		<quantity_product/>
+		<articul>35589</articul>
+		<description/>
+		<img/>
+		<kz_price>76859</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6035-П (НПКМ 460.045)</name_product>
+		<category>11</category>
+		<price>292804</price>
+		<quantity_product/>
+		<articul>33972</articul>
+		<description/>
+		<img/>
+		<kz_price>290491</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект "Патриот" для установки весов на  8 датчиках (НПКМ 982.013)</name_product>
+		<category>46</category>
+		<price>76497</price>
+		<quantity_product>1</quantity_product>
+		<articul>35331</articul>
+		<description>Комплект предназначен для установки автомобильных весов на 8 датчиках, модельного ряда 2021г на стационарный фундамент. В комплект входят: Пластина крепления датчика (НПКМ 482.401.01.02.001) (8 шт), Упор боковой (4 шт), Нащельник (2 шт). Эти детали монтируются на месте установки весов.</description>
+		<img/>
+		<kz_price>75893</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1000 (1500х1500мм)  М8100-1-АК3С-П</name_product>
+		<category>27</category>
+		<price>132548</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х1500х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9681, р9685, рама р9063</description>
+		<img/>
+		<kz_price>131501</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 600/1500 (1000х1200мм)  М8100-0,6/1,5-АК1С-П</name_product>
+		<category>27</category>
+		<price>125418</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1000х1200х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9059.</description>
+		<img/>
+		<kz_price>124427</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект "Патриот" для установки весов на  10 датчиках (НПКМ 982.014)</name_product>
+		<category>46</category>
+		<price>81432</price>
+		<quantity_product/>
+		<articul>35509</articul>
+		<description>Комплект предназначен для установки автомобильных весов на 10 датчиках, модельного ряда 2021г на стационарный фундамент. В комплект входят: Пластина крепления датчика (НПКМ 482.401.01.02.001) (10 шт), Упор боковой (4 шт), Нащельник (2 шт). Эти детали монтируются на месте установки весов.</description>
+		<img/>
+		<kz_price>80789</kz_price>
+	</product>
+	<product>
+		<name_product>Титан 3000/5000 (М8100-5ТК5С-12-БМ)</name_product>
+		<category>31</category>
+		<price>422140.77</price>
+		<quantity_product/>
+		<articul>17665</articul>
+		<description>Крашеные  №5 (2000х2000), на подвесках со стальными тензодатчиками. НПВ=5т</description>
+		<img>/exchange/images/00-00011128.jpg</img>
+		<kz_price>418806</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 600/1500 (1200х1200)</name_product>
+		<category>27</category>
+		<price>262832</price>
+		<quantity_product/>
+		<articul>17718</articul>
+		<description>Нержавеющие, типоразмера №2 (1200х1200),  на нержавеющих подвесках и тензодатчиках Z6 - 500кг.  М0601-БМ. НПВ=1 т. К весам Подходит пандус Пандус М4801-ВН2 Арт.17685</description>
+		<img>/exchange/images/00-00011124.jpg</img>
+		<kz_price>260756</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-3-630-001</name_product>
+		<category>8</category>
+		<price>461247</price>
+		<quantity_product/>
+		<articul>14349</articul>
+		<description>Ширина ленты: 600-800 мм. 4 датчика Z6FC3-200 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 630кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011210.png</img>
+		<kz_price>457603</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 600/1500 (1200х1200мм) М8100-0,6/1,5-АК2С</name_product>
+		<category>27</category>
+		<price>154924</price>
+		<quantity_product>3</quantity_product>
+		<articul>р08778</articul>
+		<description>Весы палтформенные 1200х1200х90 (4 датчика), двухинтервальные  600х1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9675, р9679, рама р9061</description>
+		<img>/exchange/images/00-00011069.jpg</img>
+		<kz_price>153700</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 300/600 (1000х1200)</name_product>
+		<category>27</category>
+		<price>271428</price>
+		<quantity_product/>
+		<articul>14147</articul>
+		<description>300кг Х 0,1кг/600кг Х 0,2кг., нерж.конструкция, 4 нерж. датчика 200 kg, р/п. 1070х1200 М=120 кг. Прибор М0601-БМ. К весам  подходит пандус М4801-ВН1 Арт.9459</description>
+		<img>/exchange/images/00-00011351.jpg</img>
+		<kz_price>269284</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-1-320-001</name_product>
+		<category>8</category>
+		<price>453224</price>
+		<quantity_product/>
+		<articul>14604</articul>
+		<description>Ширина ленты: 400-500 мм. 4 датчика Z6FC3-100 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 320кг.   В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011211.jpg</img>
+		<kz_price>449644</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 2000 (1500х1500мм) М8100-2-АК3С</name_product>
+		<category>27</category>
+		<price>160872</price>
+		<quantity_product/>
+		<articul>р08858</articul>
+		<description>Весы платформенные 1500х1500х90 (4 датчика), однодиапазонные 2000 кг. Дискретность индикации 1 Кг. К весам подходят пандусы  р9681, р9685, рама р9063</description>
+		<img>/exchange/images/00-00011080.jpg</img>
+		<kz_price>159601</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-20-М06-НМ9В-003-К</name_product>
+		<category>17</category>
+		<price>2728628</price>
+		<quantity_product/>
+		<articul>р14411</articul>
+		<description/>
+		<img>/exchange/images/00-00010676.jpg</img>
+		<kz_price>2707072</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4814-10 Длина 1090 мм ширина 1000 мм</name_product>
+		<category>18</category>
+		<price>18598</price>
+		<quantity_product/>
+		<articul>р15178</articul>
+		<description>Пандус для ТРЭК шириной 1000мм высота пандуса 224 мм длина 1090мм  Для въезда с одной стороны нужно 2 пандуса. Для въезда и съезда нужно 4 пандуса. </description>
+		<img>/exchange/images/00-00010828.png</img>
+		<kz_price>18451</kz_price>
+	</product>
+	<product>
+		<name_product>М5064-50 кг</name_product>
+		<category>35</category>
+		<price>20444</price>
+		<quantity_product>32</quantity_product>
+		<articul>3047</articul>
+		<description>50кг, 2мВ/В, 0.02%, -10-+40С, 380±30Ом, IP65, Нерж., 3м,</description>
+		<img>/exchange/images/00-00010976.jpg</img>
+		<kz_price>20282</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-15/30-04-М06-H8C-5T-800-БФ (НПКМ 482.008)</name_product>
+		<category>18</category>
+		<price>445682</price>
+		<quantity_product/>
+		<articul>р11595</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-15/30-04-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 8 датчиков H8C-C3-5T ZEMIC.  Длина платформ 4100 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010938.png</img>
+		<kz_price>442161</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-08-М06-H8C-5T-1000-БФ (НПКМ 482.043)</name_product>
+		<category>18</category>
+		<price>686008</price>
+		<quantity_product/>
+		<articul>р15483</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-30/40-08-М06-Z-010-БФ Ширина платформы 1000мм. Весы ТРЭК из 2х платформ. В весах 12 датчиков H8C-C3-5T ZEMIC. Стандартная длина кабеля от весов до прибора 30 м. Длина платформ 8000 мм ширина 1000 мм.</description>
+		<img>/exchange/images/00-00010838.png</img>
+		<kz_price>680589</kz_price>
+	</product>
+	<product>
+		<name_product>М8100-10ТК9C-5-С(1780)</name_product>
+		<category>31</category>
+		<price>729326.61</price>
+		<quantity_product/>
+		<articul>1393</articul>
+		<description>НПВ10000кг d= 5кг, р/п. 1700х8000, 4 датчика 65023C-10000 lb-3107. Узлы встройки с пружинными шайбами.</description>
+		<img>/exchange/images/00-00028522.jpg</img>
+		<kz_price>723565</kz_price>
+	</product>
+	<product>
+		<name_product>Моно2 300/600 Н(60/1000)</name_product>
+		<category>7</category>
+		<price>168766</price>
+		<quantity_product/>
+		<articul>18097</articul>
+		<description>Для взвешивания мясных туш в колбасных цехах массой до 600 кг. Встраиваются в штатный монорельс конвейера.</description>
+		<img>/exchange/images/00-00011126.jpg</img>
+		<kz_price>167433</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 300/600 (1000х1500)</name_product>
+		<category>27</category>
+		<price>285380</price>
+		<quantity_product/>
+		<articul>17705</articul>
+		<description>Нержавеющие, типоразмера №10 (1000х1500),  на нержавеющих подвесках и тензодатчиках.  М0601-БМ. НПВ=0,6 т. К весам  подходит пандус М4801-ВН1 Арт.9459</description>
+		<img>/exchange/images/00-00011234.jpg</img>
+		<kz_price>283125</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-740DMET-2-БФ-Р_ _</name_product>
+		<category>40</category>
+		<price>2063490</price>
+		<quantity_product/>
+		<articul>33216</articul>
+		<description>Весы вагонные бесфундаментные, C нашим ГПУ. Датчики 740DMET
+Весы вагонные НПКМ 483.017 с покупным ГПУ.
+Весы вагонные НПКМ 483.038 с ГПУ метра.</description>
+		<img>/exchange/images/00-00033216.jpg</img>
+		<kz_price>2047188</kz_price>
+	</product>
+	<product>
+		<name_product>М2604</name_product>
+		<category>3</category>
+		<price>10833</price>
+		<quantity_product>2</quantity_product>
+		<articul>2839</articul>
+		<description>Модуль дискретного ввода-вывода. 8 входов и 8 выходов с отпторазвязкой - используется в приборе М0600-Д6.  Кожух  арт.2030-использовать!  арт.2032 Пластина-использовать! </description>
+		<img>/exchange/images/00-00010980.png</img>
+		<kz_price>10747</kz_price>
+	</product>
+	<product>
+		<name_product>М5064-200 кг</name_product>
+		<category>35</category>
+		<price>23049</price>
+		<quantity_product/>
+		<articul>3118</articul>
+		<description>200кг, 2мВ/В, 0.02%, -10-+40С, 350±30Ом, IP65, Нерж., 3м,</description>
+		<img>/exchange/images/00-00011136.jpg</img>
+		<kz_price>22867</kz_price>
+	</product>
+	<product>
+		<name_product>Модуль tDS-735</name_product>
+		<category>3</category>
+		<price>14121</price>
+		<quantity_product/>
+		<articul>б09470</articul>
+		<description>Производитель: ICP DAS. COM портов RS-485: 3 Максимальная скорость COM-портов RS-485:	115200 Бит/с Портов PoE 10/100 Mbit/s 1. Входное напряжение питания DC:	12 ... 48 ВПроизводитель: ICP DAS. COM портов RS-485: 3 Максимальная скорость COM-портов RS-485:	115200 Бит/с Портов PoE 10/100 Mbit/s 1. Входное напряжение питания DC:	12 ... 48 В
+</description>
+		<img>/exchange/images/00-00000536.jpg</img>
+		<kz_price>14009</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-00.01</name_product>
+		<category>3</category>
+		<price>46746</price>
+		<quantity_product/>
+		<articul>р12592</articul>
+		<description>Для конвейерных весов и ленточных дозаторов непрерывного действия, RS-485, MS-bus токовый выход 4-20 мА, без модуля сопряжения.</description>
+		<img>/exchange/images/00-00010396.jpg</img>
+		<kz_price>46377</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6404</name_product>
+		<category>11</category>
+		<price>127803</price>
+		<quantity_product/>
+		<articul>р08174</articul>
+		<description>Шкаф управления М6404 (Северсталь)</description>
+		<img/>
+		<kz_price>126793</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6508</name_product>
+		<category>11</category>
+		<price>395716</price>
+		<quantity_product/>
+		<articul>р12460</articul>
+		<description>Шкаф для ВМЗ с контроллерами S7-1500</description>
+		<img/>
+		<kz_price>392590</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6030-У</name_product>
+		<category>11</category>
+		<price>200853</price>
+		<quantity_product/>
+		<articul>р11882</articul>
+		<description>Убывающий  дозатор</description>
+		<img/>
+		<kz_price>199266</kz_price>
+	</product>
+	<product>
+		<name_product>М6202</name_product>
+		<category>11</category>
+		<price>105530</price>
+		<quantity_product/>
+		<articul>17512</articul>
+		<description>Шкаф для установки прибора рядом с весами.  В составе шкафа нет БМ и грозы, устанавливается в шкаф из весов.</description>
+		<img/>
+		<kz_price>104696</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6205</name_product>
+		<category>11</category>
+		<price>257789</price>
+		<quantity_product/>
+		<articul>р07619</articul>
+		<description>Для авто- и вагонных весов с применением Moxa</description>
+		<img/>
+		<kz_price>255752</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6511</name_product>
+		<category>11</category>
+		<price>208672</price>
+		<quantity_product/>
+		<articul>р15640</articul>
+		<description>ЗП№0М00-000323 в ERP «ХЕМЕТАЛЛ ООО» к установке приготовления коагулянта </description>
+		<img/>
+		<kz_price>207023</kz_price>
+	</product>
+	<product>
+		<name_product>Интерфейсный преобразователь MOXA NPORT IA-5150</name_product>
+		<category>3</category>
+		<price>21230</price>
+		<quantity_product/>
+		<articul>37563</articul>
+		<description>https://moxa.pro/products/nport-ia-5150
+Ethernet сервер последовательных интерфейсов, 1xRS-232/422/485, с каскадированием (2xEthernet, 1 IP-адрес)
+1 порт RS-232/422/485 подключение двумя способами: 1xDB9M и Клеммная колодка.
+2 разъёма Ethernet RJ 45</description>
+		<img>/exchange/images/00-00037563.jpg</img>
+		<kz_price>21062</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-1-630-001</name_product>
+		<category>8</category>
+		<price>463165</price>
+		<quantity_product/>
+		<articul>14605</articul>
+		<description>Ширина ленты: 400-500 мм. 4 датчика Z6FC3-200 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 630кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011212.jpg</img>
+		<kz_price>459506</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 600/1500 (1000х1000мм)  М8100-0,6/1,5-АК0С-П</name_product>
+		<category>27</category>
+		<price>127289</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1000х1000х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9058.</description>
+		<img/>
+		<kz_price>126283</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-3-320-003 (НПКМ 484.108)</name_product>
+		<category>8</category>
+		<price>317442</price>
+		<quantity_product/>
+		<articul>39064</articul>
+		<description>Ширина ленты: 600-800 мм. 4 датчика BM11 -100 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 320кг. В комплект поставки входит шкаф М6403, датчик скорости М4209.</description>
+		<img/>
+		<kz_price>314934</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-16-М06-НМ9В-027 (НПКМ 482.401-04)</name_product>
+		<category>47</category>
+		<price>1644870.15</price>
+		<quantity_product/>
+		<articul>35115</articul>
+		<description>6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 16 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1631876</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-18-М06-НМ9В-027 (НПКМ 482.401-07)</name_product>
+		<category>47</category>
+		<price>1795598.16</price>
+		<quantity_product>1</quantity_product>
+		<articul>11249</articul>
+		<description>8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 18 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1781413</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=18 м) (Весы 2021) (НПКМ 448.241-03)</name_product>
+		<category>42</category>
+		<price>138101</price>
+		<quantity_product>3</quantity_product>
+		<articul>33228</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 18 метров
+</description>
+		<img/>
+		<kz_price>137010</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-12-М06-НМ9В-030 (НПКМ 482.401-03)</name_product>
+		<category>47</category>
+		<price>1425750.6</price>
+		<quantity_product/>
+		<articul>35114</articul>
+		<description>6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>1414487</kz_price>
+	</product>
+	<product>
+		<name_product>Гарант 15/30 (М8000-15/30-1-НН2Н)</name_product>
+		<category>25</category>
+		<price>77454</price>
+		<quantity_product>3</quantity_product>
+		<articul>р09352</articul>
+		<description>Платформа из нержавеющей стали. Размер 350х450. Тензодатчик из нержавеющей стали М5064-50 кг</description>
+		<img>/exchange/images/00-00011196.jpg</img>
+		<kz_price>76842</kz_price>
+	</product>
+	<product>
+		<name_product>Повторитель RS485 М2108-М</name_product>
+		<category>3</category>
+		<price>5883</price>
+		<quantity_product>1</quantity_product>
+		<articul>р12683</articul>
+		<description/>
+		<img>/exchange/images/00-00010416.jpg</img>
+		<kz_price>5837</kz_price>
+	</product>
+	<product>
+		<name_product>Титан 5000/10000 (М8100-10ТК5С)</name_product>
+		<category>31</category>
+		<price>418108.14</price>
+		<quantity_product/>
+		<articul>17773</articul>
+		<description>Крашеные, типоразмера №5 (2000х2000), на стальных тензодатчиках, с узлами встройки типа Подвеска. НПВ=10 т.</description>
+		<img>/exchange/images/00-00011337.jpg</img>
+		<kz_price>414805</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 600/1500</name_product>
+		<category>7</category>
+		<price>104746</price>
+		<quantity_product/>
+		<articul>18265</articul>
+		<description>НОС-2t 1 датч. Крашенные. Плоск.Грузоподъемность до 1500 кг. Встраиваются в штатный монорельс конвейера.</description>
+		<img>/exchange/images/00-00010906.png</img>
+		<kz_price>103919</kz_price>
+	</product>
+	<product>
+		<name_product>М2606</name_product>
+		<category>3</category>
+		<price>13061</price>
+		<quantity_product/>
+		<articul>3658</articul>
+		<description>Модуль дискретного ввода-вывода. 8 входов и 8 выходов с отпторазвязкой. Программируемый.</description>
+		<img>/exchange/images/00-00010982.jpg</img>
+		<kz_price>12958</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-НМ14Н-2-K-Р_ _ (4-x-4)</name_product>
+		<category>24</category>
+		<price>1448951</price>
+		<quantity_product/>
+		<articul>38837</articul>
+		<description>Весы для повагонного взвешивания в статике и движении. Без рельсов. 8 датчиков Тензодатчик Zemic HM14H1-30t</description>
+		<img>/exchange/images/00-00038837.jpg</img>
+		<kz_price>1437504</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-08-М06-H8C-5T-800-БФ (НПКМ 482.008-04)</name_product>
+		<category>18</category>
+		<price>632665</price>
+		<quantity_product/>
+		<articul>р11599</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-30/40-08-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-5T ZEMIC.  Длина платформ 8000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010942.png</img>
+		<kz_price>627667</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 300/600 (1200х1200мм) М8101-0,3/0,6-АН2Н</name_product>
+		<category>28</category>
+		<price>250759</price>
+		<quantity_product/>
+		<articul>р09007</articul>
+		<description>Весы платформенные из нержавеющей стали1200х1200х90 (4 датчика), двухдиапазонные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят пандусы р9297, р9298, рама р9061</description>
+		<img>/exchange/images/00-00011092.jpg</img>
+		<kz_price>248778</kz_price>
+	</product>
+	<product>
+		<name_product>Табло дублирующее М1903</name_product>
+		<category>3</category>
+		<price>49498</price>
+		<quantity_product>13</quantity_product>
+		<articul>р08534</articul>
+		<description>Для установки на улице. Зелёные индикаторы. Высота цифры 100мм. При установке данного табло на улице  использовать кабеля для с маркировкой OUTDOORS</description>
+		<img>/exchange/images/00-00011066.jpg</img>
+		<kz_price>49107</kz_price>
+	</product>
+	<product>
+		<name_product>Моно2 300/600Н(700)</name_product>
+		<category>7</category>
+		<price>114382</price>
+		<quantity_product/>
+		<articul>14191</articul>
+		<description>Весы нержавеющие на 2-х тензодатчиках  М5023-550 кгдля взвешивания продукции массой до 600 кг на монорельсе. Встраиваются в существующий (штатный) монорельс.Прибор М0601-БМ.</description>
+		<img>/exchange/images/00-00011355.png</img>
+		<kz_price>113478</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-01-102 (НПКМ 406.044)</name_product>
+		<category>3</category>
+		<price>9950</price>
+		<quantity_product/>
+		<articul>37718</articul>
+		<description>В пластиковом корпусе. Пластиковые кабельные вводы. 1 датчик подключаются по 6 проводной схеме. Питание 10-30 В и RS485 вводятся в корпус одним кабелем. Предусмотрены клеммы и кабельный ввод для подключения следующего прибора в «Цепочку».</description>
+		<img>/exchange/images/00-00037718.jpg</img>
+		<kz_price>9871</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-06-М06-Н8С-10Т-800-БФ (НПКМ 482.024)</name_product>
+		<category>18</category>
+		<price>617316</price>
+		<quantity_product/>
+		<articul>р12334</articul>
+		<description>Рабочее наименование старое: Весы автомобильные ТРЭК М8200Б-30/40-06-М06-Z-024-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 6000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010920.png</img>
+		<kz_price>612439</kz_price>
+	</product>
+	<product>
+		<name_product>М62109-12в</name_product>
+		<category>3</category>
+		<price>10434</price>
+		<quantity_product>2</quantity_product>
+		<articul>р08481</articul>
+		<description>Комплект поставки:  Преобразователь-концентратор RS232/RS485 (М2109), блок питания 12в., кабель USB для подключения к компьютеру.</description>
+		<img>/exchange/images/00-00011060.png</img>
+		<kz_price>10352</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 1000 (1200х1500)</name_product>
+		<category>27</category>
+		<price>261490</price>
+		<quantity_product/>
+		<articul>17839</articul>
+		<description>Нержавеющие, типоразмера №11 (1200х1500),  на нержавеющих подвесках и тензодатчиках.. НПВ=1 т. К весам подходит пандус 801-ВН2 Арт.17685</description>
+		<img>/exchange/images/00-00011123.jpg</img>
+		<kz_price>259424</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект закладных деталей М8300</name_product>
+		<category>23, 24</category>
+		<price>248493</price>
+		<quantity_product/>
+		<articul>р14113</articul>
+		<description>Комплект закладных деталей для вагонных весов, состоящих из 1 секции длиной 4 метра. Для весов, состоящих из 2х секций необходимо 2 комплекта закладных деталей.</description>
+		<img>/exchange/images/00-00013372.jpg</img>
+		<kz_price>246530</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-15/30-06-М06-H8C-5T-800-БФ (НПКМ 482.008-02)</name_product>
+		<category>18</category>
+		<price>533741</price>
+		<quantity_product/>
+		<articul>р11597</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-15/30-06-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 8 датчиков H8C-C3-5T ZEMIC.  Длина платформ 6100 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010940.jpg</img>
+		<kz_price>529524</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1000х1200мм) М8101-0,6/1,5-АН1Н</name_product>
+		<category>28</category>
+		<price>210469</price>
+		<quantity_product/>
+		<articul>р09004</articul>
+		<description>Весы платформенные из нержавеющей стали 1000х1200х90 (4 датчика), двухдиапазонные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят Пандусы р9295, р9296, рама р9059</description>
+		<img>/exchange/images/00-00011089.jpg</img>
+		<kz_price>208806</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 300/600 (1000х1500мм) М8101-0,3/0,6-АН10Н</name_product>
+		<category>28</category>
+		<price>220033</price>
+		<quantity_product/>
+		<articul>р09005</articul>
+		<description>Весы платформенные из нержавеющей стали 1000х1500х90 (4 датчика), двухдиапазонные 300/600 кг. К весам подходят Пандусы р9295, р9296, рама р9060</description>
+		<img>/exchange/images/00-00011090.jpg</img>
+		<kz_price>218295</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим-06А (М0600-С6-3)</name_product>
+		<category>3</category>
+		<price>58269</price>
+		<quantity_product/>
+		<articul>П6297</articul>
+		<description>Прошивка для поосного взвешивания автомобилей в движении</description>
+		<img>/exchange/images/00-00011349.jpg</img>
+		<kz_price>57809</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 300/600 (1200х1200)</name_product>
+		<category>27</category>
+		<price>258436</price>
+		<quantity_product/>
+		<articul>17829</articul>
+		<description>Нержавеющие, типоразмера №2 (1200х1200),  на нержавеющих подвесках и тензодатчиках.М300-200кг. НПВ=0,6 т. К весам подходит пандус 801-ВН2 Арт.17685</description>
+		<img>/exchange/images/00-00011121.jpg</img>
+		<kz_price>256394</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-150-М06-HM14H-2-К-Р_ _ (5-x-5) (НПКМ 483.068-05)</name_product>
+		<category>23</category>
+		<price>1539994</price>
+		<quantity_product>1</quantity_product>
+		<articul>38977</articul>
+		<description>Весы для повагонного взвешивания в статике.  Без рельсов.  8 датчиков HM14C-C3-30t-13B6-D05 производства ZEMIC</description>
+		<img>/exchange/images/00-00038977.png</img>
+		<kz_price>1527828</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 300/600 (1000х1200мм) М8100-0,3/0,6-АК1С</name_product>
+		<category>27</category>
+		<price>148134</price>
+		<quantity_product/>
+		<articul>р08850</articul>
+		<description>Весы платформенные 1000х1200х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят пандусы  р9662, р9668, рама р9059</description>
+		<img>/exchange/images/00-00011072.jpg</img>
+		<kz_price>146964</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0401-2</name_product>
+		<category>3</category>
+		<price>75456</price>
+		<quantity_product>5</quantity_product>
+		<articul>р06597</articul>
+		<description>
+
+
+
+
+</description>
+		<img>/exchange/images/00-00010392.jpg</img>
+		<kz_price>74860</kz_price>
+	</product>
+	<product>
+		<name_product>Модуль М2109 (НПКМ 421.010) Концентратор RS485</name_product>
+		<category>3</category>
+		<price>7177</price>
+		<quantity_product>9</quantity_product>
+		<articul>р08448</articul>
+		<description>Преобразователь-концентратор RS232/RS485 (М2109),</description>
+		<img>/exchange/images/00-00011057.jpg</img>
+		<kz_price>7120</kz_price>
+	</product>
+	<product>
+		<name_product>Весы платформенные М8100-1,5/3-ВК9Н (900х900)</name_product>
+		<category>31</category>
+		<price>347512.14</price>
+		<quantity_product/>
+		<articul>р15933</articul>
+		<description>!!! В составе весов шкаф, внутри которого 1- портовый шлюз Modbus в PROFIBUS Slave. Платформенные весы типа "ТИТАН" в противоударном исполнении. Узлы встройки подвески с пружинными шайбами. Габариты платформы 900х900 мм высота 202 мм</description>
+		<img>/exchange/images/00-00010873.jpg</img>
+		<kz_price>344767</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-07-М06-H8C-5T-800-БФ (НПКМ 482.008-03)</name_product>
+		<category>18</category>
+		<price>596513</price>
+		<quantity_product/>
+		<articul>р11598</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-30/40-07-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-5T ZEMIC.  Длина платформ 7000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010941.png</img>
+		<kz_price>591801</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1000х1500мм) М8101-0,6/1,5-АН10Н</name_product>
+		<category>28</category>
+		<price>231139</price>
+		<quantity_product/>
+		<articul>р09006</articul>
+		<description>Весы платформенные из нержавеющей стали1000х1500х90 (4 датчика), двухдиапазонные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят Пандусы р9295, р9296, рама р9060</description>
+		<img>/exchange/images/00-00011091.jpg</img>
+		<kz_price>229313</kz_price>
+	</product>
+	<product>
+		<name_product>Моно2 1000Н(700)</name_product>
+		<category>7</category>
+		<price>114025</price>
+		<quantity_product/>
+		<articul>18257</articul>
+		<description>Весы нержавеющие на 2-х тензодатчиках М5023-750 кг (А-модификация) для взвешивания продукции массой до 600 кг на монорельсе. Встраиваются в существующий (штатный) монорельс.Прибор М0601-БМ.</description>
+		<img>/exchange/images/00-00010904.jpg</img>
+		<kz_price>113124</kz_price>
+	</product>
+	<product>
+		<name_product>Весы монорельсовые М8700-1-0,6КА(60/800)</name_product>
+		<category>7</category>
+		<price>115903</price>
+		<quantity_product/>
+		<articul>р14817</articul>
+		<description>На 1 тензодатчике монорельс в виде трубы диаметром 60мм диной 800 мм</description>
+		<img>/exchange/images/00-00010787.jpg</img>
+		<kz_price>114987</kz_price>
+	</product>
+	<product>
+		<name_product>Моно2 300/600(60/1000)</name_product>
+		<category>7</category>
+		<price>165842</price>
+		<quantity_product/>
+		<articul>18220</articul>
+		<description>Для взвешивания мясных туш в колбасных цехах массой до 600 кг. Встраиваются в штатный монорельс конвейера. Оцинкованные. Круглый путь.</description>
+		<img>/exchange/images/00-00010903.jpg</img>
+		<kz_price>164532</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-06-101</name_product>
+		<category>3</category>
+		<price>103123</price>
+		<quantity_product>1</quantity_product>
+		<articul>р10261</articul>
+		<description>Прежнее названиеМикросим М0808-06. В корпусе из нержавеющей стали. Металлические кабельные вводы. 6 датчиков подключаются по 6 проводной схеме, каждый к отдельному тензоканалу. Питание 10-30 В и RS485 вводятся в корпус одним кабелем. 
+</description>
+		<img>/exchange/images/00-00011312.jpg</img>
+		<kz_price>102308</kz_price>
+	</product>
+	<product>
+		<name_product>М6403</name_product>
+		<category>11</category>
+		<price>149364</price>
+		<quantity_product>1</quantity_product>
+		<articul>12649</articul>
+		<description>для конвейерных весов , Прибор М0600-К6 с модулем М2604, источник питания, кнопки пуск, стоп, выключатель автоматический, лампы индикации,  кабельные вводы, клеммные соединители, розетка</description>
+		<img>/exchange/images/00-00011019.jpg</img>
+		<kz_price>148184</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-00.02</name_product>
+		<category>3</category>
+		<price>44196</price>
+		<quantity_product/>
+		<articul>р12994</articul>
+		<description>Для конвейерных весов и ленточных дозаторов непрерывного действия, RS-485, MS-bus токовый выход 0-20 мА, без модуля сопряжения.</description>
+		<img>/exchange/images/00-00010449.jpg</img>
+		<kz_price>43847</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4814-075 Длина 1090 мм ширина 750мм</name_product>
+		<category>18</category>
+		<price>14232</price>
+		<quantity_product/>
+		<articul>р11634</articul>
+		<description>Пандус для весов ТРЭК с НПВ 30 и 40тонн. с платформами шириной 800мм. Высота пандуса 224мм. Длина 1090 ширина 750мм Для въезда с одной стороны нужно 2 пандуса. Для въезда и съезда нужно 4 пандуса.</description>
+		<img>/exchange/images/00-00010944.png</img>
+		<kz_price>14120</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-09-М06-H8C-10T-800-БФ (НПКМ 482.024-03)</name_product>
+		<category>18</category>
+		<price>724612</price>
+		<quantity_product/>
+		<articul>р12366</articul>
+		<description>Рабочее наименование старое: Весы автомобильные ТРЭК М8200Б-30/40-09-М06-Z-024-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 9000 м ширина 800 мм.</description>
+		<img>/exchange/images/00-00010926.png</img>
+		<kz_price>718888</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1500х1500мм) М8101-0,6/1,5-АН3Н</name_product>
+		<category>28</category>
+		<price>272313</price>
+		<quantity_product/>
+		<articul>р09011</articul>
+		<description>Весы палтформенные из нержавеющей стали1500х1500х90 (4 датчика), двухдиапазонные 600х1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят Пандусы р9299, р9138, рама р9063</description>
+		<img>/exchange/images/00-00011096.jpg</img>
+		<kz_price>270162</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 1000 (1000х1200)</name_product>
+		<category>27</category>
+		<price>248548</price>
+		<quantity_product/>
+		<articul>17836</articul>
+		<description>Нержавеющие, типоразмера №1 (1000х1200),  на нержавеющих подвесках и тензодатчиках.  М0601-БМ. НПВ=0,6 т. К весам  подходит пандус М4801-ВН1 Арт.9459</description>
+		<img>/exchange/images/00-00011122.jpg</img>
+		<kz_price>246584</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600Н</name_product>
+		<category>7</category>
+		<price>111363</price>
+		<quantity_product/>
+		<articul>18266</articul>
+		<description>НОС-750 кг 1 датч. Нержавеющие. Плоск.Грузоподъемность до 600 кг. Встраиваются в штатный монорельс конвейера.</description>
+		<img>/exchange/images/00-00010907.png</img>
+		<kz_price>110483</kz_price>
+	</product>
+	<product>
+		<name_product>Гарант 30/60 (М8000-30/60-1-НН2Н)</name_product>
+		<category>25</category>
+		<price>68340</price>
+		<quantity_product>2</quantity_product>
+		<articul>р08498</articul>
+		<description>Платформа из нержавеющей стали. Размер 350х450. Тензодатчик из нержавеющей стали М5064-100 кг</description>
+		<img>/exchange/images/00-00011063.jpg</img>
+		<kz_price>67800</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4806-2ПД-01 (НПКМ 448.246)</name_product>
+		<category>14</category>
+		<price>5695</price>
+		<quantity_product>3</quantity_product>
+		<articul>34760</articul>
+		<description>Пластиковая цифровая коробка для подключения 2х цифровых датчиков M740DMET. Датчики подключаются на клеммниках под отвёртку.</description>
+		<img>/exchange/images/00-00034760.jpg</img>
+		<kz_price>5650</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-60-М06-HM14H-1-К-Р_ _ Не продавать</name_product>
+		<category>23</category>
+		<price>822710</price>
+		<quantity_product/>
+		<articul>36642</articul>
+		<description>Весы для потележечного  взвешивания в статике. Состоят из одной секции длиной 5м. Без рельсов. 4 Тензодатчика Zemic HM14H1-30t </description>
+		<img>/exchange/images/00-00036642.png</img>
+		<kz_price>816211</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6207</name_product>
+		<category>11</category>
+		<price>102123</price>
+		<quantity_product>2</quantity_product>
+		<articul>р13803</articul>
+		<description>Шкаф для управления светофорами, подключения 2х камер видео регистрации (распознавания номеров), подключения весов на цифровых датчиках. В состав входят Модуль tDS-735 (для подключения  с одной  стороны цифровых датчиков по RS 485, с другой Ethernet)  Индустриальный коммутатор NS-205PSE-24V с 5 шт  портами Ethernet для подключения камер и подачи на них питания.</description>
+		<img>/exchange/images/00-00010548.jpg</img>
+		<kz_price>101316</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 150/300 (1000х1200)</name_product>
+		<category>27</category>
+		<price>254194</price>
+		<quantity_product/>
+		<articul>17827</articul>
+		<description>Нержавеющие, типоразмера №1 (1000х1200),  на нержавеющих подвесках и тензодатчиках.. НПВ=0,3 т. К весам  подходит пандус М4801-ВН1 Арт.9459</description>
+		<img>/exchange/images/00-00011118.jpg</img>
+		<kz_price>252186</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-100-ПК-HM9B-2-БФ-Р_ _-Ex (НПКМ 483.033)</name_product>
+		<category>40</category>
+		<price>2487910</price>
+		<quantity_product/>
+		<articul>33796</articul>
+		<description>Весы вагонные бесфундаментные, с  ГПУ производства Метра.  Датчики HM9B-Ex.В комплект входят подкладки КД65 и крепёж. Рельсы НЕ входят в комплект.</description>
+		<img>/exchange/images/00-00033796.jpg</img>
+		<kz_price/>
+	</product>
+	<product>
+		<name_product>Стандарт 60/150 (М8000-60/150-1-КН4А)</name_product>
+		<category>26</category>
+		<price>70507.2</price>
+		<quantity_product/>
+		<articul>р09723</articul>
+		<description>ГПУ из конструкционной стали. Крышка из нержавеющей стали. 450х600мм. датчик Алюминиевый LOC-250. СПЕЦНАСТРОЙКА прибора</description>
+		<img>/exchange/images/00-00011173.jpg</img>
+		<kz_price>69950</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик М5023-Ni-1100кг-3м</name_product>
+		<category>39</category>
+		<price>18604</price>
+		<quantity_product>16</quantity_product>
+		<articul>р14568</articul>
+		<description/>
+		<img>/exchange/images/00-00010778.jpg</img>
+		<kz_price>18457</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-01-031</name_product>
+		<category>3</category>
+		<price>27338</price>
+		<quantity_product>4</quantity_product>
+		<articul>15726</articul>
+		<description>Прежнее название М0803-1. Цифровой тензопреобразователь в корпусе G120 , RS485, 4 вх, 4 вых. Светодиоды внутри. 1 тензо датчик.</description>
+		<img>/exchange/images/00-00011232.jpeg</img>
+		<kz_price>27122</kz_price>
+	</product>
+	<product>
+		<name_product>М5064-100 кг</name_product>
+		<category>35</category>
+		<price>20264</price>
+		<quantity_product>35</quantity_product>
+		<articul>2837</articul>
+		<description>100кг, 2мВ/В, 0.02%, -10-+40С, 350±30Ом, IP65, Нерж., 3м,</description>
+		<img>/exchange/images/00-00011135.jpg</img>
+		<kz_price>20104</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-09-М06-H8C-5T-800-БФ (НПКМ 482.008-05)</name_product>
+		<category>18</category>
+		<price>656670</price>
+		<quantity_product/>
+		<articul>р12309</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-30/40-09-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-5T ZEMIC.  Длина платформ 9000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00011345.png</img>
+		<kz_price>651482</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 1500/3000 (1500х1500мм) М8101-1,5/3-АН3Н</name_product>
+		<category>28</category>
+		<price>250641</price>
+		<quantity_product/>
+		<articul>р09012</articul>
+		<description>Весы платформенные из нержавеющей стали 1500х1500х90 (4 датчика), двухдиапазонные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят Пандусы р9299, р9138, рама р9063</description>
+		<img>/exchange/images/00-00011097.jpg</img>
+		<kz_price>248661</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600 (48/600)</name_product>
+		<category>7</category>
+		<price>113002</price>
+		<quantity_product/>
+		<articul>18280</articul>
+		<description>1 датч. НОС-750 кг Труба. Краш. (D=48, L=600) мм.</description>
+		<img>/exchange/images/00-00010909.jpg</img>
+		<kz_price>112109</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-18-М06-НМ9В-001-К (НПКМ 482.403)</name_product>
+		<category>17</category>
+		<price>1493282</price>
+		<quantity_product/>
+		<articul>35199</articul>
+		<description>Весы разработаны для замены весов Оптимум 60/18 на предприятии ТетраПак (СиБиАрИ). Прикреплён файл замеров по которым разработаны весы. Это Весы выполнены под покраску.</description>
+		<img>/exchange/images/00-00035199.jpg</img>
+		<kz_price>1481485</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-04-100</name_product>
+		<category>3</category>
+		<price>62072</price>
+		<quantity_product>3</quantity_product>
+		<articul>р10150</articul>
+		<description>Прежнее название Микросим М0808-04. В корпусе из нержавеющей стали. Металлические кабельные вводы. 4 датчика подключаются по 6 проводной схеме, каждый к отдельному тензоканалу. Питание 10-30 В и RS485 вводятся в корпус одним кабелем. Предусмотрены клеммы и кабельный ввод для подключения следующего прибора в «Цепочку». </description>
+		<img>/exchange/images/00-00010955.jpg</img>
+		<kz_price>61582</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-15/30-05-М06-H8C-5T-800-БФ (НПКМ 482.008-01)</name_product>
+		<category>18</category>
+		<price>490829</price>
+		<quantity_product/>
+		<articul>р11596</articul>
+		<description>Рабочее наименование старое: ТРЭК М8200Б-15/30-05-М06-Z-008-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 8 датчиков H8C-C3-5T ZEMIC.  Длина платформ 5000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010939.png</img>
+		<kz_price>486951</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-08-М06-H8C-10T-1000-БФ (НПКМ 482.044)</name_product>
+		<category>18</category>
+		<price>743966</price>
+		<quantity_product/>
+		<articul>р15544</articul>
+		<description>Рабочее наименование старое: Весы автомобильные ТРЭК М8200Б-30/40-08-М06-H8C-10T-024-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 8000 мм ширина 1000 мм.</description>
+		<img>/exchange/images/00-00010849.png</img>
+		<kz_price>738089</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1500Х2000мм) М8101-0,6/1,5-АН4Н</name_product>
+		<category>28</category>
+		<price>294332</price>
+		<quantity_product/>
+		<articul>р09013</articul>
+		<description>Весы платформенные 1500х2000х90 (4 датчика), двухдиапазонные 600/1500 кг. Дискретность индикации 02/0,5 Кг. К весам подходят Пандусы р9299, р9138, рама р9064</description>
+		<img>/exchange/images/00-00011098.jpg</img>
+		<kz_price>292007</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 600/1500 (1200х1200мм) М8101-0,6/1,5-АН2Н</name_product>
+		<category>28</category>
+		<price>227876</price>
+		<quantity_product/>
+		<articul>р09008</articul>
+		<description>Весы палтформенные из нержавеющей стали1200х1200х90 (4 датчика), двухдиапазонные 600х1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы р9297, р9298, рама р9061</description>
+		<img>/exchange/images/00-00011093.jpg</img>
+		<kz_price>226076</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-00.00</name_product>
+		<category>3</category>
+		<price>44196</price>
+		<quantity_product/>
+		<articul>р12992</articul>
+		<description>Для конвейерных весов и ленточных дозаторов непрерывного действия, RS-485, MS-bus токовый выход 0-5 мА, без модуля сопряжения.</description>
+		<img>/exchange/images/00-00010448.jpg</img>
+		<kz_price>43847</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-60-М06-HM14H-1-К-Р65 (4)</name_product>
+		<category>23</category>
+		<price>971374</price>
+		<quantity_product/>
+		<articul>р13580</articul>
+		<description>Весы для потележечного  взвешивания в статике.  В комплекте с рельсами Р65.  4 датчика HM14C-C3-30t-13B6-D05 производства ZEMIC</description>
+		<img>/exchange/images/00-00010510.png</img>
+		<kz_price>963700</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-12Н-01 (1200мм)</name_product>
+		<category>28</category>
+		<price>72602</price>
+		<quantity_product/>
+		<articul>р09298</articul>
+		<description>Ширина пандуса 1200мм. Подходит для весов М8100-АН2Н, М8100-АН11Н, Модификация пандуса -01 для установки ножек в лапы пандуса.</description>
+		<img/>
+		<kz_price>72028</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-НМ14Н-2-K-Р_ _ (5-х-5)</name_product>
+		<category>24</category>
+		<price>1676614</price>
+		<quantity_product/>
+		<articul>38618</articul>
+		<description>Весы из 2х 5 метровых секций для повагонного  взвешивания в статике  и движении.  В комплекте с рельсами Р65.  4 датчика НМ14Н1-30T производства Земик</description>
+		<img/>
+		<kz_price>1663369</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-07-М06-Н8С-10Т-800-БФ (НПКМ 482.024-01)</name_product>
+		<category>18</category>
+		<price>648171</price>
+		<quantity_product/>
+		<articul>р12354</articul>
+		<description>Рабочее наименование старое: Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 7000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010924.png</img>
+		<kz_price>643050</kz_price>
+	</product>
+	<product>
+		<name_product>Концентратор RS485 М2110 на DIN рельс</name_product>
+		<category>3</category>
+		<price>3654</price>
+		<quantity_product>10</quantity_product>
+		<articul>р08471</articul>
+		<description/>
+		<img>/exchange/images/00-00011059.jpg</img>
+		<kz_price>3625</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-16-ПК-НМ9В-030 (НПКМ 482.404-05)</name_product>
+		<category>48</category>
+		<price>1867145.43</price>
+		<quantity_product/>
+		<articul>35128</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-06 1 шт. 6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 16 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>1852395</kz_price>
+	</product>
+	<product>
+		<name_product>Преобразователь RS485 в USB EPSolar eTracer, iTracer, CC-USB-RS485-150U3.81</name_product>
+		<category>3</category>
+		<price>625</price>
+		<quantity_product>15</quantity_product>
+		<articul>33674</articul>
+		<description>Это покупное изделие. Для подключения со стороны RS485 у него провода, и для подключения к прибору необходимо припаять разъём.</description>
+		<img/>
+		<kz_price>620</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-20-ПК-НМ9В-030 (НПКМ 482.404-10)</name_product>
+		<category>48</category>
+		<price>2297612.31</price>
+		<quantity_product/>
+		<articul>35133</articul>
+		<description> Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 2 шт. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 20 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>2279461</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-24-ПК-НМ9В-024 (НПКМ 482.404-11)</name_product>
+		<category>48</category>
+		<price>2154625.44</price>
+		<quantity_product/>
+		<articul>35134</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 1 шт Микросим М0808-06 1 шт. 10 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 24м. 24 швеллер.</description>
+		<img/>
+		<kz_price>2137604</kz_price>
+	</product>
+	<product>
+		<name_product>Стандарт 150/300 (М8000-150/300-1-КН6А)</name_product>
+		<category>26</category>
+		<price>80459.46</price>
+		<quantity_product/>
+		<articul>р10024</articul>
+		<description> ГПУ из конструкционной стали. Крышка из нержавеющей стали.размер платформы 500х800. датчик Алюминиевый. LOC-500</description>
+		<img>/exchange/images/00-00010952.jpg</img>
+		<kz_price>79824</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4807-6ПА-01</name_product>
+		<category>14</category>
+		<price>8635</price>
+		<quantity_product>2</quantity_product>
+		<articul>р11706</articul>
+		<description/>
+		<img>/exchange/images/00-00011222.jpg</img>
+		<kz_price>8567</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-НМ14Н-2-K-Р65 (4-x-4) </name_product>
+		<category>24</category>
+		<price>1762585</price>
+		<quantity_product/>
+		<articul>38857</articul>
+		<description>Весы для повагонного взвешивания в статике и движении. С рельсами. 8 датчиков Тензодатчик Zemic HM14H1-30t</description>
+		<img>/exchange/images/00-00038857.jpg</img>
+		<kz_price>1748661</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-40-08-М06-НМ9В-002-К</name_product>
+		<category>17</category>
+		<price>1011520</price>
+		<quantity_product/>
+		<articul>р14391</articul>
+		<description/>
+		<img>/exchange/images/00-00010666.jpg</img>
+		<kz_price>1003529</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4809-6НА-01</name_product>
+		<category>14</category>
+		<price>15731</price>
+		<quantity_product>6</quantity_product>
+		<articul>р10267</articul>
+		<description/>
+		<img>/exchange/images/00-00011313.jpg</img>
+		<kz_price>15607</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-150-М06-HM14H-2-К-Р65 (4-x-4)</name_product>
+		<category>23</category>
+		<price>1801607</price>
+		<quantity_product/>
+		<articul>р13588</articul>
+		<description>Весы для повагонного взвешивания в статике.  В комплекте с рельсами р65.  8 датчиков HM14C-C3-30t-13B6-D05 производства ZEMIC</description>
+		<img>/exchange/images/00-00010529.png</img>
+		<kz_price>1787374</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-3-320-001</name_product>
+		<category>8</category>
+		<price>450832</price>
+		<quantity_product/>
+		<articul>14381</articul>
+		<description>Ширина ленты: 600-800 мм. 4 датчика Z6FC3-100 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 320кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00010398.png</img>
+		<kz_price>447270</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-5-320-001</name_product>
+		<category>8</category>
+		<price>444211</price>
+		<quantity_product/>
+		<articul>14334</articul>
+		<description>Ширина ленты: 900-1200 мм. Внутренний размер става конвейера от 1140 до 1540 мм  (в опросном листе размер А). 4 датчика Z6FC3-100 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 320кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011236.png</img>
+		<kz_price>440702</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-740DMET-1-БФ-Р_ _</name_product>
+		<category>40</category>
+		<price>1086690</price>
+		<quantity_product/>
+		<articul>33577</articul>
+		<description>Весы вагонные бесфундаментные, с ГПУ (Метра). Датчики 740DMET</description>
+		<img>/exchange/images/00-00033577.jpg</img>
+		<kz_price>1078105</kz_price>
+	</product>
+	<product>
+		<name_product>М4209</name_product>
+		<category>3</category>
+		<price>42625</price>
+		<quantity_product>2</quantity_product>
+		<articul>32094</articul>
+		<description>Импульсный датчик скорости с пружинным прижатием к нижней стороне рабочей ветви конвейерной ленты, с разъемом LTW на 4 контакта. 18имп/об,  Диапазон скоростей ленты от 0,1 до 5 м/с. Пластиковое колесо.</description>
+		<img>/exchange/images/00-00032094.jpg</img>
+		<kz_price>42288</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный Микросим М10-02</name_product>
+		<category>3</category>
+		<price>122753</price>
+		<quantity_product/>
+		<articul>38319</articul>
+		<description>Цифровой прибор М10 для работы с цифровыми датчиками и приборами М0808. Собран на базе СПК107  Панель оператора программируемая (панельный контроллер) арт. 29953</description>
+		<img>/exchange/images/00-00038319.jpg</img>
+		<kz_price>121783</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 300/600 (1000х1000мм) М8101-0,3/0,6-АН0Н</name_product>
+		<category>28</category>
+		<price>195771</price>
+		<quantity_product/>
+		<articul>р09001</articul>
+		<description>Весы платформенные из нержавеющей стали 1000х1000х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 кг. К весам подходят Пандусы р9295, р9296, рама р9058</description>
+		<img>/exchange/images/00-00011086.jpg</img>
+		<kz_price>194224</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 1000 (1200х1500мм) М8101-1-АН11Н</name_product>
+		<category>28</category>
+		<price>248025</price>
+		<quantity_product/>
+		<articul>р09009</articul>
+		<description>Весы палтформенные из нержавеющей стали 1200х1500х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят Пандусы р9297, р9298, рама р9062</description>
+		<img>/exchange/images/00-00011094.jpg</img>
+		<kz_price>246066</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 600/1500 (1200х1500)</name_product>
+		<category>27</category>
+		<price>282461</price>
+		<quantity_product/>
+		<articul>17774</articul>
+		<description>Нержавеющие, типоразмера №11 (1200х1500),  на нержавеющих подвесках и тензодатчиках.. НПВ=1,5 т. К весам подходит пандус 801-ВН2 Арт.17685</description>
+		<img>/exchange/images/00-00011125.jpg</img>
+		<kz_price>280230</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-100-ПК-НМ14Н-2-БФ-Р_ _ (НПКМ 483.040-01)</name_product>
+		<category>40</category>
+		<price>2030153</price>
+		<quantity_product/>
+		<articul>36767</articul>
+		<description>В комплект поставки этих весов не входит ПК. Весы вагонные бесфундаментные, Платформа производства Метра. </description>
+		<img>/exchange/images/00-00036767.jpg</img>
+		<kz_price/>
+	</product>
+	<product>
+		<name_product>Моно 300/600Н(60/800)</name_product>
+		<category>7</category>
+		<price>131349</price>
+		<quantity_product/>
+		<articul>18286</articul>
+		<description>НОС-750 кг 1 датч. Труба. Нерж. (D=60, L=800) мм.</description>
+		<img>/exchange/images/00-00010914.jpg</img>
+		<kz_price>130311</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600 (60/800)</name_product>
+		<category>7</category>
+		<price>109850</price>
+		<quantity_product/>
+		<articul>18284</articul>
+		<description>НОС-750 кг </description>
+		<img>/exchange/images/00-00010912.jpg</img>
+		<kz_price>108982</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 2000 (1200х1500мм) М8100-2-АК11С</name_product>
+		<category>27</category>
+		<price>156387</price>
+		<quantity_product/>
+		<articul>р08856</articul>
+		<description>Весы платформенные 1200х1500х90 (4 датчика), однодиапазонные 2000 кг. К весам подходят пандусы  р9675, р9679, рама р9062</description>
+		<img>/exchange/images/00-00011078.jpg</img>
+		<kz_price>155152</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-12-ПК-HM9B-003-К</name_product>
+		<category>17</category>
+		<price>1193879</price>
+		<quantity_product/>
+		<articul>р14511</articul>
+		<description/>
+		<img>/exchange/images/00-00010735.jpg</img>
+		<kz_price>1184447</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-40-12-М06-НМ9В-001-К</name_product>
+		<category>17</category>
+		<price>1450563</price>
+		<quantity_product/>
+		<articul>р14393</articul>
+		<description/>
+		<img>/exchange/images/00-00010667.jpg</img>
+		<kz_price>1439104</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-7-630-001</name_product>
+		<category>8</category>
+		<price>476708</price>
+		<quantity_product/>
+		<articul>13563</articul>
+		<description>Ширина ленты: 11300-1600 мм. Внутренний размер става конвейера от 1660 до 1940 мм  (в опросном листе размер А). 4 датчика Z6FC3-200 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 630кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011194.jpg</img>
+		<kz_price>472942</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1500/3000 (1500х1500мм) М8100-1,5/3-АК3С</name_product>
+		<category>27</category>
+		<price>178988</price>
+		<quantity_product/>
+		<articul>р08859</articul>
+		<description>Весы платформенные 1500х1500х90 (4 датчика), двухинтервальные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят пандусы  р9681, р9685, рама р9063</description>
+		<img>/exchange/images/00-00011081.jpg</img>
+		<kz_price>177574</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 300/600 (1000х1000мм) М8100-0,3/0,6-АК0С</name_product>
+		<category>27</category>
+		<price>146630</price>
+		<quantity_product>1</quantity_product>
+		<articul>р08848</articul>
+		<description>Весы платформенные 1000х1000х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 кг. К весам подходят пандусы  р9662, р9668, рама р9058</description>
+		<img>/exchange/images/00-00011070.jpg</img>
+		<kz_price>145472</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-20-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>2503205</price>
+		<quantity_product/>
+		<articul>р14505</articul>
+		<description/>
+		<img>/exchange/images/00-00010729.jpg</img>
+		<kz_price>2483430</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик М5023-Ni-750кг-3м</name_product>
+		<category>39</category>
+		<price>18604</price>
+		<quantity_product>4</quantity_product>
+		<articul>р14566</articul>
+		<description/>
+		<img>/exchange/images/00-00010777.jpg</img>
+		<kz_price>18457</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1500/3000 (1200х2700мм) М8100-1,5/3-АК9С</name_product>
+		<category>27</category>
+		<price>153797</price>
+		<quantity_product/>
+		<articul>34687</articul>
+		<description>Весы платформенные 1200х2700х104 (4 датчика), двухинтервальные 1500/3000 кг. Дискретность индикации 0,5/1 Кг.</description>
+		<img>/exchange/images/00-00034687.jpg</img>
+		<kz_price>152582</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4805-5А-05</name_product>
+		<category>14</category>
+		<price>13518</price>
+		<quantity_product>2</quantity_product>
+		<articul>16321</articul>
+		<description>В корпусе G120. С грозозащитой на 4 (четыре) датчика. 4 входа (кабели 4-WS, d=4…7,6 мм) , 2 выхода (кабель 6-WS, d=4…7,6 мм).</description>
+		<img>/exchange/images/00-00011311.jpg</img>
+		<kz_price>13411</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-18-М06-НМ9В-001-К</name_product>
+		<category>17</category>
+		<price>2017315</price>
+		<quantity_product/>
+		<articul>р14403</articul>
+		<description/>
+		<img>/exchange/images/00-00010672.jpg</img>
+		<kz_price>2001378</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-40-08-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>1122223</price>
+		<quantity_product/>
+		<articul>р14514</articul>
+		<description/>
+		<img>/exchange/images/00-00010738.jpg</img>
+		<kz_price>1113357</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0808-01-035</name_product>
+		<category>3</category>
+		<price>21832</price>
+		<quantity_product/>
+		<articul>17161</articul>
+		<description>Прежнее название М0803-5. Установка на DIN рейку. 8 дискретных Входов 6 выходов. </description>
+		<img>/exchange/images/00-00011332.jpg</img>
+		<kz_price>21660</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-150-М06-HM14H-2-К-Р_ _ (4-x-4)</name_product>
+		<category>23</category>
+		<price>1484765</price>
+		<quantity_product/>
+		<articul>р13589</articul>
+		<description>Весы для повагонного взвешивания в статике.  Без рельсов.  8 датчиков HM14C-C3-30t-13B6-D05 производства ZEMIC</description>
+		<img>/exchange/images/00-00010531.png</img>
+		<kz_price>1473035</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-150-М06-НМ14Н-2-БФ-Р_ _</name_product>
+		<category>40</category>
+		<price>1941390</price>
+		<quantity_product/>
+		<articul>б11028</articul>
+		<description>Весы вагонные бесфундаментные, с ГПУ производства Метра. </description>
+		<img>/exchange/images/00-00028938.jpg</img>
+		<kz_price>1926053</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 300/600 (1200х1200мм) М8100-0,3/0,6-АК2С</name_product>
+		<category>27</category>
+		<price>149639</price>
+		<quantity_product/>
+		<articul>р08854</articul>
+		<description>Весы платформенные 1200х1200х90 (4 датчика), двухинтервальные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят пандусы  р9675, р9679, рама р9061</description>
+		<img>/exchange/images/00-00011076.jpg</img>
+		<kz_price>148457</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-12-М06-НМ9В-002-К</name_product>
+		<category>17</category>
+		<price>1426311</price>
+		<quantity_product/>
+		<articul>р14395</articul>
+		<description/>
+		<img>/exchange/images/00-00010668.jpg</img>
+		<kz_price>1415043</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-08-М06-НМ9В-001-К</name_product>
+		<category>17</category>
+		<price>882864</price>
+		<quantity_product/>
+		<articul>р14389</articul>
+		<description/>
+		<img>/exchange/images/00-00010665.jpg</img>
+		<kz_price>875889</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-60-M06-HM14H-1-K-Р_ _ (5) (НПКМ 483.041)</name_product>
+		<category>23</category>
+		<price>808305</price>
+		<quantity_product/>
+		<articul>36347</articul>
+		<description>Весы для потележечного  взвешивания в статике. Состоят из одной секции длиной 5м. Без рельсов.  4 Тензодатчика Zemic HM14H1-30t </description>
+		<img>/exchange/images/00-00036347.png</img>
+		<kz_price>801919</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим-06А (М1900)</name_product>
+		<category>3</category>
+		<price>26126</price>
+		<quantity_product>4</quantity_product>
+		<articul>2939</articul>
+		<description>индикация и клавиатура М0600-А, RS485, Гарантия 1 годиндикация и клавиатура М0600-А, RS485, Гарантия 1 год
+</description>
+		<img>/exchange/images/00-00011146.jpg</img>
+		<kz_price>25920</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1500/3000 (1500х2000мм) М8100-1,5/3-АК4С</name_product>
+		<category>27</category>
+		<price>186653</price>
+		<quantity_product/>
+		<articul>р08862</articul>
+		<description>Весы платформенные 1500х2000х90 (4 датчика), двухинтервальные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят пандусы  р9681, р9685, рама р9064</description>
+		<img>/exchange/images/00-00011084.jpg</img>
+		<kz_price>185178</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-16-М06-НМ9В-003-К</name_product>
+		<category>17</category>
+		<price>2024075</price>
+		<quantity_product/>
+		<articul>р14401</articul>
+		<description/>
+		<img>/exchange/images/00-00010671.jpg</img>
+		<kz_price>2008085</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим М0601-БМ-2.1-К </name_product>
+		<category>3</category>
+		<price>49234</price>
+		<quantity_product>32</quantity_product>
+		<articul>р11879</articul>
+		<description/>
+		<img>/exchange/images/00-00000023.png</img>
+		<kz_price>48845</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1000 (1200х1500мм)  М8100-1-АК11С</name_product>
+		<category>27</category>
+		<price>155561</price>
+		<quantity_product/>
+		<articul>р08855</articul>
+		<description>Весы палтформенные 1200х1500х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9675, р9679, рама р9062</description>
+		<img>/exchange/images/00-00011077.jpg</img>
+		<kz_price>154332</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-НМ14Н-2-БФ-Р_ _ (НПКМ 483.040)</name_product>
+		<category>40</category>
+		<price>2063490</price>
+		<quantity_product/>
+		<articul>36078</articul>
+		<description>Весы вагонные бесфундаментные, Платформа производства Метра. </description>
+		<img>/exchange/images/00-00036078.jpg</img>
+		<kz_price>2047188</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-150-ПК-HM14H-1-БФ-Р_ _ (НПКМ 483.039)</name_product>
+		<category>40</category>
+		<price>1086690</price>
+		<quantity_product/>
+		<articul>36081</articul>
+		<description>Весы вагонные бесфундаментные, Платформа производства Метра. </description>
+		<img>/exchange/images/00-00036081.jpg</img>
+		<kz_price>1078105</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-60-М06-НМ14Н-1-БФ-Р_ _</name_product>
+		<category>40</category>
+		<price>1012209</price>
+		<quantity_product/>
+		<articul>34948</articul>
+		<description>Весы вагонные бесфундаментные, с ГПУ производства Метра. </description>
+		<img>/exchange/images/00-00034948.jpg</img>
+		<kz_price>1004213</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-5-630-001</name_product>
+		<category>8</category>
+		<price>453870</price>
+		<quantity_product>1</quantity_product>
+		<articul>14298</articul>
+		<description>Ширина ленты: 900-1200 мм. Внутренний размер става конвейера от 1140 до 1540 мм  (в опросном листе размер А). 4 датчика Z6FC3-200 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 630кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011023.jpg</img>
+		<kz_price>450284</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1500/3000 (1200х1200мм) М8100-1,5/3-АК2С (НПКМ 481.121.17)</name_product>
+		<category>27</category>
+		<price>144105</price>
+		<quantity_product>1</quantity_product>
+		<articul>34475</articul>
+		<description>Весы палтформенные 1200х1200х90 (4 датчика), двухинтервальные 1500х3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят пандусы  р9675, р9679, рама р9061</description>
+		<img>/exchange/images/00-00034475.jpg</img>
+		<kz_price>142967</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-18-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>2218185</price>
+		<quantity_product/>
+		<articul>р14507</articul>
+		<description/>
+		<img>/exchange/images/00-00010731.jpg</img>
+		<kz_price>2200661</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный М0601-БМ-4-П (НПКМ 406.042) </name_product>
+		<category>3</category>
+		<price>39961</price>
+		<quantity_product>9</quantity_product>
+		<articul>32930</articul>
+		<description>ВНИМАНИЕ! У прибора 2 порта RS485. Для подключения к компьютеру по USB использовать: Преобразователь интерфейсов RS485 в USB (НПКМ 443.016 СБ)  арт. 38031,  Прибор предназначен для установки в помещении. По разъёму тензоканала совместим с Микросим М0601_БМ-1.2. Для крепления на стену использовать: Комплект для крепления прибора в пластиковом корпусе (НПКМ 906.001) арт. 38033</description>
+		<img>/exchange/images/00-00032930.jpg</img>
+		<kz_price>39645</kz_price>
+	</product>
+	<product>
+		<name_product>М0600-Б</name_product>
+		<category>3</category>
+		<price>40908</price>
+		<quantity_product/>
+		<articul>14697</articul>
+		<description>Прибор для багажных весов разрабатывается по договору для фирмы LAS-1</description>
+		<img>/exchange/images/00-00011109.png</img>
+		<kz_price>40585</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 16 м (НПКМ 448.268)</name_product>
+		<category>43</category>
+		<price>109209</price>
+		<quantity_product/>
+		<articul>38108</articul>
+		<description>Ограждение-комплект для весов НПКМ 482.406. Проект Северсталь г. Калуга.</description>
+		<img>/exchange/images/00-00038108.jpg</img>
+		<kz_price>108346</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 300/600 (1500х1500)</name_product>
+		<category>27</category>
+		<price>270837</price>
+		<quantity_product/>
+		<articul>17831</articul>
+		<description>Нержавеющие, типоразмера №3 (1500х1500),  на нержавеющих подвесках и тензодатчиках. НПВ=0,6 т. К весам подходит Пандус М4801-ВН3 Арт.17820</description>
+		<img>/exchange/images/00-00011119.jpg</img>
+		<kz_price>268697</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4807-4ПА-01</name_product>
+		<category>14</category>
+		<price>4087</price>
+		<quantity_product>8</quantity_product>
+		<articul>р09229</articul>
+		<description>Клемная коробка для платформенных весов в пластиковом корпусе с многооборотными переменными подстроечными резисторами. 4 кабельных ввода для подключения датчиков + 1 выход кабеля к прибору.</description>
+		<img>/exchange/images/00-00011285.jpg</img>
+		<kz_price>4055</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 600/1500 (1000х1500мм)  М8100-0,6/1,5-АК10С</name_product>
+		<category>27</category>
+		<price>154738</price>
+		<quantity_product/>
+		<articul>р08853</articul>
+		<description>Весы платформенные 1000х1500х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9060</description>
+		<img>/exchange/images/00-00011075.jpg</img>
+		<kz_price>153516</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-16-ПК-HM9B-003-К</name_product>
+		<category>17</category>
+		<price>2153537</price>
+		<quantity_product/>
+		<articul>р14509</articul>
+		<description/>
+		<img>/exchange/images/00-00010733.jpg</img>
+		<kz_price>2136524</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим-06Д (М0600-Д6-02)</name_product>
+		<category>3</category>
+		<price>52379</price>
+		<quantity_product>4</quantity_product>
+		<articul>11276</articul>
+		<description>для дозаторов дискретного действия, RS-485, с блоком сопряжения М2604</description>
+		<img>/exchange/images/00-00011142.jpg</img>
+		<kz_price>51965</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-18-ПК-HM9B-001-К</name_product>
+		<category>17</category>
+		<price>2155554</price>
+		<quantity_product/>
+		<articul>р14508</articul>
+		<description/>
+		<img>/exchange/images/00-00010732.jpg</img>
+		<kz_price>2138525</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 600/1500 (1500х1500)</name_product>
+		<category>27</category>
+		<price>297790</price>
+		<quantity_product/>
+		<articul>17784</articul>
+		<description>Нержавеющие, типоразмера №3 (1500х1500),  на нержавеющих подвесках и тензодатчиках. НПВ=1,5 т. К весам подходит Пандус М4801-ВН3 Арт.17820</description>
+		<img>/exchange/images/00-00011129.jpg</img>
+		<kz_price>295437</kz_price>
+	</product>
+	<product>
+		<name_product>Мастер 1000 (1500х1500)</name_product>
+		<category>27</category>
+		<price>282499</price>
+		<quantity_product/>
+		<articul>17842</articul>
+		<description>Нержавеющие, типоразмера №3 (1500х1500),  на нержавеющих подвесках и тензодатчиках. НПВ=0,6 т. К весам подходит Пандус М4801-ВН3 Арт.17820</description>
+		<img>/exchange/images/00-00011120.jpg</img>
+		<kz_price>280267</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600 (48/800)</name_product>
+		<category>7</category>
+		<price>110085</price>
+		<quantity_product/>
+		<articul>18281</articul>
+		<description>НОС-750 кг </description>
+		<img>/exchange/images/00-00010910.jpg</img>
+		<kz_price>109215</kz_price>
+	</product>
+	<product>
+		<name_product>Гарант 6/15 (М8000-6/15-1-НН2Н)</name_product>
+		<category>25</category>
+		<price>81110</price>
+		<quantity_product/>
+		<articul>р09351</articul>
+		<description>Платформа из нержавеющей стали. Размер 350х450. Тензодатчик из нержавеющей стали М5064-25 кг.6кгХ2г/15кг Х5г, нерж. датчик, нерж. платформа 350х450 М=10кг. М0601-БМ</description>
+		<img>/exchange/images/00-00011195.jpg</img>
+		<kz_price>80469</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1000 (1500х1500мм)  М8100-1-АК3С</name_product>
+		<category>27</category>
+		<price>154884</price>
+		<quantity_product/>
+		<articul>р08857</articul>
+		<description>Весы платформенные 1500х1500х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9681, р9685, рама р9063</description>
+		<img>/exchange/images/00-00011079.jpg</img>
+		<kz_price>153660</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 1000 (1500х2000мм)  М8100-1-АК4С</name_product>
+		<category>27</category>
+		<price>164686</price>
+		<quantity_product/>
+		<articul>р08860</articul>
+		<description>Весы платформенные 1500х2000х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9681, р9685, рама р9064</description>
+		<img>/exchange/images/00-00011082.jpg</img>
+		<kz_price>163385</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-5-63-001</name_product>
+		<category>8</category>
+		<price>210000</price>
+		<quantity_product/>
+		<articul>16755</articul>
+		<description>Ширина ленты: 900-1200 мм. Внутренний размер става конвейера от 1140 до 1540 мм  (в опросном листе размер А). 4 датчика Z6FC3-20 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 63кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011336.jpg</img>
+		<kz_price>208341</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-7-320-001</name_product>
+		<category>8</category>
+		<price>520605.54</price>
+		<quantity_product/>
+		<articul>13562</articul>
+		<description>Ширина ленты: 1300-1600 мм. Внутренний размер става конвейера от 1660 до 1940 мм  (в опросном листе размер А). 4 датчика Z6FC3-100 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 320кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011207.jpg</img>
+		<kz_price>516493</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект торцов под отсыпку пандуса из щебня (НПКМ 982.020)</name_product>
+		<category>45</category>
+		<price>127279</price>
+		<quantity_product>1</quantity_product>
+		<articul>34432</articul>
+		<description>Комплект состоит из 2х торцов. В комплект поставки торцов входят клиновые анкеры М16 для крепления к бетонной плите основания</description>
+		<img>/exchange/images/00-00034432.png</img>
+		<kz_price>126273</kz_price>
+	</product>
+	<product>
+		<name_product>Весы монорельсовые М8700-1-0,6НА(60/500)</name_product>
+		<category>7</category>
+		<price>127316</price>
+		<quantity_product/>
+		<articul>р14816</articul>
+		<description>На 1 тензодатчике. Монорельс в виде трубы диаметром 60мм длиной 500мм</description>
+		<img>/exchange/images/00-00010786.jpg</img>
+		<kz_price>126310</kz_price>
+	</product>
+	<product>
+		<name_product>Стандарт 30/60 (М8000-30/60-1-КН4А)</name_product>
+		<category>26</category>
+		<price>72002.37</price>
+		<quantity_product>1</quantity_product>
+		<articul>р09717</articul>
+		<description>ГПУ из конструкционной стали. Крышка из нержавеющей стали. 450х600мм. датчик Алюминиевый. LOC-100 СПЕЦНАСТРОЙКА прибора</description>
+		<img>/exchange/images/00-00011172.jpg</img>
+		<kz_price>71434</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик М5023-Ni-375кг-3м</name_product>
+		<category>39</category>
+		<price>18604</price>
+		<quantity_product>27</quantity_product>
+		<articul>р14562</articul>
+		<description/>
+		<img>/exchange/images/00-00010775.jpg</img>
+		<kz_price>18457</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-24-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>2906314</price>
+		<quantity_product/>
+		<articul>р14503</articul>
+		<description/>
+		<img>/exchange/images/00-00010727.jpg</img>
+		<kz_price>2883354</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-40-12-ПК-HM9B-001-К</name_product>
+		<category>17</category>
+		<price>1580025</price>
+		<quantity_product/>
+		<articul>р14513</articul>
+		<description/>
+		<img>/exchange/images/00-00010737.jpg</img>
+		<kz_price>1567543</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект для крепления прибора в пластиковом корпусе (НПКМ 906.001)</name_product>
+		<category>3</category>
+		<price>1095</price>
+		<quantity_product/>
+		<articul>38033</articul>
+		<description>В комплект входит кронштейн для крепления прибора на стену (Деталь Кронштейн М (НПКМ 471.001.002) 12909), 2 "барашка" для крепления кронштейна к корпусу прибора (KIPP Рукоятка звездообразная K0155.406Х (L=10мм)), 2 шайбы (Шайба курглая без фаски, полиамид М6 DIN 125 (6,4х12х1,6))</description>
+		<img>/exchange/images/00-00038033.jpg</img>
+		<kz_price>1086</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-24-М06-НМ9В-001-К</name_product>
+		<category>17</category>
+		<price>2613738</price>
+		<quantity_product/>
+		<articul>р14413</articul>
+		<description/>
+		<img>/exchange/images/00-00010677.jpg</img>
+		<kz_price>2593089</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-24-М06-НМ9В-002-К</name_product>
+		<category>17</category>
+		<price>2733715</price>
+		<quantity_product/>
+		<articul>р14415</articul>
+		<description/>
+		<img>/exchange/images/00-00010678.jpg</img>
+		<kz_price>2712119</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4809-4НА-01</name_product>
+		<category>14</category>
+		<price>17725</price>
+		<quantity_product>8</quantity_product>
+		<articul>р10158</articul>
+		<description>С элементами грозозащиты. Корпус из нерж. стали IP67. Кабельные вводы под гофрорукав 16мм. Многооборотные переменные резисторы для подстройки датчиков.</description>
+		<img>/exchange/images/00-00010956.jpg</img>
+		<kz_price>17585</kz_price>
+	</product>
+	<product>
+		<name_product>Преобразователь интерфейсов RS485 в USB (НПКМ 443.016 СБ)</name_product>
+		<category>3</category>
+		<price>645</price>
+		<quantity_product>16</quantity_product>
+		<articul>38031</articul>
+		<description>Преобразователь интерфейсов RS485 в USB предназначен для использования совместно с прибором Микросим М0601-БМ-4-П (НПКМ 406.042) арт. 32930 (прибором в пластиковом корпусе).  На стороне прибора разъём DB-9F (Розетка) . В разъёме распаяны контакты для подключения RS485: 6 - A1 (D+), 7 - B1 (D-),  8 - GND. Со стороны компьютера разъём USB. Для работы преобразователя требуется установить драйвер.</description>
+		<img>/exchange/images/00-00038031.jpg</img>
+		<kz_price>640</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 300/600 (1000х1200мм) М8101-0,3/0,6-АН1Н</name_product>
+		<category>28</category>
+		<price>203670</price>
+		<quantity_product/>
+		<articul>р09003</articul>
+		<description>Весы платформенные из нержавеющей стали 1000х1200х90 (4 датчика), двухдиапазонные 300/600 кг. Дискретность индикации 0,1/0,2 Кг. К весам подходят Пандусы р9295, р9296, рама р9059</description>
+		<img>/exchange/images/00-00011088.jpg</img>
+		<kz_price>202061</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик М5023-Ni-550кг-3м</name_product>
+		<category>39</category>
+		<price>18604</price>
+		<quantity_product>2</quantity_product>
+		<articul>р14564</articul>
+		<description/>
+		<img>/exchange/images/00-00010776.jpg</img>
+		<kz_price>18457</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 600/1500 (1000х1200мм)  М8100-0,6/1,5-АК1С</name_product>
+		<category>27</category>
+		<price>151377</price>
+		<quantity_product/>
+		<articul>р08851</articul>
+		<description>Весы платформенные 1000х1200х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9059</description>
+		<img>/exchange/images/00-00011073.jpg</img>
+		<kz_price>150181</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-18-М06-НМ9В-003-К</name_product>
+		<category>17</category>
+		<price>2438872</price>
+		<quantity_product/>
+		<articul>р14407</articul>
+		<description/>
+		<img>/exchange/images/00-00010674.jpg</img>
+		<kz_price>2419605</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-18-ПК-HM9B-003-К</name_product>
+		<category>17</category>
+		<price>2587239</price>
+		<quantity_product/>
+		<articul>р14506</articul>
+		<description/>
+		<img>/exchange/images/00-00010730.jpg</img>
+		<kz_price>2566800</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=16 м) (Весы 2021) (НПКМ 448.267)</name_product>
+		<category>42</category>
+		<price>128808</price>
+		<quantity_product/>
+		<articul>38109</articul>
+		<description>Настил-комплект для весов НПКМ 482.406. Проект Северсталь г. Калуга.
+</description>
+		<img>/exchange/images/00-00038109.jpg</img>
+		<kz_price>127790</kz_price>
+	</product>
+	<product>
+		<name_product>М5064-25 кг</name_product>
+		<category>35</category>
+		<price>22057</price>
+		<quantity_product>9</quantity_product>
+		<articul>3119</articul>
+		<description>25кг, 2мВ/В, 0.02%, -10-+40С, 350±30Ом, IP65, Нерж., 3м,
+Замена: Zemic Алюминиевый сплав L6N 20kg или 30kg , Нержавеющая сталь B6N 20kg или 30kg</description>
+		<img>/exchange/images/00-00011151.jpg</img>
+		<kz_price>21883</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-09-М06-H8C-10T-1000-БФ (НПКМ 482.039)</name_product>
+		<category>18</category>
+		<price>688617</price>
+		<quantity_product/>
+		<articul>р15248</articul>
+		<description>Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 9000 мм ширина 1000 мм.</description>
+		<img>/exchange/images/00-00010829.png</img>
+		<kz_price>683177</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные ТРЭК М8200Б-30/40-08-М06-H8C-10T-800-БФ (НПКМ 482.024-02)</name_product>
+		<category>18</category>
+		<price>583062</price>
+		<quantity_product/>
+		<articul>р12365</articul>
+		<description>Рабочее наименование старое: Весы автомобильные ТРЭК М8200Б-30/40-08-М06-Z-024-БФ. Весы ТРЭК из 2х платформ. Стандартная длина кабеля от весов до прибора 30 м. В весах 12 датчиков H8C-C3-10T ZEMIC.  Длина платформ 8000 мм ширина 800 мм.</description>
+		<img>/exchange/images/00-00010925.png</img>
+		<kz_price>578456</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-СД-60-ПК-HM14H-1-БФ-Р_ _ </name_product>
+		<category>40</category>
+		<price>1085959</price>
+		<quantity_product/>
+		<articul>39188</articul>
+		<description>Весы вагонные бесфундаментные, Платформа производства Метра. </description>
+		<img>/exchange/images/00-00039188.jpg</img>
+		<kz_price/>
+	</product>
+	<product>
+		<name_product>Датчик М5023-Ni-1500кг-3м</name_product>
+		<category>39</category>
+		<price>18604</price>
+		<quantity_product>29</quantity_product>
+		<articul>р14561</articul>
+		<description/>
+		<img>/exchange/images/00-00010774.jpg</img>
+		<kz_price>18457</kz_price>
+	</product>
+	<product>
+		<name_product>Патриот 60/80-18-К (М8200Б-60/80-18-М06-HM9B-001-К) с пешеходным настилом</name_product>
+		<category>17</category>
+		<price>2096466</price>
+		<quantity_product/>
+		<articul>р14405</articul>
+		<description>Внимание, в  комплект поставки весов не входят фундаментные плиты! В приямок, настил входит в состав весов. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось. Швеллер 27У. Ширина платформы весов 3 м. Ширина колеи 1 м.</description>
+		<img>/exchange/images/00-00010673.jpg</img>
+		<kz_price>2079904</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-16-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>1991322</price>
+		<quantity_product/>
+		<articul>р14510</articul>
+		<description/>
+		<img>/exchange/images/00-00010734.jpg</img>
+		<kz_price>1975591</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 1500/3000 (1500х2000мм) М8101-1,5/3-АН4Н</name_product>
+		<category>28</category>
+		<price>259244</price>
+		<quantity_product/>
+		<articul>р09014</articul>
+		<description>Весы платформенные из нержавеющей стали 1500х2000х90 (4 датчика), двухдиапазонные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят Пандусы р9299, р9138, рама р9064</description>
+		<img>/exchange/images/00-00011099.jpg</img>
+		<kz_price>257196</kz_price>
+	</product>
+	<product>
+		<name_product>М6103-П</name_product>
+		<category>11</category>
+		<price>82163</price>
+		<quantity_product/>
+		<articul>р05857</articul>
+		<description>Для конвейерного дозатора местный пульт</description>
+		<img/>
+		<kz_price>81514</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-18-М06-HM9B-024 (НПКМ 482.401-06)</name_product>
+		<category>47</category>
+		<price>1636527.39</price>
+		<quantity_product>5</quantity_product>
+		<articul>34845</articul>
+		<description>8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 17750 мм. 24 швеллер.</description>
+		<img/>
+		<kz_price>1623599</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-24-М06-НМ9В-024 (НПКМ 482.401-11)</name_product>
+		<category>47</category>
+		<price>2119314.12</price>
+		<quantity_product/>
+		<articul>35120</articul>
+		<description>10 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 10 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 24м. 24 швеллер.</description>
+		<img/>
+		<kz_price>2102572</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/40-08-М06-НМ9В-027 (НПКМ 482.401)</name_product>
+		<category>47</category>
+		<price>910063.47</price>
+		<quantity_product/>
+		<articul>35111</articul>
+		<description>4 датчика HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 8м. 27 швеллер.</description>
+		<img/>
+		<kz_price>902874</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект оснований для установки на плиты - 6 датчиков</name_product>
+		<category>44</category>
+		<price>46543</price>
+		<quantity_product>2</quantity_product>
+		<articul>35532</articul>
+		<description/>
+		<img/>
+		<kz_price>46175</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6208 б12944     </name_product>
+		<category>11</category>
+		<price>113921</price>
+		<quantity_product/>
+		<articul>б12944</articul>
+		<description>Шкаф для управления светофорами и датчиками позиционирования, подключения 2х камер видео регистрации (распознавания номеров), подключения весов на цифровых датчиках. В состав входят Модуль tDS-735 (для подключения с одной стороны цифровых датчиков по RS 485, с другой Ethernet) Индустриальный коммутатор NS-205PSE-24V с 5 шт портами Ethernet для подключения камер и подачи на них питания.
+Входит модуль дискретного ввода-вывода MK210-312 и модуль дискретного вывода МУ210-401 для подключения датчиков позиционирования</description>
+		<img/>
+		<kz_price>113021</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=12 м) с монтажным креплением (Весы 2021) (НПКМ 448.260-01)</name_product>
+		<category>42</category>
+		<price>133953</price>
+		<quantity_product/>
+		<articul>36369</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>132895</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 2000 (1500х2000мм) М8100-2-АК4С-П</name_product>
+		<category>27</category>
+		<price>142886</price>
+		<quantity_product>1</quantity_product>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х2000х90 (4 датчика), однодиапазонные 2000 кг. Дискретность индикации 1 Кг. К весам подходят пандусы  р9681, р9685, рама р9064.</description>
+		<img/>
+		<kz_price>141757</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1500/3000 (1500х1500мм) М8100-1,5/3-АК3С-П</name_product>
+		<category>27</category>
+		<price>153030</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1500х1500х90 (4 датчика), двухинтервальные 1500/3000 кг. Дискретность индикации 0,5/1 Кг. К весам подходят пандусы  р9681, р9685, рама р9063.</description>
+		<img/>
+		<kz_price>151821</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-3-160-001</name_product>
+		<category>8</category>
+		<price>451424</price>
+		<quantity_product>1</quantity_product>
+		<articul>14382</articul>
+		<description>Опоры датчиков нового образца (универсальные). Подходят для датчиков HSX (KEL) , BM11 (ZEMIC). Ширина ленты: 600-800 мм. 4 датчика  по 50 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 160кг.В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011238.jpg</img>
+		<kz_price>447858</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 2000 (1200х1500мм) М8100-2-АК11С-П</name_product>
+		<category>27</category>
+		<price>130428</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы платформенные 1200х1500х90 (4 датчика), однодиапазонные 2000 кг. К весам подходят пандусы  р9675, р9679, рама р9062.</description>
+		<img/>
+		<kz_price>129398</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-20-М06-НМ9В-027 (НПКМ 482.400-10)</name_product>
+		<category>47</category>
+		<price>2003637.69</price>
+		<quantity_product/>
+		<articul>33179</articul>
+		<description>Модульные. Одноканальные. Прибор Микросим М0601. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось. Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 20 м. 27 швеллер. </description>
+		<img/>
+		<kz_price>1987809</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/40-08-ПК-НМ9В-027 (НПКМ 482.404)</name_product>
+		<category>48</category>
+		<price>915772.2</price>
+		<quantity_product/>
+		<articul>35123</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 1 шт. 4 датчика HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 8м. 27 швеллер.</description>
+		<img/>
+		<kz_price>908538</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-16-ПК-НМ9В-027 (НПКМ 482.404-04)</name_product>
+		<category>48</category>
+		<price>1691050.59</price>
+		<quantity_product/>
+		<articul>35127</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-06 1 шт. 6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 16 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1677691</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600 (60/600)</name_product>
+		<category>7</category>
+		<price>116548</price>
+		<quantity_product/>
+		<articul>18282</articul>
+		<description>НОС-750 кг </description>
+		<img>/exchange/images/00-00010911.jpg</img>
+		<kz_price>115627</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-100-20-ПК-HM9B-003-К</name_product>
+		<category>17</category>
+		<price>2868419</price>
+		<quantity_product/>
+		<articul>р14504</articul>
+		<description/>
+		<img>/exchange/images/00-00010728.jpg</img>
+		<kz_price>2845758</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4805-8А-03</name_product>
+		<category>14</category>
+		<price>16056</price>
+		<quantity_product/>
+		<articul>15179</articul>
+		<description>Коробка суммирующая 8-ми входовая с элементами грозозащиты, металлич. гермовводы, IP65</description>
+		<img>/exchange/images/00-00011192.jpg</img>
+		<kz_price>15929</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-18-М06-НМ9В-001-К (НПКМ 482.405)</name_product>
+		<category>17</category>
+		<price>1283071</price>
+		<quantity_product/>
+		<articul>36467</articul>
+		<description>Весы разработаны для замены весов Оптимум 60/18 на предприятии ТетраПак (СиБиАрИ). Прикреплён файл замеров по которым разработаны весы. Это Весы выполнены под покрытие методом горячего цинкования.</description>
+		<img>/exchange/images/00-00036467.jpg</img>
+		<kz_price>1272935</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-5-160-001</name_product>
+		<category>8</category>
+		<price>443204</price>
+		<quantity_product/>
+		<articul>14335</articul>
+		<description>Ширина ленты: 900-1200 мм. Внутренний размер става конвейера от 1140 до 1540 мм  (в опросном листе размер А). 4 датчика Z6FC3-50 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 160кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011227.jpg</img>
+		<kz_price>439703</kz_price>
+	</product>
+	<product>
+		<name_product>Весы вагонные М8300-С-60-М06-HM14H-1-К-Р_ _ (4)</name_product>
+		<category>23</category>
+		<price>809341</price>
+		<quantity_product/>
+		<articul>р13581</articul>
+		<description>Весы для потележечного  взвешивания в статике. Состоят из одной секции длиной 4м. Без рельсов.  4 Тензодатчика Zemic HM14H1-30t </description>
+		<img>/exchange/images/00-00010512.png</img>
+		<kz_price>802947</kz_price>
+	</product>
+	<product>
+		<name_product>Весы платформенные М8100-1-1-АН9Н (1000х2000 мм)</name_product>
+		<category>27</category>
+		<price>202996</price>
+		<quantity_product/>
+		<articul>р12977</articul>
+		<description>Весы нерж. низкопрофильные с опорой на датчики Zemic.</description>
+		<img>/exchange/images/00-00010445.jpg</img>
+		<kz_price>201392</kz_price>
+	</product>
+	<product>
+		<name_product>Гарант 150/300 (М8000-150/300-1-НН6Н)</name_product>
+		<category>25</category>
+		<price>118569</price>
+		<quantity_product/>
+		<articul>р09354</articul>
+		<description>Платформа из нержавеющей стали. Размер 600х800. Тензодатчик из нержавеющей стали Utilcell M.190i 400kg</description>
+		<img>/exchange/images/00-00011198.jpg</img>
+		<kz_price>117632</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-20-М06-НМ9В-002-К</name_product>
+		<category>17</category>
+		<price>2372619</price>
+		<quantity_product/>
+		<articul>р14409</articul>
+		<description/>
+		<img>/exchange/images/00-00010675.jpg</img>
+		<kz_price>2353875</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-1-160-001</name_product>
+		<category>8</category>
+		<price>453015</price>
+		<quantity_product/>
+		<articul>14602</articul>
+		<description>Ширина ленты: 400-500 мм. 4 датчика Z6FC3-50 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 160кг. В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011113.png</img>
+		<kz_price>449436</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-12-ПК-HM9B-002-К</name_product>
+		<category>17</category>
+		<price>1555773</price>
+		<quantity_product/>
+		<articul>р14512</articul>
+		<description/>
+		<img>/exchange/images/00-00010736.jpg</img>
+		<kz_price>1543482</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 600/1500Н</name_product>
+		<category>7</category>
+		<price>111784</price>
+		<quantity_product/>
+		<articul>18268</articul>
+		<description>НОС-2t 1 датч. Нержавеющие. Плоск.Грузоподъемность до 1500 кг. Встраиваются в штатный монорельс конвейера.</description>
+		<img>/exchange/images/00-00010908.png</img>
+		<kz_price>110901</kz_price>
+	</product>
+	<product>
+		<name_product>Гарант 60/150 (М8000-60/150-1-НН4Н)</name_product>
+		<category>25</category>
+		<price>92761</price>
+		<quantity_product/>
+		<articul>р09353</articul>
+		<description>Платформа из нержавеющей стали. Размер 450х600. Тензодатчик из нержавеющей стали М5064-200 кг</description>
+		<img>/exchange/images/00-00011197.jpg</img>
+		<kz_price>92028</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 2000 (1500х2000мм) М8100-2-АК4С</name_product>
+		<category>27</category>
+		<price>168844</price>
+		<quantity_product/>
+		<articul>р08861</articul>
+		<description>Весы платформенные 1500х2000х90 (4 датчика), однодиапазонные 2000 кг. Дискретность индикации 1 Кг. К весам подходят пандусы  р9681, р9685, рама р9064</description>
+		<img>/exchange/images/00-00011083.jpg</img>
+		<kz_price>167510</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600</name_product>
+		<category>7</category>
+		<price>104899</price>
+		<quantity_product>1</quantity_product>
+		<articul>18264</articul>
+		<description>НОС-750 кг  1 датч. Крашенные. Плоский монорельс из полосы толщиной 10мм высотой 100 мм, длиной 600мм. Грузоподъемность до 600 кг. Встраиваются в штатный монорельс.</description>
+		<img>/exchange/images/00-00010905.jpeg</img>
+		<kz_price>104070</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-80-12-М06-НМ9В-003-К</name_product>
+		<category>17</category>
+		<price>1064417</price>
+		<quantity_product/>
+		<articul>р14397</articul>
+		<description/>
+		<img>/exchange/images/00-00010669.jpg</img>
+		<kz_price>1056008</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-1-63-001</name_product>
+		<category>8</category>
+		<price>455083</price>
+		<quantity_product/>
+		<articul>14731</articul>
+		<description/>
+		<img>/exchange/images/00-00011213.jpg</img>
+		<kz_price>451488</kz_price>
+	</product>
+	<product>
+		<name_product>М8400-2-3-63-001</name_product>
+		<category>8</category>
+		<price>445173</price>
+		<quantity_product/>
+		<articul>П6242</articul>
+		<description>Ширина ленты: 600-800 мм. 4 датчика Z6FC3-20 kg. Наибольшая предельно-допустимая нагрузка на ГПУ 63кг.В комплект поставки входит шкаф М6403.</description>
+		<img>/exchange/images/00-00011204.png</img>
+		<kz_price>441656</kz_price>
+	</product>
+	<product>
+		<name_product>Микросим-06Д (М0600-Д6-04)</name_product>
+		<category>3</category>
+		<price>53229</price>
+		<quantity_product>13</quantity_product>
+		<articul>11287</articul>
+		<description>для дозаторов дискретного действия, RS-485, с блоком сопряжения М2606</description>
+		<img>/exchange/images/00-00011134.jpg</img>
+		<kz_price>52808</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 300/600 (1000х1500мм)  М8100-0,3/0,6-АК10С</name_product>
+		<category>27</category>
+		<price>150314</price>
+		<quantity_product/>
+		<articul>р08852</articul>
+		<description>Весы платформенные 1000х1500х90 (4 датчика), двухинтервальные 300/600 кг. К весам подходят пандусы  р9662, р9668, рама р9060</description>
+		<img>/exchange/images/00-00011074.jpg</img>
+		<kz_price>149127</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК 600/1500 (1000х1000мм)  М8100-0,6/1,5-АК0С</name_product>
+		<category>27</category>
+		<price>150183</price>
+		<quantity_product/>
+		<articul>р08849</articul>
+		<description>Весы платформенные 1000х1000х90 (4 датчика), двухинтервальные 600/1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9662, р9668, рама р9058</description>
+		<img>/exchange/images/00-00011071.jpg</img>
+		<kz_price>148997</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-08-ПК-HM9B-001-К</name_product>
+		<category>17</category>
+		<price>1012326</price>
+		<quantity_product/>
+		<articul>р14501</articul>
+		<description/>
+		<img>/exchange/images/00-00010725.jpg</img>
+		<kz_price>1004329</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60-16-М06-НМ9В-002-К</name_product>
+		<category>17</category>
+		<price>1876940</price>
+		<quantity_product/>
+		<articul>р14399</articul>
+		<description/>
+		<img>/exchange/images/00-00010670.jpg</img>
+		<kz_price>1862112</kz_price>
+	</product>
+	<product>
+		<name_product>Весы электронные конвейерные М8400-3-63-001 (НПКМ 484.103 -07)</name_product>
+		<category>8</category>
+		<price>457961</price>
+		<quantity_product/>
+		<articul>16730</articul>
+		<description/>
+		<img>/exchange/images/00-00011335.jpg</img>
+		<kz_price>454343</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный М0601-БМ-3.1 В комплекте с герметичным кожухом</name_product>
+		<category>3</category>
+		<price>49234</price>
+		<quantity_product/>
+		<articul>р11939</articul>
+		<description>В комплекте с герметичным кожухом.Под кожухом на задней панели прибора все соединения на клеммниках под отвёртку.
+</description>
+		<img>/exchange/images/00-00011225.jpg</img>
+		<kz_price>48845</kz_price>
+	</product>
+	<product>
+		<name_product>М62109-24в</name_product>
+		<category>3</category>
+		<price>11655</price>
+		<quantity_product>5</quantity_product>
+		<articul>р08482</articul>
+		<description>Комплект поставки:  Преобразователь-концентратор RS232/RS485 (М2109), блок питания 24в., кабель USB для подключения к компьютеру.</description>
+		<img>/exchange/images/00-00011061.png</img>
+		<kz_price>11563</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-30/60-12-ПК-НМ9В-027 (НПКМ 482.404-02)</name_product>
+		<category>48</category>
+		<price>1257524.55</price>
+		<quantity_product/>
+		<articul>35125</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-06 1 шт. 6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>1247590</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/80-12-ПК-НМ9В-030 (НПКМ 482.404-03)</name_product>
+		<category>48</category>
+		<price>1432358.43</price>
+		<quantity_product/>
+		<articul>35126</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-06 1 шт. 6 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 12 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>1421043</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект "Патриот" для установки весов на 4 датчиках (НПКМ 982.011)</name_product>
+		<category>46</category>
+		<price>67809</price>
+		<quantity_product/>
+		<articul>35695</articul>
+		<description>Комплект предназначен для установки автомобильных весов на 4 датчиках, модельного ряда 2021г на стационарный фундамент. В комплект входят: Пластина крепления датчика (НПКМ 482.401.01.02.001) (8 шт), Упор боковой (4 шт), Нащельник (2 шт). Эти детали монтируются на месте установки весов.</description>
+		<img/>
+		<kz_price>67273</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=8 м) (НПКМ 448.259)</name_product>
+		<category>42</category>
+		<price>28635</price>
+		<quantity_product/>
+		<articul>36221</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 8 метров
+</description>
+		<img/>
+		<kz_price>28409</kz_price>
+	</product>
+	<product>
+		<name_product>Датчик скорости импульсный М4208</name_product>
+		<category>3</category>
+		<price>73171</price>
+		<quantity_product/>
+		<articul>р13317</articul>
+		<description/>
+		<img/>
+		<kz_price>72593</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=8 м) (Весы 2021) (НПКМ 448.241)</name_product>
+		<category>42</category>
+		<price>66432</price>
+		<quantity_product/>
+		<articul>36216</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 8 метров
+</description>
+		<img/>
+		<kz_price>65907</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6039 (НПКМ 460.049)</name_product>
+		<category>11</category>
+		<price>421437</price>
+		<quantity_product/>
+		<articul>36309</articul>
+		<description/>
+		<img/>
+		<kz_price>418108</kz_price>
+	</product>
+	<product>
+		<name_product>Моно 300/600Н (60/600)</name_product>
+		<category>7</category>
+		<price>135976</price>
+		<quantity_product/>
+		<articul>18285</articul>
+		<description>НОС-750 кг 1 датч. Труба. Нерж. (D=60, L=600) мм.</description>
+		<img>/exchange/images/00-00010913.jpg</img>
+		<kz_price>134902</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-15Н-01 (1500мм)</name_product>
+		<category>28</category>
+		<price>85698</price>
+		<quantity_product/>
+		<articul>р09138</articul>
+		<description>Ширина пандуса 1500мм. Подходит для весов М8100-АН3Н, М8100-АН4Н, Пандус НЕ связан с весами.</description>
+		<img/>
+		<kz_price>85021</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-10Н-01 (1000мм)</name_product>
+		<category>28</category>
+		<price>65919</price>
+		<quantity_product/>
+		<articul>р09296</articul>
+		<description>Ширина пандуса 1000мм. Подходит для весов М8100-АН0Н, М8100-АН1Н, М8100-АН10Н. Модификация пандуса -01 для установки ножек в лапы пандуса.</description>
+		<img/>
+		<kz_price>65398</kz_price>
+	</product>
+	<product>
+		<name_product>Ограждение-комплект 18 м (НПКМ 448.243-02)</name_product>
+		<category>43</category>
+		<price>114569</price>
+		<quantity_product>11</quantity_product>
+		<articul>34652</articul>
+		<description/>
+		<img/>
+		<kz_price>113664</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-10Н (1000мм)</name_product>
+		<category>28</category>
+		<price>62531</price>
+		<quantity_product/>
+		<articul>р09295</articul>
+		<description>Ширина пандуса 1000мм. Подходит для весов М8100-АН0Н, М8100-АН1Н, М8100-АН10Н. Пандус НЕ связан с весами.</description>
+		<img/>
+		<kz_price>62037</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4814-10 (НПКМ 448.266) Длина 1959 мм ширина 1000 мм</name_product>
+		<category>18</category>
+		<price>33046</price>
+		<quantity_product/>
+		<articul>36815</articul>
+		<description>Пандус для ТРЭК шириной 1000мм высота пандуса 224 мм длина 1959мм  Для въезда с одной стороны нужно 2 пандуса. Для въезда и съезда нужно 4 пандуса. </description>
+		<img/>
+		<kz_price>32785</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-02.00</name_product>
+		<category>3</category>
+		<price>55341</price>
+		<quantity_product/>
+		<articul>р14840</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия и конвейерных дозаторов доз, блок сопряжения М2604, RS-485, MS-bus токовый выход 0-5 мА</description>
+		<img/>
+		<kz_price>54904</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-04.02</name_product>
+		<category>3</category>
+		<price>61022</price>
+		<quantity_product/>
+		<articul>р14846</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия, блок сопряжения М2606, RS-485, MS-bus токовый выход 0-20 мА</description>
+		<img/>
+		<kz_price>60540</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4816-10К (НПКМ 448.123)</name_product>
+		<category>1</category>
+		<price>23472</price>
+		<quantity_product/>
+		<articul/>
+		<description/>
+		<img/>
+		<kz_price>23287</kz_price>
+	</product>
+	<product>
+		<name_product>Шкаф управления М6513</name_product>
+		<category>11</category>
+		<price>77169</price>
+		<quantity_product/>
+		<articul>38216</articul>
+		<description>Шкаф управления конвейером загрузки на вагонных весах для работы с программой WsNet в режиме дозатора.</description>
+		<img/>
+		<kz_price>76559</kz_price>
+	</product>
+	<product>
+		<name_product>Прибор весоизмерительный конвейерный Микросим М0600-КМ-6-04.01</name_product>
+		<category>3</category>
+		<price>57766</price>
+		<quantity_product/>
+		<articul>р14848</articul>
+		<description>Для конвейерных весов, ленточных дозаторов непрерывного действия, блок сопряжения М2606, RS-485, MS-bus токовый выход 4-20 мА</description>
+		<img/>
+		<kz_price>57310</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-24-М06-НМ9В-027 (НПКМ 482.401-12)</name_product>
+		<category>47</category>
+		<price>2337264.84</price>
+		<quantity_product/>
+		<articul>35121</articul>
+		<description>10 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 12 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 24 м. 27 швеллер.</description>
+		<img/>
+		<kz_price>2318800</kz_price>
+	</product>
+	<product>
+		<name_product>Оптимум цифровые  60/100-24 (М8200Б-60/100-24-М08-V-016)</name_product>
+		<category>20</category>
+		<price>4451869</price>
+		<quantity_product/>
+		<articul>р10206</articul>
+		<description>Двухдиапазонные цифровые 60/100т. Длина 24 м. Установка с пандусом. 10 тензодатчиков DLB-40Rlb.Тензопреобразователи цифровые М0808-E-01 (4х и 6и-канальный). Компьютер. </description>
+		<img/>
+		<kz_price>4416699</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=16 м) (НПКМ 448.259-02)</name_product>
+		<category>42</category>
+		<price>57271</price>
+		<quantity_product/>
+		<articul>36223</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 16 метров
+</description>
+		<img/>
+		<kz_price>56819</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=12 м) (Весы 2021) (НПКМ 448.241-01)</name_product>
+		<category>42</category>
+		<price>93535</price>
+		<quantity_product>1</quantity_product>
+		<articul>36217</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>92796</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 600/1500 (1200х1200мм) М8100-0,6/1,5-АК2С-П</name_product>
+		<category>27</category>
+		<price>132030</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы палтформенные 1200х1200х90 (4 датчика), двухинтервальные  600х1500 кг. Дискретность индикации 0,2/0,5 Кг. К весам подходят пандусы  р9675, р9679, рама р9061.</description>
+		<img/>
+		<kz_price>130987</kz_price>
+	</product>
+	<product>
+		<name_product>КЛАССИК-П 1000 (1200х1500мм)  М8100-1-АК11С-П</name_product>
+		<category>27</category>
+		<price>129602</price>
+		<quantity_product/>
+		<articul/>
+		<description>Прибор М0601-Б-4-П. Весы палтформенные 1200х1500х90 (4 датчика), однодиапазонные 1000 кг. Дискретность индикации 0,5 Кг. К весам подходят пандусы  р9675, р9679, рама р9062</description>
+		<img/>
+		<kz_price>128578</kz_price>
+	</product>
+	<product>
+		<name_product>М4002-2</name_product>
+		<category>14</category>
+		<price>6235</price>
+		<quantity_product>23</quantity_product>
+		<articul>15180</articul>
+		<description>Блок грозозащиты приборный, металлич. гермовводы, IP65</description>
+		<img>/exchange/images/00-00010421.png</img>
+		<kz_price>6186</kz_price>
+	</product>
+	<product>
+		<name_product>Комплект "Патриот" для установки весов на 6 датчиках (НПКМ 982.012)</name_product>
+		<category>46</category>
+		<price>72113</price>
+		<quantity_product/>
+		<articul>35694</articul>
+		<description>Комплект предназначен для установки автомобильных весов на 6 датчиках, модельного ряда 2021г на стационарный фундамент. В комплект входят: Пластина крепления датчика (НПКМ 482.401.01.02.001) (8 шт), Упор боковой (4 шт), Нащельник (2 шт). Эти детали монтируются на месте установки весов.</description>
+		<img/>
+		<kz_price>71543</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект (L=20 м) с монтажным креплением (Весы 2021) (НПКМ 448.260-04)</name_product>
+		<category>42</category>
+		<price>90970</price>
+		<quantity_product/>
+		<articul>36827</articul>
+		<description>Настил для весов модельного ряда 2021 длиной 12 метров
+</description>
+		<img/>
+		<kz_price>90251</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=24 м) (НПКМ 448.259-05)</name_product>
+		<category>42</category>
+		<price>83322</price>
+		<quantity_product/>
+		<articul>36225</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 24 метров
+</description>
+		<img/>
+		<kz_price>82664</kz_price>
+	</product>
+	<product>
+		<name_product>Коробка соединительная М4805-4А-04</name_product>
+		<category>14</category>
+		<price>19432</price>
+		<quantity_product/>
+		<articul>р06933</articul>
+		<description/>
+		<img/>
+		<kz_price>19278</kz_price>
+	</product>
+	<product>
+		<name_product>Весы автомобильные М8200Б-60/100-18-ПК-НМ9В-030 (НПКМ 482.404-08)</name_product>
+		<category>48</category>
+		<price>2097679.11</price>
+		<quantity_product/>
+		<articul>35131</articul>
+		<description>Компьютер не входит в комплект поставки. М62109-24в 1 шт. Микросим М0808-04 2 шт. 8 датчиков HM9B-30t (Zemic) (двухопорная консоль, шарик) сталь с никелевым покрытием IP68. Нагрузка 4 оси по 14 т/ось . Ширина платформы весов 3 м. Ширина колеи 1 м. Длина платформы 18 м. 30 швеллер.</description>
+		<img/>
+		<kz_price>2081107</kz_price>
+	</product>
+	<product>
+		<name_product>Настил-комплект с Креплениями "щеколда" (L=20 м) (НПКМ 448.259-04)</name_product>
+		<category>42</category>
+		<price>70296</price>
+		<quantity_product/>
+		<articul>36224</articul>
+		<description>Настил-комплект с щеколдой для весов модельного ряда 2021 длиной 20 метров
+</description>
+		<img/>
+		<kz_price>69741</kz_price>
+	</product>
+	<product>
+		<name_product>Пандус М4813-12Н (1200мм)</name_product>
+		<category>28</category>
+		<price>69348</price>
+		<quantity_product/>
+		<articul>р09297</articul>
+		<description>Ширина пандуса 1200мм. Подходит для весов М8100-АН2Н, М8100-АН11Н, Пандус НЕ связан с весами.</description>
+		<img/>
+		<kz_price>68800</kz_price>
+	</product>
+	<product>
+		<name_product>ПРОФИ 2000 (1200х1500мм) М8101-2-АН11Н</name_product>
+		<category>28</category>
+		<price>241221</price>
+		<quantity_product/>
+		<articul>р09010</articul>
+		<description>Весы платформенные из нержавеющей стали1200х1500х90 (4 датчика), однодиапазонные 2000 кг. К весам подходят Пандусы р9297, р9298, рама р9062</description>
+		<img>/exchange/images/00-00011095.jpg</img>
+		<kz_price>239315</kz_price>
+	</product>
+	<product>
+		<name_product>М0803-ПК-2</name_product>
+		<category>3</category>
+		<price>23214</price>
+		<quantity_product/>
+		<articul>15457</articul>
+		<description>Плата прибора М0803</description>
+		<img/>
+		<kz_price>23031</kz_price>
+	</product>
+</products>
