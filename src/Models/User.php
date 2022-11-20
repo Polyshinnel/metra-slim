@@ -18,6 +18,7 @@ class User extends Model
         'status',
         'confirm_code',
         'status_mail',
-        'admin_status'
+        'admin_status',
+        'country'
     ];
 }

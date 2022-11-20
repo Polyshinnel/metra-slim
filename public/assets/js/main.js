@@ -61,8 +61,12 @@ $('#registerBtn').click(function () {
     var orgAddress = $('#user-address').val();
     var userPhone = $('#user-phone').val();
     var userPass = $('#user-password').val();
-    var country = $('input[name="country"]:checked');
-
+    var country = 'ru';
+    var kzState = $('#country-radio-kz');
+    if(kzState.is(':checked')) {
+        country = 'kz';
+    }
+    console.log(country);
     $('.fancy-box').fadeIn(300);
     $('.fanncy-message p').html('Идет отправка кода подтверждения');
     $('.fanncy-message img').attr('src','assets/img/wait-cirle.gif');
