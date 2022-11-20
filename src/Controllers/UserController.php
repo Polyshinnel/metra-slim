@@ -44,6 +44,7 @@ class UserController
         $orgAddress = $data['orgAddress'];
         $userPhone = $data['userPhone'];
         $userPass = $data['userPass'];
+        $country = $data['country'];
         $flag = 0;
 
         $checkUserDataPhoneArr = User::where('phone',$userPhone)->get()->toArray();
@@ -114,7 +115,8 @@ class UserController
                 'status' => 0,
                 'confirm_code' => $confirmCode,
                 'status_mail' => 0,
-                'admin_status' => 0
+                'admin_status' => 0,
+                'country' => $country
             ];
             User::create($createArr);
             $response = 'Register Success!';
@@ -217,7 +219,7 @@ class UserController
 
             $telegramService = new TelegramService(tokenTelegram);
 
-            $text = "Зарегистрирован новый пользователь\r\n"."<b>Имя пользователя: </b>".$userInfo[0]['name']."\r\n<b>Почта: </b>".$userInfo[0]['mail']."\r\n<b>Телефон: </b>".$userInfo[0]['phone']."\r\n<b>Организация: </b>".$userInfo[0]['org_name'];
+            $text = "Зарегистрирован новый пользователь\r\n"."<b>Имя пользователя: </b>".$userInfo[0]['name']."\r\n<b>Почта: </b>".$userInfo[0]['mail']."\r\n<b>Телефон: </b>".$userInfo[0]['phone']."\r\n<b>Организация: </b>".$userInfo[0]['org_name']."\r\n<b>Страна: </b>".$userInfo[0]['country'];
 
             $callbackData = 'authUser='.$userInfo[0]['id'];
 

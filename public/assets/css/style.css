@@ -1379,4 +1379,21 @@ body {
 
 .err-search {
   margin-top: 30px;
+}
+
+.input-block_radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.input-radio-btn {
+  display: flex;
+  flex-direction: column;
+}
+.input-radio-btn label img {
+  position: static;
+  width: 90px;
+  border: 1px solid #ccc;
 }/*# sourceMappingURL=style.css.map */

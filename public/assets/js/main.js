@@ -61,6 +61,7 @@ $('#registerBtn').click(function () {
     var orgAddress = $('#user-address').val();
     var userPhone = $('#user-phone').val();
     var userPass = $('#user-password').val();
+    var country = $('input[name="country"]:checked');
 
     $('.fancy-box').fadeIn(300);
     $('.fanncy-message p').html('Идет отправка кода подтверждения');
@@ -76,7 +77,8 @@ $('#registerBtn').click(function () {
             orgName: orgName,
             orgAddress: orgAddress,
             userPhone: userPhone,
-            userPass: userPass
+            userPass: userPass,
+            country: country
         },
         success: function(data){
             $('.fancy-box').fadeOut(300);
