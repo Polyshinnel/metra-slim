@@ -38,6 +38,7 @@ class IntegrationParser
             $sku = (string)$product->articul;
             $description = (string)$product->description;
             $img = (string)$product->img;
+            $kzPrice = (int)$product->kz_price;
 
             if($img == '')
             {
@@ -56,7 +57,8 @@ class IntegrationParser
                         'quantity' => $quantity,
                         'sku' => $sku,
                         'description' => $description,
-                        'img' => $img
+                        'img' => $img,
+                        'kz_price' => $kzPrice
                     ];
                 }
             }
@@ -69,7 +71,8 @@ class IntegrationParser
                     'quantity' => $quantity,
                     'sku' => $sku,
                     'description' => $description,
-                    'img' => $img
+                    'img' => $img,
+                    'kz_price' => $kzPrice
                 ];
             }
 

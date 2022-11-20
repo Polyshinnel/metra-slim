@@ -9,7 +9,7 @@ use App\Utils\CommonHelper;
 
 class ProductController
 {
-    public static function getProduct($id)
+    public static function getProduct($id,$country)
     {
         $product = Product::where('id',$id)->get()->toArray();
         $product = $product[0];
@@ -20,8 +20,12 @@ class ProductController
             $statusClass = 'in-stock';
             $status = 'В наличии';
         }
+        if($country == 'kz') {
+            $price = CommonHelper::normalizePrice($product['kz_price']).'  ₽';
+        } else {
+            $price = CommonHelper::normalizePrice($product['price']).'  ₽';
+        }
 
-        $price = CommonHelper::normalizePrice($product['price']).'  ₽';
         $categoryId = $product['category_id'];
 
         $rootCat = CatalogController::checkCategory($categoryId,[]);
@@ -49,6 +53,7 @@ class ProductController
 
         $lastCrumb = $product['name'];
 
+
         $productFinal = [
             'id' => $product['id'],
             'name' => $product['name'],
@@ -59,8 +64,6 @@ class ProductController
             'status' => $status,
             'statusClass' => $statusClass
         ];
-
-        print_r($lastCrumb);
 
         return [
             'product' => $productFinal,

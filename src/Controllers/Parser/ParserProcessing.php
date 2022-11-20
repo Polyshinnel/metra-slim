@@ -61,6 +61,7 @@ class ParserProcessing
         $sku = $product['sku'];
         $description = $product['description'];
         $img = $product['img'];
+        $kz_price = $product['kz_price'];
 
 
         $filter = [
@@ -81,7 +82,8 @@ class ParserProcessing
             {
                 $updateArr = [
                     'price' => $price,
-                    'quantity' => $quantity
+                    'quantity' => $quantity,
+                    'kz_price' => $kz_price
                 ];
 
                 $this->productModel->where('id',$id)->update($updateArr);
@@ -98,7 +100,8 @@ class ParserProcessing
                 'description' => $description,
                 'img' => $img,
                 'price' => $price,
-                'quantity' => $quantity
+                'quantity' => $quantity,
+                'kz_price' => $kz_price
             ];
 
             $this->productModel->create($createArr);

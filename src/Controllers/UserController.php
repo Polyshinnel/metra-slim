@@ -181,6 +181,7 @@ class UserController
 
             $userData = [
                 'name' => $name,
+                'country' => $userInfo['country']
             ];
 
             $userInfo['admin_status'] = $adminStatus;

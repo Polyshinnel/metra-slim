@@ -8,7 +8,7 @@ use App\Models\Product;
 
 class SearchController
 {
-    public static function getSearchResults($data)
+    public static function getSearchResults($data,$country)
     {
         $searchResultArr = [];
         $searchQuery = $data['search'];
@@ -33,6 +33,11 @@ class SearchController
                     $statusClass = 'in-stock';
                     $status = 'В наличии';
                 }
+
+                if($country == 'kz') {
+                    $searchResult['price'] = $searchResult['kz_price'];
+                }
+
                 $searchResult['status'] = $status;
                 $searchResult['statusClass'] = $statusClass;
 

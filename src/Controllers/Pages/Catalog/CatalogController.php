@@ -10,7 +10,7 @@ use App\Utils\CommonHelper;
 
 class CatalogController
 {
-    public static function getCategoriesAndProducts($data)
+    public static function getCategoriesAndProducts($data,$country)
     {
         $parent = 0;
         if(!empty($data['parent']))
@@ -37,6 +37,11 @@ class CatalogController
             }
 
             $price = $product['price'];
+
+            if($country == 'kz') {
+                $price = $product['kz_price'];
+            }
+
             $price = CommonHelper::normalizePrice($price).' ₽';
 
             $products[] = [
@@ -97,7 +102,10 @@ class CatalogController
     public static function checkCategory($parent,$rootCat)
     {
         $category = Category::where('id',$parent)->get()->toArray();
-        $rootCat[] = $category[0];
+        if(!empty($category)){
+            $rootCat[] = $category[0];
+        }
+
         if($parent == 0)
         {
             return $rootCat;

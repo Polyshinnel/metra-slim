@@ -18,6 +18,7 @@ class Product extends Model
         'description',
         'img',
         'price',
-        'quantity'
+        'quantity',
+        'kz_price'
     ];
 }

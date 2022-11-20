@@ -96,10 +96,11 @@ $app->get('/tkpcostruct',function (Request $request,Response $response, array $a
 
 $app->get('/catalog',function (Request $request,Response $response, array $args) use ($view){
     $userAuth = UserController::checkUserAuth();
+    $country = $userAuth['country'];
     $getParams = $request->getQueryParams();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
-    $catalogData = CatalogController::getCategoriesAndProducts($getParams);
+    $catalogData = CatalogController::getCategoriesAndProducts($getParams,$country);
 
     $body = $view->render("user/catalog.twig", [
         'title' => 'Каталог',
@@ -116,8 +117,9 @@ $app->get('/catalog',function (Request $request,Response $response, array $args)
 
 $app->get('/search',function (Request $request,Response $response, array $args) use ($view){
     $userAuth = UserController::checkUserAuth();
+    $country = $userAuth['country'];
     $getParams = $request->getQueryParams();
-    $search = SearchController::getSearchResults($getParams);
+    $search = SearchController::getSearchResults($getParams,$country);
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
 
@@ -136,9 +138,10 @@ $app->get('/products/{id}',function (Request $request,Response $response, array 
     $userAuth = UserController::checkUserAuth();
     $productId = $args['id'];
     $headerName = $userAuth['name'];
+    $country = $userAuth['country'];
     $sidebar = SidebarController::getSidebar();
 
-    $productData = ProductController::getProduct($productId);
+    $productData = ProductController::getProduct($productId,$country);
 
     $body = $view->render("user/product.twig", [
         'title' => 'Каталог',
