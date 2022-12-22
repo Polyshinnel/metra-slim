@@ -1431,6 +1431,7 @@ body {
   .main .work-area {
     width: 100%;
     left: 0;
+    padding: 15px;
   }
   .main .work-area .work-area__header .other-header__block .header-person {
     display: none;
