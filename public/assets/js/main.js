@@ -475,3 +475,12 @@ $('.search-category input').on('keypress',function (e) {
         getRedirect(url);
     }
 })
+
+$('.header-menu').click(function(){
+    var sidebar = $('.sidebar');
+    if(sidebar.hasClass('sidebar_active')) {
+        $('.sidebar').removeClass('sidebar_active');
+    } else {
+        $('.sidebar').addClass('sidebar_active');
+    }
+});
