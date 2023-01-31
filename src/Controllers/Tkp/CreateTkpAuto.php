@@ -4,6 +4,7 @@
 namespace App\Controllers\Tkp;
 
 
+use App\Controllers\UserController;
 use App\Models\TkpAuto;
 use App\Models\TkpBundle;
 use App\Models\TkpPlatform;
@@ -16,10 +17,13 @@ class CreateTkpAuto
 {
     public static function createTkp($data,$typeTkp)
     {
+        $userAuth = UserController::checkUserAuth();
+        $country = $userAuth['country'];
         $tkpId = $data['id'];
         $customerName = $data['customerName'];
         $instalationPlace = $data['instalationPlace'];
         $expiredDate = $data['expiredDate'];
+
 
         if($typeTkp == 'auto')
         {
@@ -41,8 +45,13 @@ class CreateTkpAuto
             $tkpInfo = TkpBundle::where('id',$tkpId)->first()->toArray();
         }
 
+        $addPath = '/ru';
 
-        $template = __DIR__.'../../../../public/assets/cabinet-materials/tkp'.$tkpInfo['path'];
+        if($country == 'kz') {
+            $addPath = '/kz';
+        }
+
+        $template = __DIR__.'../../../../public/assets/cabinet-materials/tkp'.$addPath.$tkpInfo['path'];
         try {
             $templateProcessor = new TemplateProcessor($template);
             $templateProcessor->setValue('customerName', $customerName);
