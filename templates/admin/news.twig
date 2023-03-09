@@ -1,0 +1,23 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+    <a href="/admin/new-news" class="create-news">
+        <button class="standart-btn standart-btn_margin-bottom">Создать новость</button>
+    </a>
+    <table id="table_id">
+        <thead>
+            <tr>
+                <th>Заголовок</th>
+                <th>Дата создания</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for news_item in news %}
+            <tr class="news-list-item">
+                <td><a href="/admin/news/{{ news_item.id }}">{{ news_item.title }}</a></td>
+                <td>{{ news_item.date_create }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

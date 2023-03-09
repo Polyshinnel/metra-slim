@@ -181,10 +181,9 @@ class UserController
 
             $userData = [
                 'name' => $name,
-                'country' => $userInfo['country']
+                'country' => $userInfo['country'],
+                'admin_status' => $adminStatus
             ];
-
-            $userInfo['admin_status'] = $adminStatus;
 
             $userData['redirect'] = 'none';
 
@@ -282,5 +281,16 @@ class UserController
         {
             return 'Пользователя с данным токеном не существует';
         }
+    }
+
+    public static function authorizeUser($data) {
+        $id = $data['id'];
+        $status = $data['status'];
+
+        $updateArr = [
+            'status' => $status
+        ];
+
+        User::where('id',$id)->update($updateArr);
     }
 }

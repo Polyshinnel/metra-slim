@@ -2,6 +2,8 @@
 
 use App\Controllers\Pages\Academy\Vebinars;
 use App\Controllers\Pages\Academy\VebinarsPage;
+use App\Controllers\Pages\Admin\DealersPage;
+use App\Controllers\Pages\Admin\NewsPage;
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\Catalog\SearchController;
@@ -14,6 +16,7 @@ use App\Controllers\Tkp\GetTkpPlatform;
 use App\Controllers\Tkp\GetTkpUpgradeBundle;
 use App\Controllers\Tkp\GetTkpVagon;
 use App\Controllers\UserController;
+use App\Controllers\Utils\UploadImg;
 use App\Models\Database;
 use App\Utils\TwigExtension;
 use Slim\App;
@@ -58,6 +61,20 @@ $authMiddleware = function ($request,$response,$next)
     }
     else
     {
+        return $response->withStatus(302)->withHeader('Location', '/auth');
+    }
+};
+
+$adminMiddleware = function ($request,$response,$next) {
+    $userAuth = UserController::checkUserAuth();
+    if($userAuth) {
+        if($userAuth['admin_status']) {
+            $response = $next($request, $response);
+            return $response;
+        } else {
+            return $response->withStatus(302)->withHeader('Location', '/');
+        }
+    } else {
         return $response->withStatus(302)->withHeader('Location', '/auth');
     }
 };
@@ -336,6 +353,156 @@ $app->group('/addmaterials',function () use ($app,$view){
     });
 })->add($authMiddleware);
 
+$app->group('/admin',function () use ($app,$view){
+    $app->get('',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/main.twig", [
+            'title' => 'Дашборд',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/banners',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/banners.twig", [
+            'title' => 'Баннеры',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/dealers',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $users = DealersPage::getAllUsers();
+        print_r($users);
+        $body = $view->render("admin/dealers.twig", [
+            'title' => 'Диллеры',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'users' => $users
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/dealer-clients',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/clients.twig", [
+            'title' => 'Клиенты диллеров',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/authorization',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/authorize.twig", [
+            'title' => 'Авторизация сделок',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/news',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $news = NewsPage::getListNews();
+        $body = $view->render("admin/news.twig", [
+            'title' => 'Новости',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'news' => $news
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/new-news',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/create-news.twig", [
+            'title' => 'Создать новость',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/tkp-editor',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/tkp-editor.twig", [
+            'title' => 'Редактор ТКП',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/presentations',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/presentations.twig", [
+            'title' => 'Презентации',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/faq',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/faq.twig", [
+            'title' => 'FAQ',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/vebinars',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/vebinars.twig", [
+            'title' => 'Вебинары',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+})->add($adminMiddleware);
+
 
 $app->get('/clients',function (Request $request,Response $response, array $args) use ($view){
     $userAuth = UserController::checkUserAuth();
@@ -471,6 +638,25 @@ $app->post('/restorePass',function(Request $request,Response $response, array $a
     return $response;
 });
 
+$app->post('/authorizeDealer',function(Request $request,Response $response, array $args){
+    $params = $request->getParsedBody();
+    UserController::authorizeUser($params);
+    $response->getBody()->write('');
+    return $response;
+});
+
+$app->post('/uploadImg',function(Request $request,Response $response){
+    $json = UploadImg::uploadImg();
+    $response->getBody()->write($json);
+    return $response;
+});
+
+$app->post('/createNews',function(Request $request,Response $response){
+    $params = $request->getParsedBody();
+    NewsPage::createNews($params);
+    $response->getBody()->write('');
+    return $response;
+});
 
 
 $app->post('/listTkp/{id}',function(Request $request,Response $response, array $args){

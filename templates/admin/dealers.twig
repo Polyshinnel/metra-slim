@@ -1,0 +1,43 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+
+<table id="table_id">
+    <thead>
+        <tr>
+            <th>Имя пользователя</th>
+            <th>Организация</th>
+            <th>Адрес организации</th>
+            <th>Email</th>
+            <th>Телефон</th>
+            <th>Код</th>
+            <th>Статус</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.org_name }}</td>
+            <td>{{ user.org_addr }}</td>
+            <td>{{ user.mail }}</td>
+            <td class="center">{{ user.phone }}</td>
+            <td>{{ user.confirm_code }}</td>
+            <td class="center">
+                {% if (user.status == 1) %}
+                    <button class="dealer-btn decline-user" data-id="{{ user.id }}">
+                        <img src="/assets/img/icons/admin-icons/check.svg" alt="">
+                    </button>
+                {% else %}
+                    <button class="dealer-btn confirm-user" data-id="{{ user.id }}">
+                        <img src="/assets/img/icons/admin-icons/cross.svg" alt="">
+                    </button>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

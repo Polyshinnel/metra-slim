@@ -484,3 +484,101 @@ $('.header-menu').click(function(){
         $('.sidebar').addClass('sidebar_active');
     }
 });
+
+$(document).on('click','.decline-user',function () {
+    let id = $(this).attr('data-id');
+    $(this).removeClass('decline-user');
+    $(this).addClass('confirm-user');
+    $(this).find('img').attr('src','/assets/img/icons/admin-icons/cross.svg')
+
+    $.ajax({
+        url: '/authorizeDealer',
+        method: 'post',
+        dataType: 'html',
+        data: {
+            id: id,
+            status: 0
+        },
+        success: function(data){
+
+        }
+    });
+})
+
+$(document).on('click','.confirm-user',function () {
+    let id = $(this).attr('data-id');
+    $(this).addClass('decline-user');
+    $(this).removeClass('confirm-user');
+    $(this).find('img').attr('src','/assets/img/icons/admin-icons/check.svg')
+
+    $.ajax({
+        url: '/authorizeDealer',
+        method: 'post',
+        dataType: 'html',
+        data: {
+            id: id,
+            status: 1
+        },
+        success: function(data){
+        }
+    });
+})
+
+$("#upload-file").change(function(){
+    if (window.FormData === undefined) {
+        alert('В вашем браузере FormData не поддерживается')
+    } else {
+        var formData = new FormData();
+        formData.append('userFile', $("#upload-file")[0].files[0]);
+
+        $.ajax({
+            type: "POST",
+            url: '/uploadImg',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: formData,
+            dataType : 'json',
+            success: function(data){
+                console.log(data)
+                if (data.err == '') {
+                    $('.input-file span').html(data.fileName);
+                    $('#addr-img').val(data.fileAddr);
+                } else {
+                    alert(data.err)
+                }
+            }
+        });
+    }
+});
+
+$(document).ready( function () {
+    $('#table_id').DataTable({
+        language: {
+            "decimal":        "",
+            "emptyTable":     "Нет данных для отображения",
+            "info":           "_START_ из _END_ Всего _TOTAL_ записей",
+            "infoEmpty":      "0 из 0 записей",
+            "infoFiltered":   "(отфильтровано _MAX_ записей)",
+            "infoPostFix":    "",
+            "thousands":      ",",
+            "lengthMenu":     "Показать _MENU_ записей",
+            "loadingRecords": "Загрузка...",
+            "processing":     "",
+            "search":         "Поиск: ",
+            "zeroRecords":    "Нет совпадений",
+            "paginate": {
+                "first":      "First",
+                "last":       "Last",
+                "next":       "След.",
+                "previous":   "Пред."
+            },
+            "aria": {
+                "sortAscending":  ": отсортировать по возрастанию",
+                "sortDescending": ": отсортировать по убыванию"
+            }
+        },
+        ordering:  false,
+    });
+} );
+

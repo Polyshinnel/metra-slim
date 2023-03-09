@@ -1657,3 +1657,160 @@ body {
         }
     }
 }
+
+#table_id_wrapper{
+    .column.is-full
+    {
+        margin: 30px 0;
+    } 
+
+    thead{
+        tr{
+
+            th{
+                font-weight: 700;
+                color: #333;
+                padding: 15px;
+            }
+        }
+    }
+
+    tbody{
+        .odd{
+            background-color: #f3f1f1;
+        }
+        tr{
+            .center{
+                text-align: center;
+            }
+
+            td{
+                font-size: 14px;
+                padding: 20px 10px;
+            }
+        }
+    }
+}
+
+.dealer-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    background: #003D9A;
+    border: none;
+    cursor: pointer;
+}
+
+.input-block-item{
+    display: flex;
+    flex-direction: column;
+
+    p{
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    label{
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    input[type="text"]{
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        padding: 0 10px;
+    }
+
+    .input-file {
+        position: relative;
+        display: inline-block;
+
+        span{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            text-decoration: none;
+            font-size: 14px;
+            vertical-align: middle;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            background-color: #003D9A;
+            line-height: 22px;
+            height: 40px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border: none;
+            margin: 0;
+            transition: background-color 0.2s;
+        }
+
+        input[type=file] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            display: block;
+            width: 0;
+            height: 0;
+        }
+    }
+}
+
+.input-block-item+.input-block-item{
+    margin-top: 15px;
+}
+
+.text-editor-block{
+    margin: 20px 0;
+}
+
+.standart-btn{
+    cursor: pointer;
+    border: none;
+    background: #003D9A;
+    color: #fff;
+    height: 40px;
+    padding: 0 25px;
+    border-radius: 5px;
+}
+
+.standart-btn_margin-bottom{
+    margin-bottom: 30px;
+}
+
+.dealer-policy{
+    margin: 50px 0;
+
+    h4{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: #333;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .dealer-policy__download{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        text-decoration: none;
+
+        img{
+            width: 20px;
+        }
+
+        p{
+            margin-left: 15px;
+        }
+    }
+}

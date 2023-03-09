@@ -1,0 +1,31 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+    <div class="text-editor-block">
+        <textarea id="tiny">
+            <p>Welcome to the TinyMCE jQuery example!</p>
+        </textarea>
+    </div>
+    <button onclick="getData()">Получить код</button>
+
+
+    <script src="https://cdn.tiny.cloud/1/ulstx657tv0zwzrnr726ouufo4f3ttvjjs929ri7ol3dqwss/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-jquery@1/dist/tinymce-jquery.min.js"></script>
+    <script>
+        $('textarea#tiny').tinymce({
+            height: 500,
+            menubar: false,
+            plugins: [
+                'advlist','autolink',
+                'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+                'fullscreen','insertdatetime','media','table','help','wordcount'
+            ],
+            toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist checklist outdent indent | removeformat | insertdatetime | image media | code table help'
+        });
+
+        function getData() {
+            var html = tinymce.activeEditor.getContent();
+            console.log(html);
+        }
+    </script>
+{% endblock %}
