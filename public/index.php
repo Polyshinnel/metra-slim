@@ -4,6 +4,10 @@ use App\Controllers\Pages\Academy\Vebinars;
 use App\Controllers\Pages\Academy\VebinarsPage;
 use App\Controllers\Pages\Admin\DealersPage;
 use App\Controllers\Pages\Admin\NewsPage;
+use App\Controllers\Pages\Admin\Tkp\TkpAutoController;
+use App\Controllers\Pages\Admin\Tkp\TkpPlatformController;
+use App\Controllers\Pages\Admin\Tkp\TkpUpdateController;
+use App\Controllers\Pages\Admin\Tkp\TkpVagonController;
 use App\Controllers\Pages\Catalog\CatalogController;
 use App\Controllers\Pages\Catalog\ProductController;
 use App\Controllers\Pages\Catalog\SearchController;
@@ -462,6 +466,67 @@ $app->group('/admin',function () use ($app,$view){
         $response->getBody()->write($body);
         return $response;
     });
+
+    $app->get('/tkp-editor/auto',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpList = TkpAutoController::getAllTkpAuto();
+        $body = $view->render("admin/tkp-pages/automobile.twig", [
+            'title' => 'Редактор ТКП Авто',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpList' => $tkpList
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/tkp-editor/vagon',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpList = TkpVagonController::getAllTkpVagon();
+        $body = $view->render("admin/tkp-pages/vagon.twig", [
+            'title' => 'Редактор ТКП Вагоны',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpList' => $tkpList
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/tkp-editor/platform',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpList = TkpPlatformController::getAllTkpPlatform();
+        $body = $view->render("admin/tkp-pages/platform.twig", [
+            'title' => 'Редактор ТКП Платформы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpList' => $tkpList
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/tkp-editor/update',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpList = TkpUpdateController::getAllTkpUpdate();
+        $body = $view->render("admin/tkp-pages/update.twig", [
+            'title' => 'Редактор ТКП Обновления',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpList' => $tkpList
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
 
     $app->get('/presentations',function (Request $request,Response $response, array $args) use ($view){
         $userAuth = UserController::checkUserAuth();

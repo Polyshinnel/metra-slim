@@ -1,0 +1,35 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+    <table id="table_id">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Тип датчиков</th>
+                <th>Тип установки</th>
+                <th>Длинна</th>
+                <th>Модель</th>
+                <th>Предел взвешивания</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in tkpList %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.type_sensor }}</td>
+                    <td>{{ item.type_instalation }}</td>
+                    <td>{{ item.length }}</td>
+                    <td>{{ item.model }}</td>
+                    <td>{{ item.weight }}</td>
+                    <td><button class="update-tkp" data-item="{{ item.id }}"></button></td>
+                    <td><button class="delete-tkp" data-item="{{ item.id }}"></button></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+/automobile/kochevnik/analog/pandus/kochevnik-tkp-analogovye-8m-30-40t-new.docx

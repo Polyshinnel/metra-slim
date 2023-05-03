@@ -1668,4 +1668,31 @@ body {
 }
 .dealer-policy .dealer-policy__download p {
   margin-left: 15px;
+}
+
+.tkp-link-line {
+  display: flex;
+  align-items: center;
+}
+.tkp-link-line a {
+  display: flex;
+  text-decoration: none;
+  color: #003D9A;
+}
+.tkp-link-line a + a {
+  margin-left: 20px;
+}
+.tkp-link-line .tkp-link-btn {
+  width: 134px;
+  height: 134px;
+  border-radius: 5px;
+  border: 1px solid #003D9A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tkp-link-line .tkp-link-btn p {
+  margin-top: 10px;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

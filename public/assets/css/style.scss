@@ -1814,3 +1814,35 @@ body {
         }
     }
 }
+
+
+.tkp-link-line{
+    display: flex;
+    align-items: center;
+
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #003D9A;
+    }
+
+    a+a{
+        margin-left: 20px;
+    }
+
+    .tkp-link-btn{
+        width: 134px;
+        height: 134px;
+        border-radius: 5px;
+        border: 1px solid #003D9A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+}
