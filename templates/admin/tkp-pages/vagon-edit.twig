@@ -14,41 +14,25 @@
 
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="type_sensor">Тип датчиков</label>
+                        <label for="type_sensor">Тип установки</label>
                     </div>
-                    <input type="text" id="type_sensor" placeholder="" value="{{ tkpData.info.type_sensor }}">
+                    <input type="text" id="type_sensor" placeholder="" value="{{ tkpData.info.type_instalation }}">
                 </div>
             </div>
 
             <div class="tkp-edit-line">
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="type_instalation">Тип установки</label>
+                        <label for="type_instalation">Тип измерения</label>
                     </div>
-                    <input type="text" id="type_instalation" value="{{ tkpData.info.type_instalation }}">
+                    <input type="text" id="type_instalation" value="{{ tkpData.info.type_measure }}">
                 </div>
 
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="length">Длинна</label>
+                        <label for="length">Измеряемый вес</label>
                     </div>
-                    <input type="text" id="length" value="{{ tkpData.info.length }}">
-                </div>
-            </div>
-
-            <div class="tkp-edit-line">
-                <div class="input-block">
-                    <div class="input-block__title">
-                        <label for="model">Модель</label>
-                    </div>
-                    <input type="text" id="model" value="{{ tkpData.info.model }}">
-                </div>
-
-                <div class="input-block">
-                    <div class="input-block__title">
-                        <label for="weight">Предел взвешивания</label>
-                    </div>
-                    <input type="text" id="weight" value="{{ tkpData.info.weight }}">
+                    <input type="text" id="length" value="{{ tkpData.info.weight }}">
                 </div>
             </div>
 

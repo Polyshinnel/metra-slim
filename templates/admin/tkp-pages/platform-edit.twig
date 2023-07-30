@@ -14,45 +14,36 @@
 
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="type_sensor">Тип датчиков</label>
+                        <label for="type_sensor">Модель весов</label>
                     </div>
-                    <input type="text" id="type_sensor" placeholder="" value="{{ tkpData.info.type_sensor }}">
+                    <input type="text" id="type_sensor" placeholder="" value="{{ tkpData.info.model }}">
                 </div>
             </div>
 
             <div class="tkp-edit-line">
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="type_instalation">Тип установки</label>
+                        <label for="type_instalation">Количество датчиков</label>
                     </div>
-                    <input type="text" id="type_instalation" value="{{ tkpData.info.type_instalation }}">
+                    <input type="text" id="type_instalation" value="{{ tkpData.info.quant_sensor }}">
                 </div>
 
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="length">Длинна</label>
+                        <label for="length">Габариты платформы</label>
                     </div>
-                    <input type="text" id="length" value="{{ tkpData.info.length }}">
+                    <input type="text" id="length" value="{{ tkpData.info.width }}">
                 </div>
             </div>
 
             <div class="tkp-edit-line">
                 <div class="input-block">
                     <div class="input-block__title">
-                        <label for="model">Модель</label>
+                        <label for="model">Предел взвешивания</label>
                     </div>
-                    <input type="text" id="model" value="{{ tkpData.info.model }}">
+                    <input type="text" id="model" value="{{ tkpData.info.weight }}">
                 </div>
 
-                <div class="input-block">
-                    <div class="input-block__title">
-                        <label for="weight">Предел взвешивания</label>
-                    </div>
-                    <input type="text" id="weight" value="{{ tkpData.info.weight }}">
-                </div>
-            </div>
-
-            <div class="tkp-edit-line">
                 <div class="input-block">
                     <div class="input-block__title">
                         <label for="path">Путь до файла</label>

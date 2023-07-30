@@ -14,6 +14,26 @@
         </tr>
         </thead>
 
-        <tbody></tbody>
+        <tbody>
+        {% if tkpList %}
+            {% for item in tkpList %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.model }}</td>
+                    <td>{{ item.quant_sensor }}</td>
+                    <td>{{ item.width }}</td>
+                    <td>{{ item.weight }}</td>
+                    <td>
+                        <a href="/admin/tkp-editor/platform/{{ item.id }}">
+                            <button class="tkp-btn update-tkp" data-item="{{ item.id }}" data-type="platform"><img src="/assets/img/icons/admin-icons/edit.svg" alt=""></button>
+                        </a>
+                    </td>
+                    <td>
+                        <button class="tkp-btn delete-tkp" data-item="{{ item.id }}" data-type="platform"><img src="/assets/img/icons/admin-icons/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+        </tbody>
     </table>
 {% endblock %}

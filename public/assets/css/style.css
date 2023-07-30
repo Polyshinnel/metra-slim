@@ -1737,5 +1737,27 @@ body {
 }
 
 .tkp-product-block {
-  margin-top: 60px;
+  margin-top: 50px;
+}
+.tkp-product-block .tkp-data-wrapper-item + .tkp-data-wrapper-item {
+  margin-top: 20px;
+}
+
+.tkp-edit-btns {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.tkp-edit-btns .red-btn {
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  background: #ca1f1f;
+  box-shadow: 0px 4px 12px rgba(245, 89, 16, 0.24);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  height: 44px;
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */

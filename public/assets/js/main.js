@@ -582,3 +582,63 @@ $(document).ready( function () {
     });
 } );
 
+$('#add-tkp-product').click(function(){
+    $('.tkp-data-wrapper').append('<div class="tkp-data-wrapper-item tkp-data-wrapper-item-new input-block">\n' +
+        '                        <div class="input-block__title">\n' +
+        '                            <label>Ид продукта</label>\n' +
+        '                        </div>\n' +
+        '                        <input type="text" placeholder="ИД продукта">\n' +
+        '                    </div>')
+});
+
+$('#save-tkp-data').click(function () {
+    let name = $('#tkp-name').val();
+    let typeSensor = $('#type_sensor').val();
+    let typeInstalation = $('#type_instalation').val();
+    let length = $('#length').val();
+    let model = $('#model').val();
+    let weight = $('#weight').val();
+    let path = $('#path').val();
+    let id = $(this).attr('data-id');
+
+    let tkpObj = {
+        'name': name,
+        'type_sensor': typeSensor,
+        'type_instalation': typeInstalation,
+        'length': length,
+        'model': model,
+        'weight': weight,
+        'path': path,
+        'id': id
+    }
+
+    let products = [];
+    let newProducts = [];
+
+    $('.tkp-data-wrapper-item-current').each(function () {
+        let productId = $(this).find('input').val();
+        let recordId = $(this).find('input').attr('data-id');
+        let product = {
+            'id': recordId,
+            'product_id': productId
+        }
+        products.push(product)
+    })
+
+    $('.tkp-data-wrapper-item-new').each(function () {
+        let productId = $(this).find('input').val();
+        let product = {
+            'tkp_id': id,
+            'product_id': productId
+        }
+        newProducts.push(product)
+    })
+
+    let updateObj = {
+        'tkp_info': tkpObj,
+        'products': products,
+        'new_products': newProducts
+    }
+
+    console.log(updateObj);
+})

@@ -514,11 +514,28 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
+    $app->get('/tkp-editor/vagon/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $tkpId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpData = TkpVagonController::getTkpId($tkpId);
+        $body = $view->render("admin/tkp-pages/vagon-edit.twig", [
+            'title' => 'Редактор ТКП Вагоны',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpData' => $tkpData
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
     $app->get('/tkp-editor/platform',function (Request $request,Response $response, array $args) use ($view){
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
         $tkpList = TkpPlatformController::getAllTkpPlatform();
+        print_r($tkpList);
         $body = $view->render("admin/tkp-pages/platform.twig", [
             'title' => 'Редактор ТКП Платформы',
             'headerName' => $headerName,
@@ -529,16 +546,49 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
+    $app->get('/tkp-editor/platform/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $tkpId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpData = TkpPlatformController::getTkpId($tkpId);
+        $body = $view->render("admin/tkp-pages/platform-edit.twig", [
+            'title' => 'Редактор ТКП Платформы',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpData' => $tkpData
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
     $app->get('/tkp-editor/update',function (Request $request,Response $response, array $args) use ($view){
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
         $tkpList = TkpUpdateController::getAllTkpUpdate();
+        print_r($tkpList);
         $body = $view->render("admin/tkp-pages/update.twig", [
             'title' => 'Редактор ТКП Обновления',
             'headerName' => $headerName,
             'sidebar' => $sidebar,
             'tkpList' => $tkpList
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/tkp-editor/update/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $tkpId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpData = TkpUpdateController::getTkpId($tkpId);
+        $body = $view->render("admin/tkp-pages/update-edit.twig", [
+            'title' => 'Редактор ТКП Обновления',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpData' => $tkpData
         ]);
         $response->getBody()->write($body);
         return $response;
