@@ -482,6 +482,23 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
+    $app->get('/tkp-editor/auto/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $tkpId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $tkpData = TkpAutoController::getTkpId($tkpId);
+        print_r($tkpData);
+        $body = $view->render("admin/tkp-pages/automobile-edit.twig", [
+            'title' => 'Редактор ТКП Авто',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'tkpData' => $tkpData
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
     $app->get('/tkp-editor/vagon',function (Request $request,Response $response, array $args) use ($view){
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];

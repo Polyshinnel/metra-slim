@@ -24,8 +24,12 @@
                     <td>{{ item.length }}</td>
                     <td>{{ item.model }}</td>
                     <td>{{ item.weight }}</td>
-                    <td><button class="update-tkp" data-item="{{ item.id }}"></button></td>
-                    <td><button class="delete-tkp" data-item="{{ item.id }}"></button></td>
+                    <td>
+                        <a href="/admin/tkp-editor/auto/{{ item.id }}">
+                            <button class="tkp-btn update-tkp" data-item="{{ item.id }}" data-type="auto"><img src="/assets/img/icons/admin-icons/edit.svg" alt=""></button>
+                        </a>
+                    </td>
+                    <td><button class="tkp-btn delete-tkp" data-item="{{ item.id }}" data-type="auto"><img src="/assets/img/icons/admin-icons/delete.svg" alt=""></button></td>
                 </tr>
             {% endfor %}
         </tbody>

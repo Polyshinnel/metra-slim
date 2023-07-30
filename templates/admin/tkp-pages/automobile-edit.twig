@@ -1,0 +1,86 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+    <div class="tkp-data-info-block tkp-data-block">
+        <h4 class="tkp-product-title">Общие данные</h4>
+        {% if tkpData.info %}
+            <div class="tkp-edit-line">
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Название</label>
+                    </div>
+                    <input type="text" id="login" placeholder="{{ tkpData.info.name }}">
+                </div>
+
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Тип датчиков</label>
+                    </div>
+                    <input type="text" id="login" placeholder="" value="{{ tkpData.info.type_sensor }}">
+                </div>
+            </div>
+
+            <div class="tkp-edit-line">
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Тип установки</label>
+                    </div>
+                    <input type="text" id="login" value="{{ tkpData.info.type_sensor }}">
+                </div>
+
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Длинна</label>
+                    </div>
+                    <input type="text" id="login" value="{{ tkpData.info.length }}">
+                </div>
+            </div>
+
+            <div class="tkp-edit-line">
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Модель</label>
+                    </div>
+                    <input type="text" id="login" value="{{ tkpData.info.model }}">
+                </div>
+
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Предел взвешивания</label>
+                    </div>
+                    <input type="text" id="login" value="{{ tkpData.info.weight }}">
+                </div>
+            </div>
+
+            <div class="tkp-edit-line">
+                <div class="input-block">
+                    <div class="input-block__title">
+                        <label for="login">Путь до файла</label>
+                    </div>
+                    <input type="text" id="login" value="{{ tkpData.info.path }}">
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+
+    <div class="tkp-product-block tkp-data-block">
+        <h4 class="tkp-product-title">Состав ТКП</h4>
+        <div class="tkp-data-wrapper">
+            {% if tkpData.products %}
+                {% for product in tkpData.products %}
+                    <div class="tkp-data-wrapper-item input-block">
+                        <div class="input-block__title">
+                            <label for="product_id_{{ product.product_id }}">Ид продукта</label>
+                        </div>
+                        <input type="text" id="product_id_{{ product.product_id }}" value="{{ product.product_id }}" data-id="{{ product.id }}">
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <button class="blue-btn blue-btn_serv tkp-data-wrapper_btn">Добавить продукт</button>
+    </div>
+
+
+{% endblock %}

@@ -1695,4 +1695,47 @@ body {
 .tkp-link-line .tkp-link-btn p {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.tkp-btn {
+  width: 40px;
+  height: 40px;
+  background: #003D9A;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tkp-edit-line {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.tkp-edit-line .input-block + .input-block {
+  margin-left: 40px;
+}
+
+.tkp-product-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  font-size: 18px;
+}
+
+.tkp-product-title_no-margin {
+  margin-top: 0;
+}
+
+.tkp-data-wrapper_btn {
+  margin-top: 20px;
+}
+
+.tkp-data-block {
+  border: 1px solid #ccc;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.tkp-product-block {
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */
