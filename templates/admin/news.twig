@@ -8,6 +8,7 @@
         <thead>
             <tr>
                 <th>Заголовок</th>
+                <th>Превью новости</th>
                 <th>Дата создания</th>
             </tr>
         </thead>
@@ -15,6 +16,7 @@
         {% for news_item in news %}
             <tr class="news-list-item">
                 <td><a href="/admin/news/{{ news_item.id }}">{{ news_item.title }}</a></td>
+                <td><img src="{{ news_item.thumb }}" alt="" class="news-preview"></td>
                 <td>{{ news_item.date_create }}</td>
             </tr>
         {% endfor %}

@@ -2,6 +2,7 @@
 
 use App\Controllers\Pages\Academy\Vebinars;
 use App\Controllers\Pages\Academy\VebinarsPage;
+use App\Controllers\Pages\Admin\BannerPage;
 use App\Controllers\Pages\Admin\DealersPage;
 use App\Controllers\Pages\Admin\NewsPage;
 use App\Controllers\Pages\Admin\Tkp\TkpAutoController;
@@ -375,12 +376,52 @@ $app->group('/admin',function () use ($app,$view){
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
+        $banners = BannerPage::getBanners();
+        print_r($banners);
         $body = $view->render("admin/banners.twig", [
             'title' => 'Баннеры',
             'headerName' => $headerName,
-            'sidebar' => $sidebar
+            'sidebar' => $sidebar,
+            'banners' => $banners
         ]);
         $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/add-banner',function (Request $request,Response $response, array $args) use ($view){
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $body = $view->render("admin/create-banner.twig", [
+            'title' => 'Баннеры',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/banners/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $bannerId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $banner = BannerPage::getBanner($bannerId);
+        $body = $view->render("admin/item-banner.twig", [
+            'title' => 'Баннеры',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'banner' => $banner
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->post('/create-banners',function (Request $request,Response $response, array $args) use ($view){
+        $params = $request->getParsedBody();
+        BannerPage::createBanner($params);
+        $json = json_encode(['msg' => 'banner was add']);
+        $response->getBody()->write($json);
         return $response;
     });
 
@@ -431,11 +472,30 @@ $app->group('/admin',function () use ($app,$view){
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
         $news = NewsPage::getListNews();
+        print_r($news);
         $body = $view->render("admin/news.twig", [
             'title' => 'Новости',
             'headerName' => $headerName,
             'sidebar' => $sidebar,
             'news' => $news
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+
+    $app->get('/news/{id}',function (Request $request,Response $response, array $args) use ($view){
+        $newsId = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getAdminSidebar();
+        $newsItem = NewsPage::getNewsItem($newsId);
+        print_r($newsItem);
+        $body = $view->render("admin/news-item.twig", [
+            'title' => $newsItem['title'],
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'newsItem' => $newsItem
         ]);
         $response->getBody()->write($body);
         return $response;
@@ -654,6 +714,7 @@ $app->get('/clients',function (Request $request,Response $response, array $args)
 //Страница для телеграм бота
 $app->post('/telegram-bot',function (Request $request,Response $response, array $args) use ($view){
     $params = $request->getParsedBody();
+    file_put_contents(__DIR__ . '/message.txt', print_r($params, true));
     $telegramService = new TelegramService(tokenTelegram,$params);
     $telegramBot = new TelegramBot($telegramService,$params);
     $telegramBot->startService();

@@ -1,12 +1,27 @@
 {% extends 'admin/base.twig' %}
 
 {% block body %}
+    <div class="input-block-item">
+        <label for="title-news">Заголовок новости</label>
+        <input type="text" id="title-news" placeholder="Введите заголовок" value="{{ newsItem.title }}">
+    </div>
+
+    <div class="input-block-item">
+        <p>Превью новости</p>
+        <img src="{{ newsItem.thumb }}" class="news-preview" alt="">
+    </div>
+
+    <div class="input-block-item">
+        <label for="title-news">Дата создания</label>
+        <input type="text" id="date-create" placeholder="Дата создания" value="{{ newsItem.date_create }}">
+    </div>
+
     <div class="text-editor-block">
         <textarea id="tiny">
-            <p>Welcome to the TinyMCE jQuery example!</p>
+            {{ newsItem.html | raw }}
         </textarea>
     </div>
-    <button onclick="getData()">Получить код</button>
+    <button class="standart-btn">Сохранить</button>
 
 
     <script src="https://cdn.tiny.cloud/1/ulstx657tv0zwzrnr726ouufo4f3ttvjjs929ri7ol3dqwss/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>

@@ -1,0 +1,51 @@
+{% extends 'admin/base.twig' %}
+
+{% block body %}
+    <div class="input-block-item">
+        <label for="title-banner">Заголовок</label>
+        <input type="text" id="title-banner" placeholder="Введите заголовок" value="{{ banner.title }}">
+    </div>
+
+    <div class="input-block-item">
+        <label for="descr-banner">Описание баннера</label>
+        <input type="text" id="descr-banner" placeholder="Описание баннера" value="{{ banner.description }}">
+    </div>
+
+    <div class="input-block-item">
+        <label for="href-banner">Ссылка</label>
+        <input type="text" id="href-banner" placeholder="Ссылка" value="{{ banner.href }}">
+    </div>
+
+    <div class="input-block-item">
+        <label>Баннер</label>
+        <img src="{{ banner.banner }}" class="news-preview" alt="">
+    </div>
+
+
+    <button onclick="getData()" class="standart-btn standart-btn_margin">Сохранить</button>
+
+    <script>
+        function getData() {
+            let title = $('#title-banner').val();
+            let descr = $('#descr-banner').val();
+            let href = $('#href-banner').val();
+            let banner = $('#addr-img').val()
+
+
+            $.ajax({
+                url: '/admin/create-banners',
+                method: 'post',
+                dataType: 'html',
+                data: {
+                    title: title,
+                    description: descr,
+                    href: href,
+                    banner: banner,
+                },
+                success: function(data){
+                    $(location).attr('href','/admin/banners');
+                }
+            });
+        }
+    </script>
+{% endblock %}

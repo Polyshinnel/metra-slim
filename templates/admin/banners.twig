@@ -1,5 +1,29 @@
 {% extends 'admin/base.twig' %}
 
 {% block body %}
-
+    <a href="/admin/add-banner" class="create-news">
+        <button class="standart-btn standart-btn_margin-bottom">Добавить баннер</button>
+    </a>
+    <table id="table_id">
+        <thead>
+        <tr>
+            <th>Заголовок</th>
+            <th>Описание</th>
+            <th>Ссылка</th>
+            <th>Баннер</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% if banners %}
+                {% for banner in banners %}
+                    <tr>
+                        <td><a href="/admin/banners/{{ banner.id }}">{{ banner.title }}</a></td>
+                        <td>{{ banner.description }}</td>
+                        <td>{{ banner.href }}</td>
+                        <td><img src="{{ banner.banner }}" alt="" class="news-preview""></td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
 {% endblock %}

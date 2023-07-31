@@ -1760,4 +1760,12 @@ body {
   font-size: 14px;
   height: 44px;
   padding: 0 20px;
+}
+
+.news-preview {
+  width: 200px;
+}
+
+.standart-btn_margin {
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
