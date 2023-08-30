@@ -4,6 +4,7 @@
 namespace App\Controllers\Pages\Admin;
 
 
+use App\Controllers\telegram\TelegramService;
 use App\Models\News;
 
 class NewsPage
@@ -23,6 +24,12 @@ class NewsPage
             'date_create' => $date
         ];
         News::create($createArr);
+
+        $textMessage = "<b>".$data['title']."</b>\r\n".strip_tags($data['html']);
+
+        $telegram = new TelegramService(tokenTelegram);
+        $telegram->sendMessage('-1001939190548', $textMessage);
+        $telegram->sendImg('-1001939190548', $data['thumb']);
     }
 
     public static function getNewsItem($id) {
