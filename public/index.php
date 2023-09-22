@@ -31,8 +31,8 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
-require __DIR__.'/../config/config.php';
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../config/config.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 ini_set('display_errors', 'on'); // сообщения с ошибками будут показываться
 error_reporting(E_ALL); // E_ALL - отображаем ВСЕ ошибки
@@ -51,29 +51,24 @@ $app = new App($container);
 $loader = new FilesystemLoader('../templates');
 $view = new Environment($loader);
 
-$authMiddleware = function ($request,$response,$next)
-{
+$authMiddleware = function ($request, $response, $next) {
     $userAuth = UserController::checkUserAuth();
-    if($userAuth) {
+    if ($userAuth) {
         if ($userAuth['redirect'] == 'none') {
             $response = $next($request, $response);
             return $response;
-        }
-        else
-        {
+        } else {
             return $response->withStatus(302)->withHeader('Location', $userAuth['redirect']);
         }
-    }
-    else
-    {
+    } else {
         return $response->withStatus(302)->withHeader('Location', '/auth');
     }
 };
 
-$adminMiddleware = function ($request,$response,$next) {
+$adminMiddleware = function ($request, $response, $next) {
     $userAuth = UserController::checkUserAuth();
-    if($userAuth) {
-        if($userAuth['admin_status']) {
+    if ($userAuth) {
+        if ($userAuth['admin_status']) {
             $response = $next($request, $response);
             return $response;
         } else {
@@ -86,7 +81,7 @@ $adminMiddleware = function ($request,$response,$next) {
 
 //$view->addExtension(new TwigExtension());
 
-$app->get('/',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
@@ -102,7 +97,7 @@ $app->get('/',function (Request $request,Response $response, array $args) use ($
     return $response;
 })->add($authMiddleware);
 
-$app->get('/tkpcostruct',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/tkpcostruct', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
@@ -116,13 +111,13 @@ $app->get('/tkpcostruct',function (Request $request,Response $response, array $a
 })->add($authMiddleware);
 
 
-$app->get('/catalog',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/catalog', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $country = $userAuth['country'];
     $getParams = $request->getQueryParams();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
-    $catalogData = CatalogController::getCategoriesAndProducts($getParams,$country);
+    $catalogData = CatalogController::getCategoriesAndProducts($getParams, $country);
 
     $body = $view->render("user/catalog.twig", [
         'title' => 'Каталог',
@@ -137,11 +132,11 @@ $app->get('/catalog',function (Request $request,Response $response, array $args)
     return $response;
 })->add($authMiddleware);
 
-$app->get('/search',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/search', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $country = $userAuth['country'];
     $getParams = $request->getQueryParams();
-    $search = SearchController::getSearchResults($getParams,$country);
+    $search = SearchController::getSearchResults($getParams, $country);
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
 
@@ -156,14 +151,14 @@ $app->get('/search',function (Request $request,Response $response, array $args) 
     return $response;
 })->add($authMiddleware);
 
-$app->get('/products/{id}',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/products/{id}', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $productId = $args['id'];
     $headerName = $userAuth['name'];
     $country = $userAuth['country'];
     $sidebar = SidebarController::getSidebar();
 
-    $productData = ProductController::getProduct($productId,$country);
+    $productData = ProductController::getProduct($productId, $country);
 
     $body = $view->render("user/product.twig", [
         'title' => 'Каталог',
@@ -177,7 +172,7 @@ $app->get('/products/{id}',function (Request $request,Response $response, array 
     return $response;
 })->add($authMiddleware);
 
-$app->get('/orders',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/orders', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
@@ -190,7 +185,7 @@ $app->get('/orders',function (Request $request,Response $response, array $args) 
     return $response;
 })->add($authMiddleware);
 
-$app->get('/news',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/news', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
@@ -204,9 +199,8 @@ $app->get('/news',function (Request $request,Response $response, array $args) us
 })->add($authMiddleware);
 
 
-
-$app->group('/academy',function () use ($app,$view){
-    $app->get('',function (Request $request,Response $response, array $args) use ($view){
+$app->group('/academy', function () use ($app, $view) {
+    $app->get('', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -219,7 +213,7 @@ $app->group('/academy',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/presentations',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/presentations', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -232,7 +226,7 @@ $app->group('/academy',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/vebinars',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/vebinars', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -248,7 +242,203 @@ $app->group('/academy',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/vebinars/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/instructions', function (Request $request, Response $response, array $args) use ($view) {
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+
+        $categories = [
+            [
+                'id' => 1,
+                'img' => '/assets/img/instructions/vs-net.png',
+                'title' => 'Работа с программой WS NET'
+            ]
+        ];
+
+        $body = $view->render("user/academy/instructions.twig", [
+            'title' => 'Видео инструкции',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'categories' => $categories
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/instructions/category/{id}', function (Request $request, Response $response, array $args) use ($view) {
+        $category_id = $args['id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+
+        $instructions = [
+            '1' => [
+                [
+                    'id' => 1,
+                    'title' => 'Запуск программы',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 2,
+                    'title' => 'Словари',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 3,
+                    'title' => 'Регистрация оператора',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 4,
+                    'title' => 'Журнал Смен',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 5,
+                    'title' => 'Главное окно программы. Поля обязательные для заполнения',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 6,
+                    'title' => 'Просмотр информации о программе',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 7,
+                    'title' => 'Основной режим двойное взвешивание. Требуется взвесить однократно',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 8,
+                    'title' => 'Однократное взвешивание полного вагона тара берётся с бруса вагона',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 9,
+                    'title' => 'Порядок взвешивания в режиме ВЕСЫ. Выбор режима взвешивания',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 10,
+                    'title' => 'Режим двойного взвешивания. Взвешиваем пустой затем полный вагон',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 11,
+                    'title' => 'Настройка внешнего вида таблицы базы данных',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 12,
+                    'title' => 'Печать накладной после взвешивания вагона',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 13,
+                    'title' => 'База данных',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 14,
+                    'title' => 'Потележечное взвешивание вагона',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+            ],
+        ];
+
+        $body = $view->render("user/academy/instruction-category.twig", [
+            'title' => 'Видео инструкции',
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'instructions' => $instructions[$category_id],
+            'category_id' => $category_id
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/instructions/category/{category_id}/instruction/{instruction_id}', function (Request $request, Response $response, array $args) use ($view) {
+        $category_id = $args['category_id'];
+        $instruction_id = $args['instruction_id'];
+        $userAuth = UserController::checkUserAuth();
+        $headerName = $userAuth['name'];
+        $sidebar = SidebarController::getSidebar();
+
+
+        $instructions = [
+            '1' => [
+                '1' => [
+                    'title' => 'Запуск программы',
+                    'src' => 'https://www.youtube.com/embed/jugYcchUnFI?si=tDBJaef-6XLqkCEf'
+                ],
+                '2' => [
+                    'title' => 'Словари',
+                    'src' => 'https://www.youtube.com/embed/1MJZZ2lmpas?si=aq7IDioLCGBFiaEK'
+                ],
+                '3' => [
+                    'title' => 'Регистрация оператора',
+                    'src' => 'https://www.youtube.com/embed/cEM6OEjaqy4?si=jSTFdxWq4EAwD5c7'
+                ],
+                '4' => [
+                    'title' => 'Журнал Смен',
+                    'src' => 'https://www.youtube.com/embed/1cSJ9CiuwHk?si=ue2hz-neAHWUChAP'
+                ],
+                '5' => [
+                    'title' => 'Главное окно программы. Поля обязательные для заполнения',
+                    'src' => 'https://www.youtube.com/embed/rh1ezRpuzRU?si=mo6wkZjEHPI929RO'
+                ],
+                '6' => [
+                    'title' => 'Просмотр информации о программе',
+                    'src' => 'https://www.youtube.com/embed/UgCgTE7fYus?si=V__1DG19Mh7HzPNs'
+                ],
+                '7' => [
+                    'title' => 'Основной режим двойное взвешивание. Требуется взвесить однократно',
+                    'src' => 'https://www.youtube.com/embed/lQatQhDWlNw?si=v86b7Sm7XZGFFIye'
+                ],
+                '8' => [
+                    'title' => 'Однократное взвешивание полного вагона тара берётся с бруса вагона',
+                    'src' => 'https://www.youtube.com/embed/Bw8r_2G7lqw?si=vSZ2J8rO6R3qT9zJ'
+                ],
+                '9' => [
+                    'title' => 'Порядок взвешивания в режиме ВЕСЫ. Выбор режима взвешивания',
+                    'src' => 'https://www.youtube.com/embed/BFfPsTgdgRY?si=QLO7Sik3A2khe55N'
+                ],
+                '10' => [
+                    'title' => 'Режим двойного взвешивания. Взвешиваем пустой затем полный вагон',
+                    'src' => 'https://www.youtube.com/embed/p3ieBhvp2ng?si=cgNZ3S5JA38Ar1re'
+                ],
+                '11' => [
+                    'title' => 'Настройка внешнего вида таблицы базы данных',
+                    'src' => ''
+                ],
+                '12' => [
+                    'title' => 'Печать накладной после взвешивания вагона',
+                    'src' => ''
+                ],
+                '13' => [
+                    'title' => 'База данных',
+                    'src' => ''
+                ],
+                '14' => [
+                    'title' => 'Потележечное взвешивание вагона',
+                    'src' => ''
+                ],
+            ]
+        ];
+
+        $instruction = $instructions[$category_id][$instruction_id];
+
+        $body = $view->render("user/academy/instruction-page.twig", [
+            'title' => $instruction['title'],
+            'headerName' => $headerName,
+            'sidebar' => $sidebar,
+            'instruction' => $instruction
+        ]);
+        $response->getBody()->write($body);
+        return $response;
+    });
+
+    $app->get('/vebinars/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -263,7 +453,7 @@ $app->group('/academy',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/presentations/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/presentations/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -278,8 +468,8 @@ $app->group('/academy',function () use ($app,$view){
     });
 })->add($authMiddleware);
 
-$app->group('/addmaterials',function () use ($app,$view){
-    $app->get('',function (Request $request,Response $response, array $args) use ($view){
+$app->group('/addmaterials', function () use ($app, $view) {
+    $app->get('', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -292,7 +482,7 @@ $app->group('/addmaterials',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/sertificates',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/sertificates', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -305,7 +495,7 @@ $app->group('/addmaterials',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/check-lists',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/check-lists', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -318,7 +508,7 @@ $app->group('/addmaterials',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/promo-materials',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/promo-materials', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -331,7 +521,7 @@ $app->group('/addmaterials',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/promo-photos',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/promo-photos', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -344,7 +534,7 @@ $app->group('/addmaterials',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/faq',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/faq', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getSidebar();
@@ -358,8 +548,8 @@ $app->group('/addmaterials',function () use ($app,$view){
     });
 })->add($authMiddleware);
 
-$app->group('/admin',function () use ($app,$view){
-    $app->get('',function (Request $request,Response $response, array $args) use ($view){
+$app->group('/admin', function () use ($app, $view) {
+    $app->get('', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -372,7 +562,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/banners',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/banners', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -388,7 +578,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/add-banner',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/add-banner', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -401,7 +591,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/banners/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/banners/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $bannerId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -417,7 +607,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->post('/create-banners',function (Request $request,Response $response, array $args) use ($view){
+    $app->post('/create-banners', function (Request $request, Response $response, array $args) use ($view) {
         $params = $request->getParsedBody();
         BannerPage::createBanner($params);
         $json = json_encode(['msg' => 'banner was add']);
@@ -425,7 +615,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/dealers',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/dealers', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -441,7 +631,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/dealer-clients',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/dealer-clients', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -454,7 +644,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/authorization',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/authorization', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -467,7 +657,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/news',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/news', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -484,7 +674,7 @@ $app->group('/admin',function () use ($app,$view){
     });
 
 
-    $app->get('/news/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/news/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $newsId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -501,7 +691,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/new-news',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/new-news', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -514,7 +704,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -527,7 +717,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/auto',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/auto', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -542,7 +732,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/auto/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/auto/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $tkpId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -559,7 +749,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/vagon',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/vagon', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -574,7 +764,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/vagon/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/vagon/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $tkpId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -590,7 +780,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/platform',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/platform', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -606,7 +796,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/platform/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/platform/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $tkpId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -622,7 +812,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/update',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/update', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -638,7 +828,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/tkp-editor/update/{id}',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/tkp-editor/update/{id}', function (Request $request, Response $response, array $args) use ($view) {
         $tkpId = $args['id'];
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
@@ -655,7 +845,7 @@ $app->group('/admin',function () use ($app,$view){
     });
 
 
-    $app->get('/presentations',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/presentations', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -668,7 +858,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/faq',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/faq', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -681,7 +871,7 @@ $app->group('/admin',function () use ($app,$view){
         return $response;
     });
 
-    $app->get('/vebinars',function (Request $request,Response $response, array $args) use ($view){
+    $app->get('/vebinars', function (Request $request, Response $response, array $args) use ($view) {
         $userAuth = UserController::checkUserAuth();
         $headerName = $userAuth['name'];
         $sidebar = SidebarController::getAdminSidebar();
@@ -696,7 +886,7 @@ $app->group('/admin',function () use ($app,$view){
 })->add($adminMiddleware);
 
 
-$app->get('/clients',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/clients', function (Request $request, Response $response, array $args) use ($view) {
     $userAuth = UserController::checkUserAuth();
     $headerName = $userAuth['name'];
     $sidebar = SidebarController::getSidebar();
@@ -710,23 +900,19 @@ $app->get('/clients',function (Request $request,Response $response, array $args)
 })->add($authMiddleware);
 
 
-
 //Страница для телеграм бота
-$app->post('/telegram-bot',function (Request $request,Response $response, array $args) use ($view){
+$app->post('/telegram-bot', function (Request $request, Response $response, array $args) use ($view) {
     $params = $request->getParsedBody();
     file_put_contents(__DIR__ . '/message.txt', print_r($params, true));
-    $telegramService = new TelegramService(tokenTelegram,$params);
-    $telegramBot = new TelegramBot($telegramService,$params);
+    $telegramService = new TelegramService(tokenTelegram, $params);
+    $telegramBot = new TelegramBot($telegramService, $params);
     $telegramBot->startService();
     $response->getBody()->write('');
 });
 
 
-
-
-
 //Общие страницы: Авторизация, регистрация, восстановление пароля и т.д
-$app->get('/auth',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/auth', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $body = $view->render("$folder/AuthForm.twig", [
         'title' => 'Авторизация',
@@ -734,7 +920,7 @@ $app->get('/auth',function (Request $request,Response $response, array $args) us
     $response->getBody()->write($body);
 });
 
-$app->get('/register',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/register', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $body = $view->render("$folder/RegisterForm.twig", [
         'title' => 'Регистрация',
@@ -742,7 +928,7 @@ $app->get('/register',function (Request $request,Response $response, array $args
     $response->getBody()->write($body);
 });
 
-$app->get('/confirm',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/confirm', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $getParams = $request->getQueryParams();
     $mail = $getParams['mail'];
@@ -753,7 +939,7 @@ $app->get('/confirm',function (Request $request,Response $response, array $args)
     $response->getBody()->write($body);
 });
 
-$app->get('/restore',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/restore', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $body = $view->render("$folder/RestorePage.twig", [
         'title' => 'Восстановление пароля',
@@ -762,29 +948,26 @@ $app->get('/restore',function (Request $request,Response $response, array $args)
     $response->getBody()->write($body);
 });
 
-$app->get('/restorePass',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/restorePass', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $getParams = $request->getQueryParams();
 
     $userInfo = UserController::getDataFromToken($getParams);
 
-    if($userInfo)
-    {
+    if ($userInfo) {
         $body = $view->render("$folder/RestorePass.twig", [
             'title' => 'Восстановление пароля',
-            'text' => 'Введите новый пароль для логина: '.$userInfo['mail']
+            'text' => 'Введите новый пароль для логина: ' . $userInfo['mail']
         ]);
 
         $response->getBody()->write($body);
         return $response;
-    }
-    else
-    {
+    } else {
         return $response->withStatus(302)->withHeader('Location', '/auth');
     }
 });
 
-$app->get('/awaitPage',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/awaitPage', function (Request $request, Response $response, array $args) use ($view) {
     $folder = 'common';
     $body = $view->render("$folder/AwaitPage.twig", [
         'title' => 'Восстановление пароля',
@@ -794,57 +977,56 @@ $app->get('/awaitPage',function (Request $request,Response $response, array $arg
 });
 
 
-
 //Методы для служебных страниц
-$app->post('/authUser',function(Request $request,Response $response, array $args){
+$app->post('/authUser', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     $controllerResponse = UserController::authUser($params);
     $response->getBody()->write($controllerResponse);
     return $response;
 });
 
-$app->post('/registerUser',function(Request $request,Response $response, array $args){
+$app->post('/registerUser', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     $controllerResponse = UserController::registerUser($params);
     $response->getBody()->write($controllerResponse);
     return $response;
 });
 
-$app->post('/confirmMail',function(Request $request,Response $response, array $args){
+$app->post('/confirmMail', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
-    $userResponse = UserController::checkConfirm($params['mail'],$params['code']);
+    $userResponse = UserController::checkConfirm($params['mail'], $params['code']);
     $response->getBody()->write($userResponse);
     return $response;
 });
 
-$app->post('/restoreMail',function(Request $request,Response $response, array $args){
+$app->post('/restoreMail', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     $userResponse = UserController::restoreMail($params);
     $response->getBody()->write($userResponse);
     return $response;
 });
 
-$app->post('/restorePass',function(Request $request,Response $response, array $args){
+$app->post('/restorePass', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     $userResponse = UserController::restorePass($params);
     $response->getBody()->write($userResponse);
     return $response;
 });
 
-$app->post('/authorizeDealer',function(Request $request,Response $response, array $args){
+$app->post('/authorizeDealer', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     UserController::authorizeUser($params);
     $response->getBody()->write('');
     return $response;
 });
 
-$app->post('/uploadImg',function(Request $request,Response $response){
+$app->post('/uploadImg', function (Request $request, Response $response) {
     $json = UploadImg::uploadImg();
     $response->getBody()->write($json);
     return $response;
 });
 
-$app->post('/createNews',function(Request $request,Response $response){
+$app->post('/createNews', function (Request $request, Response $response) {
     $params = $request->getParsedBody();
     NewsPage::createNews($params);
     $response->getBody()->write('');
@@ -852,26 +1034,22 @@ $app->post('/createNews',function(Request $request,Response $response){
 });
 
 
-$app->post('/listTkp/{id}',function(Request $request,Response $response, array $args){
+$app->post('/listTkp/{id}', function (Request $request, Response $response, array $args) {
     $params = $request->getParsedBody();
     $typeTkp = $args['id'];
-    if($typeTkp == 'auto')
-    {
+    if ($typeTkp == 'auto') {
         $controllerResponse = GetTkpAuto::getTkpList($params);
     }
 
-    if($typeTkp == 'vagon')
-    {
+    if ($typeTkp == 'vagon') {
         $controllerResponse = GetTkpVagon::getTkpList($params);
     }
 
-    if($typeTkp == 'platform')
-    {
+    if ($typeTkp == 'platform') {
         $controllerResponse = GetTkpPlatform::getTkpList($params);
     }
 
-    if($typeTkp == 'upgrade-bundle')
-    {
+    if ($typeTkp == 'upgrade-bundle') {
         $controllerResponse = GetTkpUpgradeBundle::getTkpList($params);
     }
 
@@ -879,10 +1057,10 @@ $app->post('/listTkp/{id}',function(Request $request,Response $response, array $
     return $response;
 });
 
-$app->get('/getTkp/{id}',function (Request $request,Response $response, array $args) use ($view){
+$app->get('/getTkp/{id}', function (Request $request, Response $response, array $args) use ($view) {
     $getParams = $request->getQueryParams();
     $typeTkp = $args['id'];
-    CreateTkpAuto::createTkp($getParams,$typeTkp);
+    CreateTkpAuto::createTkp($getParams, $typeTkp);
     $response->getBody()->write('');
 });
 

@@ -1322,6 +1322,10 @@ body {
   font-size: 14px !important;
 }
 
+.page-category__block_page-elem_mod img {
+  width: auto;
+}
+
 .other-page-wrapper_single p {
   font-size: 14px;
   line-height: 130%;

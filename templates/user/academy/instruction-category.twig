@@ -1,0 +1,40 @@
+{% extends 'user/base.twig' %}
+
+{% block body %}
+
+    <div class="breadcrumbps">
+        <ul>
+            <li><a href="/">Главная</a>&nbsp;/&nbsp;</li>
+            <li><a href="/academy">Академия метра</a>&nbsp;/&nbsp;</li>
+            <li>{{ title }}</li>
+        </ul>
+    </div>
+
+    <h1 class="other-page-title">{{ title }}</h1>
+
+    <div class="other-page-wrapper">
+        <div class="page-category-wrapper">
+            {% for instruction in instructions %}
+                <a href="/academy/instructions/category/{{ category_id }}/instruction/{{ instruction.id }}">
+                    <div class="page-category__block page-category__block_page-elem page-category__block_page-elem_mod">
+                        <img src="{{ instruction.img }}" alt="">
+                        <p>{{ instruction.title }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+
+        <div class="pagination-block">
+            <ul class="pagination-list">
+                <li class="no-borders"><a href="#"><</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">></a></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
