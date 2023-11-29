@@ -38,7 +38,7 @@ class CatalogController
 
             $price = $product['price'];
 
-            if($country == 'kz') {
+            if(($country == 'kz') || ($country == 'bel')) {
                 $price = $product['kz_price'];
             }
 

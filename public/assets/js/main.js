@@ -63,8 +63,13 @@ $('#registerBtn').click(function () {
     var userPass = $('#user-password').val();
     var country = 'ru';
     var kzState = $('#country-radio-kz');
+    var belState = $('country-radio-bel');
     if(kzState.is(':checked')) {
         country = 'kz';
+    }
+
+    if(belState.is(':checked')) {
+        country = 'bel';
     }
     console.log(country);
     $('.fancy-box').fadeIn(300);

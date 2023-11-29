@@ -252,7 +252,13 @@ $app->group('/academy', function () use ($app, $view) {
                 'id' => 1,
                 'img' => '/assets/img/instructions/vs-net.png',
                 'title' => 'Работа с программой WS NET'
-            ]
+            ],
+            [
+                'id' => 2,
+                'img' => '/assets/img/other-pages/academy/video.svg',
+                'title' => 'Инструкции по работе с весами'
+            ],
+
         ];
 
         $body = $view->render("user/academy/instructions.twig", [
@@ -344,6 +350,23 @@ $app->group('/academy', function () use ($app, $view) {
                     'img' => '/assets/img/other-pages/academy/video.svg'
                 ],
             ],
+            '2' => [
+                [
+                    'id' => 1,
+                    'title' => 'Установка конвейерных весов на горизонтальный конвейер',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 2,
+                    'title' => 'Установка конвейерных весов на наклонном конвейере',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+                [
+                    'id' => 3,
+                    'title' => 'Работа с Конвейерным прибором Микросим',
+                    'img' => '/assets/img/other-pages/academy/video.svg'
+                ],
+            ]
         ];
 
         $body = $view->render("user/academy/instruction-category.twig", [
@@ -422,6 +445,20 @@ $app->group('/academy', function () use ($app, $view) {
                 '14' => [
                     'title' => 'Потележечное взвешивание вагона',
                     'src' => ''
+                ],
+            ],
+            '2' => [
+                '1' => [
+                    'title' => 'Установка конвейерных весов на горизонтальный конвейер',
+                    'src' => 'https://www.youtube.com/embed/N88t7lAgCYw?si=B1V97OVp1tqKelZR'
+                ],
+                '2' => [
+                    'title' => 'Установка конвейерных весов на наклонном конвейере',
+                    'src' => 'https://www.youtube.com/embed/_jIo9FaWgwo?si=r-GuPevGow6RsSt4'
+                ],
+                '3' => [
+                    'title' => 'Работа с Конвейерным прибором Микросим',
+                    'src' => 'https://www.youtube.com/embed/KsuHjznxGr8?si=_DbChPBZzcMrPbDn'
                 ],
             ]
         ];

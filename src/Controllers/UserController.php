@@ -72,7 +72,7 @@ class UserController
         }
 
         $userPhone = CommonHelper::normalizePhone($userPhone);
-        if(mb_strlen($userPhone) < 12)
+        if(mb_strlen($userPhone) < 10)
         {
             $response = 'Введите мобильный телефон, или проверьте корректность ввода цифр!';
             $flag++;

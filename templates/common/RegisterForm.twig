@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?ver=123">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <title>{{ title }}</title>
 </head>
@@ -74,6 +74,11 @@
                         <label for="country-radio-kz"><img src="assets/img/other-pages/kz-flag.png" alt=""></label>
                         <input type="radio" name="country" id="country-radio-kz" value="kz">
                     </div>
+
+                    <div class="input-radio-btn">
+                        <label for="country-radio-bel"><img src="assets/img/other-pages/bel-flag.png" alt=""></label>
+                        <input type="radio" name="country" id="country-radio-bel" value="bel">
+                    </div>
                 </div>
                 
             </div>
@@ -96,11 +101,6 @@
 <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/inputmask/inputmask.min.js"></script>
-<script>
-    let inputMask = new Inputmask("+7(999)-999-99-99");
-    let elem = document.querySelector('#user-phone');
-    inputMask.mask(elem);
-</script>
 </body>
 
 
